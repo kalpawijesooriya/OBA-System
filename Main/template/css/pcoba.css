@@ -1,0 +1,7 @@
+.menu_main{
+    height: auto;
+    width: 100%;
+    margin: 0px auto !important;
+    z-index: 1;
+    text-align: center !important;
+}
