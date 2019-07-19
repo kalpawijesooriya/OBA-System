@@ -20,6 +20,86 @@
 </head>
 <body>
 
+    <script src="js/jssor.slider-27.5.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:800,$Opacity:2}
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 980;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    <style>
+        /*jssor slider loading skin spin css*/
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /*jssor slider bullet skin 051 css*/
+        .jssorb051 .i {position:absolute;cursor:pointer;}
+        .jssorb051 .i .b {fill:#fff;fill-opacity:0.5;}
+        .jssorb051 .i:hover .b {fill-opacity:.7;}
+        .jssorb051 .iav .b {fill-opacity: 1;}
+        .jssorb051 .i.idn {opacity:.3;}
+
+        /*jssor slider arrow skin 051 css*/
+        .jssora051 {display:block;position:absolute;cursor:pointer;}
+        .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+        .jssora051:hover {opacity:.8;}
+        .jssora051.jssora051dn {opacity:.5;}
+        .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+    </style>
 <!-- site fb addon plugin -->
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -56,7 +136,7 @@
           <img src="template/images/site-assets/logo.png" alt="dsscoba-logo">
         </div>
         <div class="pull-right site-pull-right">
-          <h4>D. S. SENANAYAKE COLLEGE</h4>
+          <h4>PRINCE COLLEGE</h4>
           <p>Old Boys' Association</p>
         </div>
         <div class="clearfix"></div>
@@ -70,31 +150,16 @@
 <!-- <div class="button"></div> -->
 <ul>
 <li id="nav-home"><a href="index.html">HOME</a></li>
-<li id="nav-news"><a href="news">NEWS</a></li>
+<li id="nav-news"><a href="news">ABOUT US</a></li>
 <li id="nav-events"><a href="events">EVENTS</a></li>
-<li id="nav-projects"><a href="projects"">PROJECTS</a></li>            
-<li id="nav-media"><a href="index.html">MEDIA</a>
+<li id="nav-projects"><a href="projects"">MEMBERSHIP</a></li>            
+<li id="nav-media"><a href="index.html">GALLERY</a>
    <ul>
       <li id="nav-media-sub"><a href="image-gallery">IMAGE GALLERY</a></li>
       <li id="nav-media-sub"><a href="index.html">VIDEO GALLERY</a></li>
    </ul>
 </li>
-<li id="nav-about"><a>ABOUT</a>
-   <ul>
-      <li id="nav-about-sub"><a href="index.html">OLD BOYS' ASSOCATION</a>
-         <ul>
-            <li id="nav-about-sub"><a href="index.html">HISTORY</a></li>
-            <li id="nav-about-sub"><a href="executive-committee">EXECUTIVE COMMITTEE</a></li>
-            <li id="nav-about-sub"><a href="past-presidents">PAST PRESIDENTS</a></li>
-            <li id="nav-about-sub"><a href="batch-representatives">BATCH REPRESENTATIVES</a></li>
-            <li id="nav-about-sub"><a href="clubs-and-societies">CLUBS & SOCIETIES</a></li>
-         </ul>
-      </li>
-      <li id="nav-about-sub"><a href="dssenanayake-college">D. S. SENANAYAKE COLLEGE</a></li>
-      <li id="nav-about-sub"><a href="our-founder">OUR FOUNDER</a></li>
-   </ul>
-</li>
-<li id="nav-membership"><a href="membership">MEMBERSHIP</a></li>
+
 <li id="nav-contact"><a href="http://dsscoba.org/contact-us">CONTACT US</a></li>
 </ul>
 </nav>
@@ -107,58 +172,69 @@
 
 <!-- site main slider -->
 <div class="slider">
-  <!-- slides -->
-  <div class="slider__slides">
-    <div class="slide s--active">
-      <div class="slide__inner">
-        <div class="slide__content">
-          <!-- <h2 class="slide__heading">Clip-Path Revealing Slider</h2> -->
-          <!-- <p class="slide__text">Greetings, Traveler!</p> -->
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
         </div>
-      </div>
-    </div>
-    <div class="slide">
-      <div class="slide__inner">
-        <div class="slide__content">
-          <!-- <h2 class="slide__heading">Simple Animation</h2> -->
-          <!-- <p class="slide__text">Clip-path magic!</p> -->
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="img/001.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/002.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/003.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/004.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/005.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/006.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/007.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/008.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/009.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/010.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/011.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/012.jpg" />
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="slide">
-      <div class="slide__inner">
-        <div class="slide__content">
-          <!-- <h2 class="slide__heading">Very Stylish Effect!</h2> -->
-          <!-- <p class="slide__text">It looks cool, isn't it?</p> -->
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+            <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                </svg>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="slide">
-      <div class="slide__inner">
-        <div class="slide__content">
-          <!-- <h2 class="slide__heading">Limited browser support</h2> -->
-          <!-- <p class="slide__text">Forget about IE/Edge and FF</p> -->
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+            </svg>
         </div>
-      </div>
-    </div>
-    <div class="slide s--prev">
-      <div class="slide__inner">
-        <div class="slide__content">
-          <!-- <h2 class="slide__heading">Check my other stuff!</h2> -->
-          <!-- <p class="slide__text"><a href="https://codepen.io/suez/pens/public/" target="_blank">Other demos</a> and <a href="https://twitter.com/NikolayTalanov" target="_blank">Twitter</a></p> -->
+        <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+            </svg>
         </div>
-      </div>
     </div>
-  </div>
-  <!-- slides end -->
-  <div class="slider__control">
-    <div class="slider__control-line"></div>
-    <div class="slider__control-line"></div>
-  </div>
-  <div class="slider__control slider__control--right m--right">
-    <div class="slider__control-line"></div>
-    <div class="slider__control-line"></div>
-  </div>
 </div>
 <!-- site main slider end -->
 
@@ -360,29 +436,7 @@ Dance on the 22nd of September at Grand Ballroom Hilton, Colombo.</p>
 </section>
 <!-- site focus section end -->
 
-<!-- site video section -->
-<section id="section-video" class="container site-section">
-<div class="row">
-  <div class="col-lg-12 col-md-12">
-      
-  <video poster="template/videos/site-video-cover.png" id="bgvid" playsinline autoplay muted loop>
-    <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-  <!-- <source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm"> -->
-  <!-- <source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4"> -->
-  <source src="template/videos/site-video.webm" type="video/webm">
-  </video>
-  <div id="site-video-overlay">
-      <h1>50<sup>th</sup> Anniversary Theme Song</h1>
-      <p>Filmed by D. S. Senanayake College OBA</p>
-      <p>Since 1967, D. S. Senanayake College has been 'home' to so many students and staff. This coming year 2017 will mark the 50th anniversary of D. S. Senanayake College. This will allow us to celebrate not only this significant milestone for our school, but also the friendships and memories made throughout these wonderful years.
-      </p>
-      <a class="text-center" href="https://www.youtube.com/watch?v=ptbHUsmyDuE">Watch Full Video</a>
-  </div>
 
-  </div>
-</div>
-</section>
-<!-- site video section end -->
 
 <!-- site top news section -->
 <section id="section-posts" class="container-fluid site-section">
@@ -618,7 +672,7 @@ Dance on the 22nd of September at Grand Ballroom Hilton, Colombo.</p>
 </div>
 <!-- site content end -->
 
-
+<script type="text/javascript">jssor_1_slider_init();</script>
 <script type="text/javascript" src="template/js/jquery.custom.js"></script>   
 <script type="text/javascript" src="template/js/jquery.site.slider.js"></script>   
 
