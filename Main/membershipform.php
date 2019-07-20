@@ -1,3 +1,8 @@
+<?php
+include 'includes/dbh.inc.php';
+include 'includes/user.inc.php';
+include 'includes/ViewUser.inc.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -161,6 +166,11 @@
 
             </div>
         </div>
+
+        <?php
+        $users=new ViewUser();
+        $users->showAllUsers();
+        ?>
         <form>
             <div class="well">
                 <div class="row">
