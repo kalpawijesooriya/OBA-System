@@ -8,8 +8,8 @@ class Dbh{
    protected function connect()
    { 
        $this->serverName="localhost";
-       $this->userName="kalpa";
-       $this->password="kalpa";
+       $this->userName="root";
+       $this->password="";
        $this->dbName="obsystem_db";
 
       $conn=new mysqli($this->serverName, $this->userName,$this->password,$this->dbName);
