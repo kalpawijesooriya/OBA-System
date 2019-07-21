@@ -1518,4 +1518,8 @@ video {
 .slide__text a {
   color: inherit;
 }
+.required {
+  content: "*";
+  color: red;
+}
 
