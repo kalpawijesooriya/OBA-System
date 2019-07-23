@@ -107,7 +107,7 @@
   <div class="site-section-content">  
     <div class="site-post-text">
       <div class="row site-portfolio-row">
-        <form class="modal-content animate" action="/OBA-System/php/auth.php" method="POST">
+        <form class="modal-content animate" action="/php/auth.php" method="POST">
 
             <div class="container" style="padding:20px;">
               <label for="regestration_number"><b>Username</b></label>

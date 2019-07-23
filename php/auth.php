@@ -17,7 +17,7 @@ if(isset($_POST['regestration_number']) && isset($_POST['pw'])){
  
                  $_SESSION['login_user'] =  $row["name"];
                  
-                 header("location: /OBA-System/Main/");
+                 header("location: /");
              }
          }
  else
@@ -26,7 +26,7 @@ if(isset($_POST['regestration_number']) && isset($_POST['pw'])){
 else
 {
   session_destroy();
-  header("location: /OBA-System/Main/");
+  header("location: /");
 }
 
 
