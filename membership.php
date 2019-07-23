@@ -48,7 +48,7 @@
 <!-- site header+navigation -->
 <header>     
 <section class="container">
-<?php include './components/header.php' ?>
+<?php include('./components/header.php') ?>
 </section>
 </header><!-- site header+navigation end -->
 
