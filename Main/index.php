@@ -1,8 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Home</title>
-
+  <title>Home</title>
+  
+    <?php
+        session_start();
+ 
+        if( isset($_SESSION['login_user']) ){
+          echo "<span id ='login_user' style='visibility:hidden; position:absolute;'>".$_SESSION['login_user']."</span>";
+        }
+        else{
+          echo "<span id ='login_user' style='visibility:hidden; position:absolute;'>no_data</span>";
+        }
+    ?>
   <meta charset="UTF-8">
   <meta content="text/html; charset=UTF-8" http-equiv="content-type">        
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -164,8 +174,9 @@
       <li id="nav-contact"><a href="http://dsscoba.org/contact-us">CONTACT US</a></li>
       <li class="">
 
-            <button class="btn" style="margin-left: 40pt; margin-right: 40pt;margin-top: 6pt;margin-bottom:  6pt;padding: 5pt; right: 0px;"
-            onclick="location.href='login.html';">Login</button>
+            <button id="login_btn" class="btn" style="margin-left: 40pt; margin-right: 40pt;margin-top: 6pt;margin-bottom:  6pt;padding: 5pt; right: 0px;"
+            onclick="login()">Login</button>
+            <p id="login_as" style="color:white;text-align:center"></p>
 
       </li>      
     </ul>
@@ -670,7 +681,7 @@ Dance on the 22nd of September at Grand Ballroom Hilton, Colombo.</p>
 <div class="row">    
     <div class="site-copyright-tag">
     <div class="container text-center">
-        <p>Website Designed & Developed by 2011 Batch</p>
+        <p>Website Designed & Developed by Gnex Solutions</p>
         <div class="site-scroll-up pull-right text-center">
         <a id="scrolltotop" href="index.html"><i id="fo-icon" class="fa fa-caret-up fa-lg animated" aria-hidden="true"></i></a>
         </div>
@@ -685,6 +696,30 @@ Dance on the 22nd of September at Grand Ballroom Hilton, Colombo.</p>
 <script type="text/javascript">jssor_1_slider_init();</script>
 <script type="text/javascript" src="template/js/jquery.custom.js"></script>   
 <script type="text/javascript" src="template/js/jquery.site.slider.js"></script>   
+<script>
+
+var usr = document.getElementById("login_user").innerHTML;
+
+  window.onload = function(e){
+      if(usr != "no_data"){
+        var btn = document.getElementById("login_btn"); 
+        var login_as =  document.getElementById("login_as");  
+        btn.innerHTML="Logout";
+        login_as.innerHTML="Logged in as "+ usr;
+      }
+  };
+
+  function login(){
+
+    if(usr != "no_data"){ //logout by clearing session
+      location.href='/OBA-System/php/auth.php';
+    }
+    else{
+      location.href='login.html';
+    }
+
+  }
+</script>
 
 
 </body>
