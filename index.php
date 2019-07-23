@@ -8,6 +8,9 @@
  
         if( isset($_SESSION['login_user']) ){
           echo "<span id ='login_user' style='visibility:hidden; position:absolute;'>".$_SESSION['login_user']."</span>";
+          echo "<span id ='login_user_reg' style='visibility:hidden; position:absolute;'>".$_SESSION['regestration_number']."</span>";
+          echo "<span id ='login_user_role' style='visibility:hidden; position:absolute;'>".$_SESSION['admin_role']."</span>";
+
         }
         else{
           echo "<span id ='login_user' style='visibility:hidden; position:absolute;'>no_data</span>";
@@ -699,11 +702,15 @@ Dance on the 22nd of September at Grand Ballroom Hilton, Colombo.</p>
 <script>
 
 var usr = document.getElementById("login_user").innerHTML;
+var user_reg =  document.getElementById("login_user_reg").innerHTML;
+var user_admin_role =  document.getElementById("login_user_role").innerHTML;
 
   window.onload = function(e){
       if(usr != "no_data"){
-        var btn = document.getElementById("login_btn"); 
+
+        var btn = document.getElementById("login_btn");
         var login_as =  document.getElementById("login_as");  
+
         btn.innerHTML="Logout";
         login_as.innerHTML="Logged in as "+ usr;
       }
@@ -712,12 +719,12 @@ var usr = document.getElementById("login_user").innerHTML;
   function login(){
 
     if(usr != "no_data"){ //logout by clearing session
-      location.href='/OBA-System/php/auth.php';
+      location.href='./php/auth.php';
     }
     else{
       location.href='login.html';
     }
-
+     
   }
 </script>
 
