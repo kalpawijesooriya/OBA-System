@@ -25,7 +25,7 @@
       <!-- <div class="button"></div> -->
       <ul>
       <li id="nav-home"><a href="index.php">HOME</a></li>
-      <li id="nav-news"><a href="news">ABOUT US</a></li>
+      <li id="nav-news"><a href="aboutUs.html">ABOUT US</a></li>
       <li id="nav-events"><a href="events">EVENTS</a></li>
       <li id="nav-projects"><a href="membership.php">MEMBERSHIP</a></li>            
       <li id="nav-media"><a href="index.php">GALLERY</a>
