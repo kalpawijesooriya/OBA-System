@@ -128,12 +128,12 @@
 <!-- site header+navigation -->
 <header>     
 <section class="container">
-<div class="row">
+<!-- <div class="row"> -->
 <!-- added the header row and the menues through php ffunction : dj -->
 <?php include './components/header.php' ?>
 
 
-</div>
+<!-- </div> -->
 
 </div>
 </section>

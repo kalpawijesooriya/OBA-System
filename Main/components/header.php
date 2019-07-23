@@ -1,7 +1,9 @@
 <?php 
-    echo(' <div class="col-lg-4 col-md-4 responsive-col-full-width/">
+    echo('
+
+    <div class="col-lg-4 col-md-4 responsive-col-full-width/">
     <div class="site-brand text-center">
-      <a href="index.html">
+      <a href="index.php">
         <div class="pull-left site-pull-left">        
           <img src="template/images/site-assets/logo.png" alt="dsscoba-logo">
         </div>
@@ -22,14 +24,14 @@
       <div id="head-mobile"></div>
       <!-- <div class="button"></div> -->
       <ul>
-      <li id="nav-home"><a href="index.html">HOME</a></li>
+      <li id="nav-home"><a href="index.php">HOME</a></li>
       <li id="nav-news"><a href="news">ABOUT US</a></li>
       <li id="nav-events"><a href="events">EVENTS</a></li>
-      <li id="nav-projects"><a href="membership.html">MEMBERSHIP</a></li>            
-      <li id="nav-media"><a href="index.html">GALLERY</a>
+      <li id="nav-projects"><a href="membership.php">MEMBERSHIP</a></li>            
+      <li id="nav-media"><a href="index.php">GALLERY</a>
         <ul>
             <li id="nav-media-sub"><a href="image-gallery">IMAGE GALLERY</a></li>
-            <li id="nav-media-sub"><a href="index.html">VIDEO GALLERY</a></li>
+            <li id="nav-media-sub"><a href="index.php">VIDEO GALLERY</a></li>
         </ul>
       </li>
       <li id="nav-contact"><a href="http://dsscoba.org/contact-us">CONTACT US</a></li>
