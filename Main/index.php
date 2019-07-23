@@ -712,7 +712,7 @@ var usr = document.getElementById("login_user").innerHTML;
   function login(){
 
     if(usr != "no_data"){ //logout by clearing session
-      location.href='/OBA-System/php/auth.php';
+      location.href='/php/auth.php';
     }
     else{
       location.href='login.html';
