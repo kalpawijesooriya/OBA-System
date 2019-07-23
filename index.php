@@ -138,53 +138,7 @@
 <!-- site header+navigation -->
 <header>     
 <section class="container">
-<div class="row">
-<div class="col-lg-4 col-md-4 responsive-col-full-width">
-    <div class="site-brand text-center">
-      <a href="index.html">
-        <div class="pull-left site-pull-left">        
-          <img src="template/images/site-assets/logo.png" alt="dsscoba-logo">
-        </div>
-        <div class="pull-right site-pull-right">
-          <h4>PRINCE COLLEGE</h4>
-          <p>Old Boys' Association</p>
-        </div>
-        <div class="clearfix"></div>
-      </a>
-    </div>   
-    <div class="button nvbtn"></div>         
-</div>
-<div class="col-md-8 responsive-col-full-width">
-
-  <div class="col-md-8">
-    <nav id='cssmenu'>
-      <div id="head-mobile"></div>
-      <!-- <div class="button"></div> -->
-      <ul>
-      <li id="nav-home"><a href="index.php">HOME</a></li>
-      <li id="nav-news"><a href="index.php">ABOUT US</a></li>
-      <li id="nav-events"><a href="index.php">EVENTS</a></li>
-      <li id="nav-projects"><a href="membership.html">MEMBERSHIP</a></li>            
-      <li id="nav-media"><a href="index.php">GALLERY</a>
-        <ul>
-            <li id="nav-media-sub"><a href="index.php">IMAGE GALLERY</a></li>
-            <li id="nav-media-sub"><a href="index.php">VIDEO GALLERY</a></li>
-        </ul>
-      </li>
-      <li id="nav-contact"><a href="index.php">CONTACT US</a></li>
-      <li class="">
-
-            <button id="login_btn" class="btn" style="margin-left: 40pt; margin-right: 40pt;margin-top: 6pt;margin-bottom:  6pt;padding: 5pt; right: 0px;"
-            onclick="login()">Login</button>
-            <p id="login_as" style="color:white;text-align:center"></p>
-
-      </li>      
-    </ul>
-      </nav>
-  </div>
-
-</div>
-</div>
+<?php include './components/header.php' ?>
 </section>
 
 </header><!-- site header+navigation end -->
@@ -607,87 +561,7 @@ Dance on the 22nd of September at Grand Ballroom Hilton, Colombo.</p>
 
 <!-- site footer -->
 <footer id="section-footer" class="container-fluid site-section">
-<div class="row">
-    
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 site-footer-bx">
-        <div id="site-footer-A1" class="text-center animated">
-            <img class="" src="template/images/site-assets/logo.png" alt="dsscoba-logo">
-            <h5 class="">COUNTRY BEFORE SELF</h5>
-        </div>
-    </div>
-    
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 site-footer-bx">
-        <div id="site-footer-A2" class="text-left site-footer-text-center animated">
-            <h5>SOCIETIES & CLUBS</h5> 
-            <ul class="list-inline site-footer-list site-list-inline-img">
-                <li>
-                    <a href="https://www.facebook.com/groups/dsobawildlifeclub" target="_blank">
-                    <img src="template/images/site-assets/clubs-societies/dsscoba-wildlife.png" alt="dsscoba-wildlife" title="Wildlife Club">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/dsbuddhists" target="_blank">
-                    <img src="template/images/site-assets/clubs-societies/dsscoba-buddhist.png" alt="dsscoba-buddhist" title="Buddhist Society">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/donspsychoparade" target="_blank">
-                    <img src="template/images/site-assets/clubs-societies/dsscoba-psycho.png" alt="dsscoba-psycho-parade" title="Psycho Parade">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/Theewraa" target="_blank">
-                    <img src="template/images/site-assets/clubs-societies/dsscoba-theewra.png" alt="dsscoba-theewra" title="D.S Theewraa">
-                    </a>
-                </li>
-
-            </ul>
-        </div>
-    </div>
-
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 site-footer-bx">
-        <div id="site-footer-A3" class="text-center animated">
-            <h5>CONTACT</h5>
-            <p>
-                <span>DSSC OBA HEADQUARTERS</span>
-                <br>
-                <span>No 62, Gregory Road,</span>
-                <br>
-                <span>Colombo 07</span>
-                <br>
-                <span>Sri Lanka</span>
-                <br><br>
-                <span>dsoba@sltnet.lk</span>
-                <br>
-                <span>+94 115 840 310 | +94 112 688 010</span>
-            </p>
-        </div>
-    </div>
-
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 site-footer-bx">
-        <div id="site-footer-A4" class="text-center animated">
-            <h5>FOLLOW US</h5> 
-            <ul class="list-inline site-social-icons">
-                <li><a href="https://www.facebook.com/OBADSSC/" target="_blank"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i></a></li>
-                <li><a href="https://twitter.com/obadssc" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.instagram.com/obadssc/" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.youtube.com/channel/UC6oSyNbktAqKIh5bt0wGz_A" target="_blank"><i class="fa fa-youtube-square fa-lg" aria-hidden="true"></i></a></li>
-            </ul>
-            <p class="site-privacy-tag">Privacy Policy | <a href="index.html">Terms & Conditions</a></p>
-        </div>
-    </div>
-</div>
-
-<div class="row">    
-    <div class="site-copyright-tag">
-    <div class="container text-center">
-        <p>Website Designed & Developed by Gnex Solutions</p>
-        <div class="site-scroll-up pull-right text-center">
-        <a id="scrolltotop" href="index.html"><i id="fo-icon" class="fa fa-caret-up fa-lg animated" aria-hidden="true"></i></a>
-        </div>
-    </div>
-    </div>
-</div>
+<?php include('./components/footer.php') ?>
 </footer><!-- site footer end -->
 
 </div>

@@ -46,11 +46,10 @@
 <div id="site-content">
 
 <!-- site header+navigation -->
-<header>    
+<header>     
 <section class="container">
-<?php include('./components/header.php') ?>
+<?php include './components/header.php' ?>
 </section>
- 
 </header><!-- site header+navigation end -->
 
 <!-- site body -->
@@ -108,9 +107,9 @@
 
 
 <!-- site footer -->
-
-<?php include('./components/footer.php'); ?>
-<!-- site footer end -->
+<footer id="section-footer" class="container-fluid site-section">
+<?php include('./components/footer.php') ?>
+</footer><!-- site footer end -->
 
 </div>
 <!-- site content end -->
