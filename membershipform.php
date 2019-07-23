@@ -166,7 +166,7 @@
 
        
         
-        <form>
+        <form id="register_form">
             <div class="well">
                 <div class="row">
                     <div class="col-md-12">
@@ -180,6 +180,7 @@
                         <div class="form-group">
                             <label>National Id Card No (NIC) <span class="required">*</span></label>
                             <input type="text" class="form-control" placeholder="Id card no"  id="nic" required>
+                            <h5 id="error_nic" class="error" >Invalid NIC Number</h5>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -203,8 +204,10 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Birthday<span class="required">*</span></label>
-                            <input type="text" id="birthday" class="form-control bdinput" name="birth_day"  placeholder="Birth Day" required>
+                            <input type="text" id="birthday" class="form-control" name="birth_day"  placeholder="Birth Day" required>
+                            <h5 id="error_bd" class="error" >Invalid Birthday</h5>
                             <small>Enter date as Day / Month / Year</small>
+                         
                         </div>
                     </div>
                    
@@ -213,8 +216,7 @@
                     <div class="col-md-12">
                         <div class="form-group">
                             <label>Address<span class="required">*</span></label>
-                            <input type="text" class="form-control" id="address" name="street"   placeholder="Address" required>
-                            
+                            <input type="text" class="form-control" id="address" name="address"   placeholder="Address" required>                           
                         </div>
                     </div>
                 </div>
@@ -239,23 +241,25 @@
                             <input type="number" class="form-control" id="mobile" placeholder="Mobile Phone Number" required>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="form-control-group">
                             <label class="control-label">Email Address<span class="required">*</span></label>
                     
                             <div class="controls">
-                                <input type="text" class="form-control"   id="email" placeholder="Email Address" required>
+                                <input type="email" class="form-control" pattern="^[a-zA-Z0-9\-_]+(\.[a-zA-Z0-9\-_]+)*@[a-z0-9]+(\-[a-z0-9]+)*(\.[a-z0-9]+(\-[a-z0-9]+)*)*\.[a-z]{2,4}$"  id="email" placeholder="Email Address" required>
+                                <h5 id="error_email" class="error" >Invalid Email Address</h5>  
                             </div>
                         </div>
                     </div>
+                  
                             
                 </div>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-control-group">
-                            <label class="control-label">School Index Number<span class="required" id="index_num">*</span></label>
+                            <label class="control-label">School Index Number<span class="required">*</span></label>
                             <div class="controls">
-                                <input type="text" class="form-control"  placeholder="Index Number" required>
+                                <input type="text" class="form-control"  placeholder="Index Number" id="index_num" required>
                             </div>
                         </div>
                     </div>      
@@ -293,7 +297,8 @@
                             <label class="control-label">Password<span class="required">*</span></label>                       
                             <div class="controls">
                                 <input type="password" class="form-control" required="required"  id="password" placeholder="Password">
-                                <small>Enter password with 6 characters</small>
+                                <small>Enter password with more than 6 characters</small>
+                                <h5 id="error_password" class="error" >Passwords do not match</h5>                               
                             </div>
                         </div>
                     </div>
@@ -302,7 +307,7 @@
                         <div class="form-group">
                         <label class="control-label">Confirm Password<span class="required">*</span></label>                       
                             <div class="controls">
-                                <input type="password" class="form-control" required="required" placeholder="Re-Enter Password" id="confirmPass" disabled>
+                                <input type="password" class="form-control" required="required" placeholder="Re-Enter Password" id="confirmPass" disabled required>
                                 
                             </div>
                         </div>
@@ -343,7 +348,7 @@
                         <input type="hidden" id="id" name="id" ng-model="user_id" autocomplete="off" class="ng-pristine ng-untouched ng-valid ng-empty">
                         <div class="col-md-9"></div>
                         <div class="col-md-3">
-                        <input id="submit" onclick="submitMemberData()" type="button" value="Submit" class="btn btn-primary  btn-dn-submit submit btn form-control">
+                        <input id="btnsubmit" onclick="submitMemberData()" type="submit" class="btn btn-primary  btn-dn-submit submit btn form-control">
                         </div>
                     </div>
                 </div>

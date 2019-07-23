@@ -1,4 +1,7 @@
-
+document.getElementById("error_email").style.display='none';
+document.getElementById("error_nic").style.display='none';
+document.getElementById("error_bd").style.display='none';
+document.getElementById("error_password").style.display='none';
 function submitMemberData() {
 var nic = document.getElementById("nic").value;
 var selecttitle = document.getElementById("title")
@@ -22,26 +25,25 @@ var newbirthday=values[2].trim()+'-'+values[1].trim()+'-'+values[0].trim();
 var registrationNum=nic.slice(0,nic.length - 1)
 // Returns successful data submission message when the entered information is stored in database.
 var dataString = 'method=register&regestration_number='+registrationNum+'&nic=' + nic + '&title=' + title + '&name=' + name+ '&birthday=' + newbirthday+ '&address=' + address+ '&country=' + country+ '&phone=' + phone+ '&mobile=' + mobile+ '&email=' + email+ '&index_num=' + index_num+ '&ol_year=' + ol_year+ '&al_year=' + al_year+'&password=' + password ;
-if (name == '' || email == '' || password == '' || phone == ''||mobile == '' || address == '' || nic == '' || password == ''|| ol_year == '' || al_year == '' ||index_num==''|| birthday == ''|| confirmPassword == '') {
-alert("Please Fill All Fields");
-}else if(nic.length!=10){
-    alert("Enter correct NIC Number"); 
+// if (name == '' || email == '' || password == '' || phone == ''||mobile == '' || address == '' || nic == '' || password == ''|| ol_year == '' || al_year == '' ||index_num==''|| birthday == ''|| confirmPassword == '') {
+// alert("Please Fill All Fields");
+// }
+if(nic.length!=10){
+  document.getElementById("error_nic").style.display='block';
 } else if(birthday.length!=14){
-    alert("Enter correct Birthday"); 
+  document.getElementById("error_bd").style.display='block';
 } else if (password != confirmPassword) {
-    alert("Passwords do not match.");
+  document.getElementById("error_password").style.display='block';
     
-}else if (password.length<=6) {
-    alert("Password lenth more than 6 characters");
-    
+}else if(!validateEmail()){
+  document.getElementById("error_email").style.display='block';
 }
-
 else {
 //AJAX code to submit form.
     $.ajax({
         type: "POST",
         async:false,
-        url: "../php/membership/memberHedder.php",
+        url: "php/membership/memberHedder.php",
         data: dataString,
         cache: false,
         success: function(s) {
@@ -107,10 +109,8 @@ date.addEventListener('blur', function(e) {
   this.value = output;
 });
 
-
+//NIC validation
 var nic = document.getElementById('nic');
-
-
 nic.addEventListener('input', function(e) {
     this.type = 'text';
     var input = this.value;
@@ -121,43 +121,95 @@ nic.addEventListener('input', function(e) {
     else if( this.value.length==9)
     {
         this.value= this.value+"v"
+        document.getElementById("error_nic").style.display='none';
     }
    
   
     this.value = this.value.substr(0, 10);
 
-    nic.onkeydown = function() {
-        var key = event.keyCode || event.charCode;
-    
-        if( key == 8 || key == 46 )
-        this.value=""
-    };
+ 
   });
 
+  nic.onkeydown = function() {
+    var key = event.keyCode || event.charCode;
+
+    if( key == 8 || key == 46 )
+    this.value=""
+};
+
+// password validation
   var password = document.getElementById("password");
   var confirmPassword =document.getElementById("confirmPass");
 
 
-  password.addEventListener('input', function(e) {
+password.addEventListener('input', function(e) {
 
-       if( this.value.length>6)
-        {
-            confirmPassword.disabled = false;
-        }
-        else
-        {
-            confirmPassword.disabled = true;
-        }
+      if( this.value.length>6)
+      {
+          confirmPassword.disabled = false;
+      }
+      else
+      {
+          confirmPassword.disabled = true;
+      }  
+  });
 
-       
-    });
+  password.onclick= function(){
+    document.getElementById("error_password").style.display='none';
+  };
+  password.onclick = function(){
+    document.getElementById("error_password").style.display='none';
+  };
+  confirmPassword.onclick = function(){
+    document.getElementById("error_password").style.display='none';
+  };
 
-function ValidateEmail(mail) 
-{
- if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
-  {
-    return (true)
+//email validations annd error msgs
+    function validateEmail() {
+      var emailText = document.getElementById('email').value;
+      var pattern = /^[a-zA-Z0-9\-_]+(\.[a-zA-Z0-9\-_]+)*@[a-z0-9]+(\-[a-z0-9]+)*(\.[a-z0-9]+(\-[a-z0-9]+)*)*\.[a-z]{2,4}$/;
+      if (pattern.test(emailText)) {
+          return true;
+      } else {
+          return false;
+      }
   }
-    alert("You have entered an invalid email address!")
-    return (false)
-}
+  email=document.getElementById("email");
+
+  email.onclick = function(){
+    document.getElementById("error_email").style.display='none';
+  };
+  email.addEventListener('input', function(e) {
+
+    var emailText = email.value;
+    var pattern = /^[a-zA-Z0-9\-_]+(\.[a-zA-Z0-9\-_]+)*@[a-z0-9]+(\-[a-z0-9]+)*(\.[a-z0-9]+(\-[a-z0-9]+)*)*\.[a-z]{2,4}$/;
+    if (pattern.test(emailText)) {
+      document.getElementById("error_email").style.display='none';
+    } else {
+      document.getElementById("error_email").style.display='block';
+    } 
+ });
+
+// nic validation add error msgs
+ nic=document.getElementById("nic");
+ nic.onclick = function(){
+  document.getElementById("error_nic").style.display='none';
+};
+
+//Birthday Validation
+bd=document.getElementById("birthday");
+bd.onclick = function(){
+ document.getElementById("error_bd").style.display='none';
+};
+
+//prevent refresh the page
+$(document).ready(function () {
+  $("#register_form").submit(function(e) {
+    e.preventDefault();
+  });
+  
+});
+
+
+    
+    

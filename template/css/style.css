@@ -1522,3 +1522,6 @@ video {
   content: "*";
   color: red;
 }
+.error{
+  color: red;
+}
