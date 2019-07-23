@@ -2,7 +2,8 @@
 include 'conn.php';
 
 session_start();
-if(isset($_POST['regestration_number']) && isset($_POST['pw'])){
+if(isset($_POST['regestration_number']) && isset($_POST['pw']))
+{
   $username = $_POST['regestration_number'];
   $password = $_POST['pw'];
   $admin_role = [];
@@ -26,24 +27,26 @@ if(isset($_POST['regestration_number']) && isset($_POST['pw'])){
                     array_push($admin_role,$row2["job_role"]); //used array incase if one has many roles
                   }
 
-                  $_SESSION['admin_role'] = "";
 
                   if(sizeof($admin_role)>0){
                     $_SESSION['admin_role'] = implode( ", ", $admin_role );
                     header("location: ../Admin/");
                   }
                   else{
+                    
+                    $_SESSION['admin_role'] = "";
                     header("location: ../");
                    }
                   
                  }
-                 
-
-                 
+                  
              }
          }
  else
-   {echo "no value found";}
+   {
+    echo "no value found";
+    //header("location: ../");
+  }
 }
 else
 {
