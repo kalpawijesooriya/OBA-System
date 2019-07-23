@@ -3,19 +3,19 @@
 <head>
   <title>Home</title>
   
-    <?php
-        session_start();
- 
-        if( isset($_SESSION['login_user']) ){
-          echo "<span id ='login_user' style='visibility:hidden; position:absolute;'>".$_SESSION['login_user']."</span>";
-          echo "<span id ='login_user_reg' style='visibility:hidden; position:absolute;'>".$_SESSION['regestration_number']."</span>";
-          echo "<span id ='login_user_role' style='visibility:hidden; position:absolute;'>".$_SESSION['admin_role']."</span>";
+  <?php
+      session_start();
 
-        }
-        else{
-          echo "<span id ='login_user' style='visibility:hidden; position:absolute;'>no_data</span>";
-        }
-    ?>
+      if( isset($_SESSION['login_user']) ){
+        echo "<span id ='login_user' style='visibility:hidden; position:absolute;'>".$_SESSION['login_user']."</span>";
+        echo "<span id ='login_user_reg' style='visibility:hidden; position:absolute;'>".$_SESSION['regestration_number']."</span>";
+        echo "<span id ='login_user_role' style='visibility:hidden; position:absolute;'>".$_SESSION['admin_role']."</span>";
+
+      }
+      else{
+        echo "<span id ='login_user' style='visibility:hidden; position:absolute;'>no_data</span>";
+      }
+  ?>
   <meta charset="UTF-8">
   <meta content="text/html; charset=UTF-8" http-equiv="content-type">        
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -125,13 +125,24 @@
 
 <!-- site preloader -->
 
-<div id="preloader" class="preloader">
+<div id="preloader" class="loader">
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    <div class="box box5"></div>
+    <div class="box box6"></div>
+    <div class="box box7"></div>
+    <div class="box box8"></div>
+</div>
+
+<!-- <div id="preloader" class="preloader">
   <div class="lines">
   <div class="line line-1"></div>
   <div class="line line-2"></div>
   <div class="line line-3"></div></div>  
   <div class="loading-text">LOADING</div>
-</div>
+</div> -->
 <!-- site preloader end -->
 
 
@@ -142,6 +153,8 @@
 <header>     
 <section class="container">
 <?php include './components/header.php' ?>
+
+
 </section>
 
 </header><!-- site header+navigation end -->
