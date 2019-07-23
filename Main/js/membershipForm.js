@@ -1,11 +1,13 @@
 
 function submitMemberData() {
 var nic = document.getElementById("nic").value;
-var title = document.getElementById("title").value;
+var selecttitle = document.getElementById("title")
+var title=selecttitle.options[selecttitle.selectedIndex].text;
 var name = document.getElementById("name").value;
 var birthday = document.getElementById("birthday").value;
 var address = document.getElementById("address").value;
-var country = document.getElementById("country").value;
+var selectcountry = document.getElementById("country")
+var country=selectcountry.options[selectcountry.selectedIndex].text;
 var phone = document.getElementById("phone").value;
 var mobile = document.getElementById("mobile").value;
 var email = document.getElementById("email").value;
@@ -15,10 +17,11 @@ var al_year = document.getElementById("al_year").value;
 var password = document.getElementById("password").value;
 var confirmPassword =document.getElementById("confirmPass").value;
 var values = birthday.split('/')
-var newbirthday=values[2].trim()+'-'+values[1].trim()+'-'+values[0].trim()
-// Returns successful data submission message when the entered information is stored in database.
-var dataString = 'method=register&nic=' + nic + '&title=' + title + '&name=' + name+ '&birthday=' + newbirthday+ '&address=' + address+ '&country=' + country+ '&phone=' + phone+ '&mobile=' + mobile+ '&email=' + email+ '&index_num=' + index_num+ '&ol_year=' + ol_year+ '&al_year=' + al_year+'&password=' + password ;
+var newbirthday=values[2].trim()+'-'+values[1].trim()+'-'+values[0].trim();
 
+var registrationNum=nic.slice(0,nic.length - 1)
+// Returns successful data submission message when the entered information is stored in database.
+var dataString = 'method=register&regestration_number='+registrationNum+'&nic=' + nic + '&title=' + title + '&name=' + name+ '&birthday=' + newbirthday+ '&address=' + address+ '&country=' + country+ '&phone=' + phone+ '&mobile=' + mobile+ '&email=' + email+ '&index_num=' + index_num+ '&ol_year=' + ol_year+ '&al_year=' + al_year+'&password=' + password ;
 if (name == '' || email == '' || password == '' || phone == ''||mobile == '' || address == '' || nic == '' || password == ''|| ol_year == '' || al_year == '' ||index_num==''|| birthday == ''|| confirmPassword == '') {
 alert("Please Fill All Fields");
 }else if(nic.length!=10){
@@ -38,7 +41,7 @@ else {
     $.ajax({
         type: "POST",
         async:false,
-        url: "includes/memberHedder.php",
+        url: "../php/membership/memberHedder.php",
         data: dataString,
         cache: false,
         success: function(s) {
