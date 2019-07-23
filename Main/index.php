@@ -129,8 +129,9 @@
 <header>     
 <section class="container">
 <div class="row">
-
-<div class="col-lg-4 col-md-4 responsive-col-full-width">
+<!-- added the header row and the menues through php ffunction : dj -->
+<?php include './components/header.php' ?>
+<!-- <div class="col-lg-4 col-md-4 responsive-col-full-width">
     <div class="site-brand text-center">
       <a href="index.html">
         <div class="pull-left site-pull-left">        
@@ -151,7 +152,7 @@
   <div class="col-md-8">
     <nav id='cssmenu'>
       <div id="head-mobile"></div>
-      <!-- <div class="button"></div> -->
+       <div class="button"></div> 
       <ul>
       <li id="nav-home"><a href="index.html">HOME</a></li>
       <li id="nav-news"><a href="news">ABOUT US</a></li>
@@ -172,7 +173,7 @@
       </li>      
     </ul>
       </nav>
-  </div>
+  </div> -->
 
 </div>
 </div>
