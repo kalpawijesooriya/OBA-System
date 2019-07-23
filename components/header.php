@@ -9,7 +9,7 @@
         </div>
         <div class="pull-right site-pull-right">
        
-          <h4>PRINCE COLLEGE</h4>
+          <h4>NEW TOWN PRINCE COLLEGE</h4>
           <p>Old Boys\' Association</p>
         </div>
         <div class="clearfix"></div>
