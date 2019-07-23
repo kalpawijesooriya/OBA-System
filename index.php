@@ -596,7 +596,7 @@ var user_admin_role =  document.getElementById("login_user_role").innerHTML;
       location.href='./php/auth.php';
     }
     else{
-      location.href='login.html';
+      location.href='./login.php';
     }
      
   }

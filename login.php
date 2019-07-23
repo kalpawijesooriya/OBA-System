@@ -83,7 +83,7 @@
         <li class="">
   
               <button class="btn" style="margin-left: 40pt; margin-right: 40pt;margin-top: 6pt;margin-bottom:  6pt;padding: 5pt; right: 0px;"
-              onclick="location.href='login.html';">Login</button>
+              onclick="location.href='login.php';">Login</button>
   
         </li>      
       </ul>
