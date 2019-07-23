@@ -129,6 +129,7 @@
 <header>     
 <section class="container">
 <div class="row">
+
 <div class="col-lg-4 col-md-4 responsive-col-full-width">
     <div class="site-brand text-center">
       <a href="index.html">
@@ -136,6 +137,7 @@
           <img src="template/images/site-assets/logo.png" alt="dsscoba-logo">
         </div>
         <div class="pull-right site-pull-right">
+       
           <h4>PRINCE COLLEGE</h4>
           <p>Old Boys' Association</p>
         </div>
