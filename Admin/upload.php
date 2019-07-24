@@ -2,7 +2,7 @@
     $statusMsg = $errorMsg = $insertValuesSQL = $errorUpload = $errorUploadType = "";
     if(isset($_POST['submit'])){
         // Include the database configuration file
-        include_once 'dbConfig.php';
+        
         
         // File upload configuration
         $targetDir = "../img/gallery/";
