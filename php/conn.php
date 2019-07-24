@@ -15,8 +15,6 @@ $conn = new mysqli($servername, $username, $password,$db);
 // } 
 // echo "Connected successfully";
 
-
-
 ?>  -->
 
 <?php
