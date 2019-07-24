@@ -66,7 +66,7 @@
   <div class="site-section-content">
 
     <div class="site-post-text"> 
-      <p>The D. S. Senanayake College Old Boys Association has a wide network, both local and overseas alumni and friends who have been maintaining connections with fellow members, the school and is committed to nurture the school and its Mission. As a member, you will be able to promote, support and get involved in important events and programs organized by the OBA for our rising prodigies at D. S. Senanayake College. The efforts put in by the OBA will strengthen the value of what our school stands for, “Country before Self”. You can be a member of our young and aspiring School’s Old Boys Association by filling the Application and hand it over along with the following documents to our OBA headquarters.</p>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
 
       <div class="col-lg -6 col-md-6">
         <blockquote class="site-blockquote">Required Documents</blockquote>
@@ -78,7 +78,7 @@
       <div class="col-lg -6 col-md-6">      
         <div class="panel panel-danger site-panel">
           <div class="panel-heading site-panel-heading">
-            <h3 class="text-center">LIFE MEMBERSHIP</h3>
+            <h3 class="text-center">Year MEMBERSHIP</h3>
           </div>
           <div class="panel-body text-center site-panel-body">
             <p class="lead" style="font-size:30px"><strong>LKR 2,250.00</strong></p>
@@ -97,7 +97,7 @@
     <div class="site-section-subheader">
         <h5>Join the Community</h5>             
     </div>
-    <div class="fb-page" data-href="https://www.facebook.com/OBADSSC/" data-width="400" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/OBADSSC/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/OBADSSC/">D. S. Senanayke College OBA</a></blockquote></div>   
+    <div class="fb-page" data-href="https://www.facebook.com/Prince.oldboys.association/" data-width="400" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Prince.oldboys.association/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Prince.oldboys.association/">Prince College OBA</a></blockquote></div>   
 </div>
 </div>
 </section>
