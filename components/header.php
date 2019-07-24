@@ -9,7 +9,7 @@
         </div>
         <div class="pull-right site-pull-right">
        
-          <h4>PRINCE COLLEGE</h4>
+          <h4>NEW TOWN PRINCE COLLEGE</h4>
           <p>Old Boys\' Association</p>
         </div>
         <div class="clearfix"></div>
@@ -28,17 +28,18 @@
       <li id="nav-news"><a href="aboutUs.php">ABOUT US</a></li>
       <li id="nav-events"><a href="events">EVENTS</a></li>
       <li id="nav-projects"><a href="membership.php">MEMBERSHIP</a></li>            
-      <li id="nav-media"><a href="index.php">GALLERY</a>
+      <li id="nav-media"><a href="image-gallery.php">GALLERY</a>
        <!-- <ul>
             <li id="nav-media-sub"><a href="image-gallery">IMAGE GALLERY</a></li>
             <li id="nav-media-sub"><a href="index.php">VIDEO GALLERY</a></li>
         </ul> -->
       </li>
-      <li id="nav-contact"><a href="http://dsscoba.org/contact-us">CONTACT US</a></li>
+      <li id="nav-contact"><a href="contact_us.php">CONTACT US</a></li>
       <li class="">
 
-            <button class="btn" style="margin-left: 40pt; margin-right: 40pt;margin-top: 6pt;margin-bottom:  6pt;padding: 5pt; right: 0px;"
-            onclick="location.href=\'login.html\';">Login</button>
+            <button id="login_btn" class="btn" style="margin-left: 40pt; margin-right: 40pt;margin-top: 6pt;margin-bottom:  6pt;padding: 5pt; right: 0px;"
+            onclick="login()">Login</button>
+            <p id="login_as" style="color:white;text-align:center"></p>
 
       </li>      
     </ul>

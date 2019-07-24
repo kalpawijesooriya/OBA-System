@@ -3,16 +3,19 @@
 <head>
   <title>Home</title>
   
-    <?php
-        session_start();
- 
-        if( isset($_SESSION['login_user']) ){
-          echo "<span id ='login_user' style='visibility:hidden; position:absolute;'>".$_SESSION['login_user']."</span>";
-        }
-        else{
-          echo "<span id ='login_user' style='visibility:hidden; position:absolute;'>no_data</span>";
-        }
-    ?>
+  <?php
+      session_start();
+
+      if( isset($_SESSION['login_user']) ){
+        echo "<span id ='login_user' style='visibility:hidden; position:absolute;'>".$_SESSION['login_user']."</span>";
+        echo "<span id ='login_user_reg' style='visibility:hidden; position:absolute;'>".$_SESSION['regestration_number']."</span>";
+        echo "<span id ='login_user_role' style='visibility:hidden; position:absolute;'>".$_SESSION['admin_role']."</span>";
+
+      }
+      else{
+        echo "<span id ='login_user' style='visibility:hidden;position:absolute;'>no_data</span>";
+      }
+  ?>
   <meta charset="UTF-8">
   <meta content="text/html; charset=UTF-8" http-equiv="content-type">        
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -122,13 +125,24 @@
 
 <!-- site preloader -->
 
-<div id="preloader" class="preloader">
+<div id="preloader" class="loader">
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    <div class="box box5"></div>
+    <div class="box box6"></div>
+    <div class="box box7"></div>
+    <div class="box box8"></div>
+</div>
+
+<!-- <div id="preloader" class="preloader">
   <div class="lines">
   <div class="line line-1"></div>
   <div class="line line-2"></div>
   <div class="line line-3"></div></div>  
   <div class="loading-text">LOADING</div>
-</div>
+</div> -->
 <!-- site preloader end -->
 
 
@@ -139,6 +153,8 @@
 <header>     
 <section class="container">
 <?php include './components/header.php' ?>
+
+
 </section>
 
 </header><!-- site header+navigation end -->
@@ -154,40 +170,40 @@
         </div>
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
             <div>
-                <img data-u="image" src="img/001.jpg" />
+                <img data-u="image" src="img/gallery/001.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/002.jpg" />
+                <img data-u="image" src="img/gallery/002.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/003.jpg" />
+                <img data-u="image" src="img/gallery/003.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/004.jpg" />
+                <img data-u="image" src="img/gallery/004.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/005.jpg" />
+                <img data-u="image" src="img/gallery/005.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/006.jpg" />
+                <img data-u="image" src="img/gallery/006.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/007.jpg" />
+                <img data-u="image" src="img/gallery/007.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/008.jpg" />
+                <img data-u="image" src="img/gallery/008.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/009.jpg" />
+                <img data-u="image" src="img/gallery/009.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/010.jpg" />
+                <img data-u="image" src="img/gallery/010.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/011.jpg" />
+                <img data-u="image" src="img/gallery/011.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/012.jpg" />
+                <img data-u="image" src="img/gallery/012.jpg" />
             </div>
         </div>
         <!-- Bullet Navigator -->
@@ -243,7 +259,7 @@
     <div id="tm-event-1" class="timeline-panel animated">
       <a href="events/Psycho-Parade-2018">
       <div class="timeline-heading">
-      <h5 class="timeline-title">Psycho Parade 2018</h5>
+      <h5 class="timeline-title">Lorem Ipsum</h5>
       </div>
       <div class="timeline-body">                
       <p class="text-left">9.00 AM at School Premises</p>
@@ -253,72 +269,39 @@
     </li>
         <li>            
     <div class="timeline-badge">
-            <div class="timeline-badge-up"><span>22<sup>nd</sup></span></div>
-      <div class="timeline-badge-down"><span>Oct</span></div>
+            <div class="timeline-badge-up"><span>18<sup>th</sup></span></div>
+      <div class="timeline-badge-down"><span>Jul</span></div>
     </div>
     
     <div id="tm-event-1" class="timeline-panel animated">
       <a href="events/The-36th-Annual-General-Meeting-of-D.-S.-Senanayake-College-Old-Boys-Association">
       <div class="timeline-heading">
-      <h5 class="timeline-title">The 36th Annual General Meeting of D. S. Senanayake College Old Boys Association</h5>
+      <h5 class="timeline-title">Lorem Ipsum</h5>
       </div>
       <div class="timeline-body">                
-      <p class="text-left">2.00 PM Onwards at R I T Alles Hall</p>
+      <p class="text-left">11.00 AM Onwards at School Main Hall</p>
       </div>
       </a>
     </div>
     </li>
         <li>            
     <div class="timeline-badge">
-            <div class="timeline-badge-up"><span>25<sup>th</sup></span></div>
-      <div class="timeline-badge-down"><span>Mar</span></div>
+            <div class="timeline-badge-up"><span>14<sup>th</sup></span></div>
+      <div class="timeline-badge-down"><span>May</span></div>
     </div>
     
     <div id="tm-event-1" class="timeline-panel animated">
       <a href="events/Psycho-Parade-2017">
       <div class="timeline-heading">
-      <h5 class="timeline-title">Psycho Parade 2017</h5>
+      <h5 class="timeline-title">Motor Parade 2017</h5>
       </div>
       <div class="timeline-body">                
-      <p class="text-left">8.00 AM at School Premises</p>
+      <p class="text-left">9.00 AM at School Premises</p>
       </div>
       </a>
     </div>
     </li>
-        <li>            
-    <div class="timeline-badge">
-            <div class="timeline-badge-up"><span>10<sup>th</sup></span></div>
-      <div class="timeline-badge-down"><span>Feb</span></div>
-    </div>
-    
-    <div id="tm-event-1" class="timeline-panel animated">
-      <a href="http://dsscoba.org/events/Golden-Jubilee-Celebration-&ndash;-DS-Turned-50">
-      <div class="timeline-heading">
-      <h5 class="timeline-title">Golden Jubilee Celebration &ndash; DS Turned 50</h5>
-      </div>
-      <div class="timeline-body">                
-      <p class="text-left">7.00PM at School Premises</p>
-      </div>
-      </a>
-    </div>
-    </li>
-        <li>            
-    <div class="timeline-badge">
-            <div class="timeline-badge-up"><span>05<sup>th</sup></span></div>
-      <div class="timeline-badge-down"><span>Jan</span></div>
-    </div>
-    
-    <div id="tm-event-1" class="timeline-panel animated">
-      <a href="events/Theewraa-Live">
-      <div class="timeline-heading">
-      <h5 class="timeline-title">Theewraa Live</h5>
-      </div>
-      <div class="timeline-body">                
-      <p class="text-left">6.30 PM at School Premises</p>
-      </div>
-      </a>
-    </div>
-    </li>
+       
       </ul>
   </div>
 
@@ -357,17 +340,13 @@
       <div class="site-post-details">
       <div class="site-clearfix"></div>
       <div class="site-post-title">
-      <h3><a href="news/Mini-Auditorium-Opening-Ceremony">Mini Auditorium Opening Ceremony</a></h3>
+      <h3><a href="">Lorem ipsum dolor sit amet</a></h3>
       </div>
       <div class="site-post-excerpt">
-      <p>The 29th of September saw the successful completion and handing over of one of the 
-largest infrastructure development projects in the history of the Old Boys Association 
-of D.S. Senanayake College. This venture was commenced under the leadership of the 
-OBA Senior President Madura Wickramaratne and the President Susantha 
-Dissanayake.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus finibus nibh et aliquam. Cras sollicitudin et elit mollis rutrum. Donec non accumsan arcu, et hendrerit dolor. Aliquam aliquam sed sapien finibus eleifend. Donec at accumsan purus, sit amet rutrum nisi. Aenean quis rhoncus elit, ut consectetur diam. Sed dapibus tempor eros. Integer ut sem in augue pellentesque volutpat. Aenean sit amet mauris at felis tempus blandit. Donec lacinia est justo, at mattis massa laoreet at. Cras sit amet lacinia augue, at pharetra purus. In et lacus quis nunc tincidunt porta vel id libero. Suspendisse fermentum nisi quis ultrices imperdiet. Sed pulvinar porta felis eget euismod.</p>
       </div>
       <div class="site-post-readmore">
-      <a href="news/Mini-Auditorium-Opening-Ceremony">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+      <a href="">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
       </div>
       </div>
     </div>
@@ -375,16 +354,13 @@ Dissanayake.</p>
       <div class="site-post-details">
       <div class="site-clearfix"></div>
       <div class="site-post-title">
-      <h3><a href="news/DSSC-OBA-CSR-Project-at-Jaffna">DSSC OBA CSR Project at Jaffna</a></h3>
+      <h3><a href="">Lorem ipsum dolor sit amet</a></h3>
       </div>
       <div class="site-post-excerpt">
-      <p>A project successfully completed by the Old Boys&#039; Association of D.S. Senanayake 
-College. A CSR project of donating school books, bags, shoes &amp; socks, sport items, 
-computers, musical &amp; sound equipments, bicycles and paints worth of Rs. 1.7mn to 
-Jaffna Atchuvely Saraswathy College.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus finibus nibh et aliquam. Cras sollicitudin et elit mollis rutrum. Donec non accumsan arcu, et hendrerit dolor. Aliquam aliquam sed sapien finibus eleifend. Donec at accumsan purus, sit amet rutrum nisi. Aenean quis rhoncus elit, ut consectetur diam. Sed dapibus tempor eros. Integer ut sem in augue pellentesque volutpat. Aenean sit amet mauris at felis tempus blandit. Donec lacinia est justo, at mattis massa laoreet at. Cras sit amet lacinia augue, at pharetra purus. In et lacus quis nunc tincidunt porta vel id libero. Suspendisse fermentum nisi quis ultrices imperdiet. Sed pulvinar porta felis eget euismod.</p>
       </div>
       <div class="site-post-readmore">
-      <a href="news/DSSC-OBA-CSR-Project-at-Jaffna">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+      <a href="">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
       </div>
       </div>
     </div>
@@ -392,14 +368,13 @@ Jaffna Atchuvely Saraswathy College.</p>
       <div class="site-post-details">
       <div class="site-clearfix"></div>
       <div class="site-post-title">
-      <h3><a href="news/Golden-Ball-2017">Golden Ball 2017</a></h3>
+      <h3><a href="">Lorem ipsum dolor sit amet</a></h3>
       </div>
       <div class="site-post-excerpt">
-      <p>The Old Boys Association of D. S. Senanayake College will have their annual Dinner 
-Dance on the 22nd of September at Grand Ballroom Hilton, Colombo.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus finibus nibh et aliquam. Cras sollicitudin et elit mollis rutrum. Donec non accumsan arcu, et hendrerit dolor. Aliquam aliquam sed sapien finibus eleifend. Donec at accumsan purus, sit amet rutrum nisi. Aenean quis rhoncus elit, ut consectetur diam. Sed dapibus tempor eros. Integer ut sem in augue pellentesque volutpat. Aenean sit amet mauris at felis tempus blandit. Donec lacinia est justo, at mattis massa laoreet at. Cras sit amet lacinia augue, at pharetra purus. In et lacus quis nunc tincidunt porta vel id libero. Suspendisse fermentum nisi quis ultrices imperdiet. Sed pulvinar porta felis eget euismod.</p>
       </div>
       <div class="site-post-readmore">
-      <a href="news/Golden-Ball-2017">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+      <a href="">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
       </div>
       </div>
     </div>
@@ -466,9 +441,9 @@ Dance on the 22nd of September at Grand Ballroom Hilton, Colombo.</p>
 <div class="row">
 
 <div class="col-lg-12 col-md-12 site-big-text">
-    <h1><span>DS</span> MEANS LOVE</h1>
-    <h1>THE <span>CULTURE</span> OF OURS</h1>
-    <h1>BUILT ON THAT <span>LOVE</span></h1>
+    <h1><span>BECOMING</span> THE MOST</h1>
+    <h1>EXCELLENT <span>SCHOOL</span> IN</h1>
+    <h1>SABARAGAMUWA<span>PROVINCE</span></h1>
 </div>
 
 </div>
@@ -573,11 +548,15 @@ Dance on the 22nd of September at Grand Ballroom Hilton, Colombo.</p>
 <script>
 
 var usr = document.getElementById("login_user").innerHTML;
+var user_reg =  document.getElementById("login_user_reg").innerHTML;
+var user_admin_role =  document.getElementById("login_user_role").innerHTML;
 
   window.onload = function(e){
       if(usr != "no_data"){
-        var btn = document.getElementById("login_btn"); 
+
+        var btn = document.getElementById("login_btn");
         var login_as =  document.getElementById("login_as");  
+
         btn.innerHTML="Logout";
         login_as.innerHTML="Logged in as "+ usr;
       }
@@ -585,13 +564,15 @@ var usr = document.getElementById("login_user").innerHTML;
 
   function login(){
 
-    if(usr != "no_data"){ //logout by clearing session
-      location.href='/OBA-System/php/auth.php';
+    if(usr == "no_data"){ //logout by clearing session
+      console.log("usr == 'no_data'");
+      location.href='./login.php';
     }
     else{
-      location.href='login.html';
+      console.log("usr != 'no_data'");
+      location.href='./php/auth.php';
     }
-
+     
   }
 </script>
 

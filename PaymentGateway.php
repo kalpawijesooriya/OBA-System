@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Membership</title>
+	<title>Payment Gateway</title>
 
   <meta charset="UTF-8">
   <meta content="text/html; charset=UTF-8" http-equiv="content-type">        
@@ -60,62 +60,10 @@
 <section id="section-page" class="container-fluid site-section">
     <div class="container">
         <div class="row menu_main head">
-            <h3>Membership Application Form<br><br></h3>
+            <h3>Payment Details<br><br></h3>
         </div>
-        <div class="row">  
-
-            <div class="col-md-12">
-                
-                
-                <h4>Before you start filling this form </h4>
-                    <br>
-                    <ul>
-                        <li>Ensure that you have a photograph of you available in jpg format. Make sure it has the characteristics of the sample – <a ng-click="sampleImg()">Click to view Sample</a>
-                        </li>
-                        <li>You will need your leaving certificate provided by Nalanda College, it has Admission No, Date of Joining & leaving. It has to be scanned in jpg format and uploaded.</li>
-                        <li>You will need to know the membership no or mobile no of the members who are going to propose and second you. If you enter a mobile no please verify beforehand with them that the number you are entering is the number they have provided to our system. It’s usually the number they receive SMS notifications from us.</li>
-                        <li>There will be a random generated code sent to Proposer. Contact him and Enter the Code in given text box. Then Click Verify. If it's success please do the same for Seconder as well.</li>
-                        <li>To validate the proposer/seconder a 6 digit code will be sent to the mobile no of the proposer/seconder. You will not be able to complete filling this form unless you are able to get these codes from them. Hence make sure your proposer/seconder is free and able to answer your call or able to send you these codes while filling the form. </li>
-
-                    </ul>
-                    <br>
-                    <h4>General Instructions</h4>
-                    <br>
-
-                    <ul>
-                        <li>If you are residing/working outside of Sri Lanka and have membership of any Alumini of Nalanda College in your country, pls select it from the list of foreign associations shown. If it’s not listed drop a mail to secretary@nalandaoba.lk with the association name and names and contact numbers of officials who are in office. We will take steps to include it shortly.</li>
-                        <li>All mandatory fields are marked with a red asterisk near the field.</li>
-                        <li>Enter Initials separated with . (dots)</li>
-                        <li>Ensure your full name displays correctly in the “Full name” field after filling Initials, Surname & Names denoted by initials </li>
-                        <li>Number to Send SMS field should be a Sri Lankan mobile operator number. Enter it in 9 digits WITHOUT first “0” e.g. 772882004</li>
-                    </ul>
-                    <br>
-                    <h4>Next Step after successful submission</h4>
-                    <br>
-
-                    <ul>
-                        <li>Note that you have only completed “registration” ONLY, and NOT yet a member of the association</li>
-                        <li>All entered data will be displayed in a printable web form, you need to print it (Hardcopy).</li>
-                        <li>You will be sent login details to the email address entered. Username will be the NIC and a generated password will be included in the email.</li>
-                        <li>If you were unable to print your form in the first instance can do so by loging in subsequently. </li>
-                        <li>You may change any data if noticed incorrect by loging to your account.</li>
-                        <li>An email & SMS will be sent to you when meetings will be held where you will need to bring the printout with your signature placed on it along with the Original of your leaving certificate </li>
-                        <li>Life time membership fee is LKR500 & cost of Member id is LKR500, After physical inspection of the leaving certificate this payment can be made at the meeting to the Treasurer (or a authorized representative) and will be given a official receipt. </li>
-                        <li>If the membership requester is unable to present himself (working/residing overseas) he may authorize a 3rd party by a signed letter of authorization along with the printed web form physically signed & the original of the leaving certificate. </li>
-                        <li>A option will be available in your login after the leaving certificate is physically inspected to upload a copy of a bank deposit slip. It will be your responsibility to collect the official receipt from the Treasurer as receipts will not be issued online. Upon confirmation of payment membership process will continue. </li>
-                        <li>You will receive a Welcome email from secretary@nalandaoba.lk containing your membership no when your membership is granted.</li>
-                        <li>Note that Name, DOB, NIC, Information in Leaving Certificate cannot be altered after payment is done hence make sure all these details are correct before making the payment.</li>
-                    </ul>
-                    <br>
-                    <p>Any Question or Suggestion write to secretary@nalandaoba.lk </p>
-                    <br>  
-
-            </div>
-        </div>
-
-       
         
-        <form>
+        <form method="post" action="https://sandbox.payhere.lk/pay/checkout">
             <div class="well">
                 <div class="row">
                     <div class="col-md-12">
@@ -124,45 +72,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label>National Id Card No (NIC) <span class="required">*</span></label>
-                            <input type="text" class="form-control" placeholder="Id card no"  id="nic" required>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <div class="form-group">
-                                <label>Title <span class="required">*</span></label>
-                                <select id="title"class="form-control" name="title"  required><option label="Mr" value="string:Mr" selected="selected">Mr</option><option label="Dr" value="string:Dr">Dr</option><option label="Prof" value="string:Prof">Prof</option><option label="Rev" value="string:Rev">Rev</option><option label="Other" value="string:Other">Other</option></select>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-group">
                             <label>Full Name <span class="required">*</span></label>
-                            <input type="text" id="name" class="form-control" name="full_name"  placeholder="Full Name" required>
+                            <input type="text" id="name" class="form-control" name="first_name"  placeholder="Full Name" required>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>Birthday<span class="required">*</span></label>
-                            <input type="text" id="birthday" class="form-control bdinput" name="birth_day"  placeholder="Birth Day" required>
-                            <small>Enter date as Day / Month / Year</small>
-                        </div>
-                    </div>
-                   
-                </div>
+
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-group">
                             <label>Address<span class="required">*</span></label>
-                            <input type="text" class="form-control" id="address" name="street"   placeholder="Address" required>
+                            <input type="text" class="form-control" id="address" name="address"   placeholder="Address" required>
                             
                         </div>
                     </div>
@@ -176,123 +100,77 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>Residence phone<span class="required">*</span></label>
-                            <input type="number" class="form-control" id="phone" placeholder="Residence Phone Number" required>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
+
+                    <div class="col-md-4">
                         <div class="form-group">
                             <label>Mobile phone<span class="required">*</span></label>
-                            <input type="number" class="form-control" id="mobile" placeholder="Mobile Phone Number" required>
+                            <input type="number" class="form-control" id="mobile" name="mobile"  placeholder="Mobile Phone Number" required>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="form-control-group">
                             <label class="control-label">Email Address<span class="required">*</span></label>
                     
                             <div class="controls">
-                                <input type="text" class="form-control"   id="email" placeholder="Email Address" required>
+                                <input type="text" class="form-control" id="email" name="email" placeholder="Email Address" required>
                             </div>
                         </div>
                     </div>
                             
                 </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="form-control-group">
-                            <label class="control-label">School Index Number<span class="required" id="index_num">*</span></label>
-                            <div class="controls">
-                                <input type="text" class="form-control"  placeholder="Index Number" required>
-                            </div>
-                        </div>
-                    </div>      
-                    <div class="col-md-3">
-                        <div class="form-control-group">
-                            <label class="control-label">O/L Year<span class="required" >*</span></label>                    
-                            <div class="controls">
-                                <input type="number" class="form-control"  placeholder="O/L Year" id="ol_year" required>
-                            </div>
-                        </div>
-                    </div>      
-                    <div class="col-md-3">
-                        <div class="form-control-group">
-                            <label class="control-label">A/L Year<span class="required" >*</span></label>
-                            <div class="controls">
-                                <input type="number" class="form-control"  placeholder="A/L Year" id="al_year" required>
-                            </div>
-                        </div>
-                    </div>   
-                </div>                   
+                 
             </div>
                
             <div class="well ng-hide" id="attachment">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-group">
-                            <label>Password Setup</label>
+                            <label>Payment Details</label>
                         </div>
                     </div>
                 </div>
-                <div class="loading" style="display: none;"><img src="./Nalanda Vidyalaya Old Boys&#39; Association_files/ajax-loader.gif" width="20" height="20">LOADING...</div>
+                <!-- <div class="loading" style="display: none;"><img src="./Nalanda Vidyalaya Old Boys&#39; Association_files/ajax-loader.gif" width="20" height="20">LOADING...</div> -->
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-12">
                         <div class="form-group">
-                            <label class="control-label">Password<span class="required">*</span></label>                       
+                            <label class="control-label">Payment Type</label>                       
                             <div class="controls">
-                                <input type="password" class="form-control" required="required"  id="password" placeholder="Password">
-                                <small>Enter password with 6 characters</small>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ngIf: reg.pro_img != null -->
-                    <div class="col-md-4">
-                        <div class="form-group">
-                        <label class="control-label">Confirm Password<span class="required">*</span></label>                       
-                            <div class="controls">
-                                <input type="password" class="form-control" required="required" placeholder="Re-Enter Password" id="confirmPass" disabled>
+                                <input type="text" required="required" name="items" id="items" value="Annual Membership" readonly>
                                 
                             </div>
                         </div>
                     </div>
-                    <!-- ngIf: reg.le_img != null -->
+                    
                 </div>
-            </div>
-            <div class="well ng-hide" id="attachment">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-group">
-                            <label>Attachments</label>
+                        <label class="control-label">Payment Amount (LKR.) </label>                       
+                            <div class="controls">
+                                <input type="text" id="amount" name="amount" value="1500" readonly>
+                                <!-- this amount should not hard coded. it should come through php variable  -->
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="loading" style="display: none;"><img src="./Nalanda Vidyalaya Old Boys&#39; Association_files/ajax-loader.gif" width="20" height="20">LOADING...</div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label>Your Photograph<span class="required">*</span></label>
-                            <input type="hidden" id="your_img" name="your_img" ng-model="reg.your_img" ng-required="true" autocomplete="off" class="ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" required="required">
-                            <input id="photoInput" class="button" type="file" placeholder="Avatar" name="avatar" accept="image/png&#39;, &#39;image/jpeg&#39;, &#39;image/jpg&#39;, &#39;image/bmp" ng-required="reg.pro_img == &#39;&#39;">
-                        </div>
-                    </div>
-                    <!-- ngIf: reg.pro_img != null -->
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label class="label-dn-align">Leaving Certificate<span class="required">*</span></label>
-                            <input type="hidden" id="your_leaving" name="your_leaving" ng-model="reg.leaving_certificate" ng-required="true" autocomplete="off" class="ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" required="required">
-                            <input id="leaveInput" class="button" type="file" placeholder="Avatar" name="leaving" accept="image/png&#39;, &#39;image/jpeg&#39;, &#39;image/jpg&#39;, &#39;image/bmp" ng-required="reg.le_img == &#39;&#39;">
-                        </div>
-                    </div>
-                    <!-- ngIf: reg.le_img != null -->
                 </div>
             </div>
+
                 <div class="well">
                     <div class="row">
-                        <input type="hidden" id="id" name="id" ng-model="user_id" autocomplete="off" class="ng-pristine ng-untouched ng-valid ng-empty">
-                        <div class="col-md-9"></div>
+
+                    <div class="col-md-9"></div>
                         <div class="col-md-3">
-                        <input id="submit" onclick="submitMemberData()" type="button" value="Submit" class="btn btn-primary  btn-dn-submit submit btn form-control">
+                                <input type="hidden" name="merchant_id" value="1212807">    <!-- Replace your Merchant ID -->
+                                <input type="hidden" name="return_url" value="http://sample.com/return">
+                                <input type="hidden" name="cancel_url" value="http://sample.com/cancel">
+                                <input type="hidden" name="notify_url" value="http://sample.com/notify">   
+                                    
+                                <input type="hidden" name="last_name" value="">
+                                <input type="hidden" name="city" value="">
+                                <input type="hidden" name="order_id" value="">
+                                <input type="hidden" name="currency" value="LKR">
+                        <!-- <input id="submit" name="submit" type="button" value="Submit" class="btn btn-primary  btn-dn-submit submit btn form-control"> -->
+                        <input type="submit" id="submit" name="submit" value="Submit" class="btn btn-primary  btn-dn-submit submit btn form-control">
                         </div>
                     </div>
                 </div>
@@ -315,7 +193,7 @@
 
 <script type="text/javascript" src="template/js/jquery.custom.js"></script>   
 <script type="text/javascript" src="template/js/jquery.site.slider.js"></script>   
-<script type="text/javascript" src="js/membershipForm.js"></script> 
+<script type="text/javascript" src="js/paymentGate.js"></script> 
 
 </body>
 </html>
