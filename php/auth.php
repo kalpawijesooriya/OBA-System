@@ -8,8 +8,15 @@ if(isset($_POST['regestration_number']) && isset($_POST['pw']))
   $password = $_POST['pw'];
   $admin_role = [];
  
- $result = mysqli_query($conn,"SELECT * FROM member JOIN user ON user.regestration_number='$username' AND 
- user.pw='$password' AND member.regestration_number = user.regestration_number");
+  // obtaining the values from the memeber table only ; dj 
+
+
+//  $result = mysqli_query($conn,"SELECT * FROM member JOIN user ON user.regestration_number='$username' AND 
+//  user.pw='$password' AND member.regestration_number = user.regestration_number");
+$result = mysqli_query($conn,"SELECT * FROM member where  
+member.regestration_number = '$username'  AND  member.`password`= '$password';");
+
+// end of change : dj 
  
  if($result)
          {
@@ -44,8 +51,10 @@ if(isset($_POST['regestration_number']) && isset($_POST['pw']))
          }
  else
    {
-    echo "no value found";
-    //header("location: ../");
+
+    header("location: ../login.php");
+    $_SESSION['login_error'] = "Invalid Credentials";
+
   }
 }
 else
