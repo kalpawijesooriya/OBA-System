@@ -44,8 +44,10 @@ if(isset($_POST['regestration_number']) && isset($_POST['pw']))
          }
  else
    {
-    echo "no value found";
-    //header("location: ../");
+
+    header("location: ../login.php");
+    $_SESSION['login_error'] = "Invalid Credentials";
+
   }
 }
 else
