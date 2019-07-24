@@ -97,7 +97,7 @@
     <div class="site-section-subheader">
         <h5>Join the Community</h5>             
     </div>
-    <div class="fb-page" data-href="https://www.facebook.com/OBADSSC/" data-width="400" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/OBADSSC/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/OBADSSC/">D. S. Senanayke College OBA</a></blockquote></div>   
+    <div class="fb-page" data-href="https://www.facebook.com/Prince.oldboys.association" data-width="400" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Prince.oldboys.association" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Prince.oldboys.association">D. S. Senanayke College OBA</a></blockquote></div>   
 </div>
 </div>
 </section>
