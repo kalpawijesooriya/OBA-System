@@ -494,7 +494,7 @@
     <div class="site-img-bx">
     <img src="template/images/site-assets/site-gridimages/IG01.png" alt="" class="image">
     <div class="overlay">
-    <div class="text text-center"><a href="xxxxxxxx" target="_blank">Lorem ipsum dolor sit amet</a></div>
+    <div class="text text-center"><a href="#" target="_blank">Lorem ipsum dolor sit amet</a></div>
     </div>
     </div>  
   </div>
@@ -503,7 +503,7 @@
     <div class="site-img-bx">
     <img src="template/images/site-assets/site-gridimages/IG02.png" alt="" class="image">
     <div class="overlay">
-    <div class="text text-center"><a href="xxxxxxxx" target="_blank">Lorem ipsum dolor sit amet</a></div>
+    <div class="text text-center"><a href="#" target="_blank">Lorem ipsum dolor sit amet</a></div>
     </div>
     </div>  
   </div>
@@ -512,7 +512,7 @@
     <div class="site-img-bx">
     <img src="template/images/site-assets/site-gridimages/IG03.png" alt="" class="image">
     <div class="overlay">
-    <div class="text text-center"><a href="xxxxxxxx" target="_blank">Lorem ipsum dolor sit amet</a></div>
+    <div class="text text-center"><a href="#" target="_blank">Lorem ipsum dolor sit amet</a></div>
     </div>
     </div>  
   </div>
@@ -521,7 +521,7 @@
     <div class="site-img-bx">
     <img src="template/images/site-assets/site-gridimages/IG04.png" alt="" class="image">
     <div class="overlay">
-    <div class="text text-center"><a href="xxxxxxxx" target="_blank">Lorem ipsum dolor sit amet</a></div>
+    <div class="text text-center"><a href="#" target="_blank">Lorem ipsum dolor sit amet</a></div>
     </div>
     </div>  
   </div>
@@ -530,7 +530,7 @@
     <div class="site-img-bx">
     <img src="template/images/site-assets/site-gridimages/IG05.png" alt="" class="image">
     <div class="overlay">
-    <div class="text text-center"><a href="xxxxxxxx" target="_blank">Lorem ipsum dolor sit amet</a></div>
+    <div class="text text-center"><a href="#" target="_blank">Lorem ipsum dolor sit amet</a></div>
     </div>
     </div>  
   </div>
