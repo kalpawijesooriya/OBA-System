@@ -482,9 +482,9 @@ Dance on the 22nd of September at Grand Ballroom Hilton, Colombo.</p>
 <div class="row">
 
 <div class="col-lg-12 col-md-12 site-big-text">
-    <h1><span>DS</span> MEANS LOVE</h1>
-    <h1>THE <span>CULTURE</span> OF OURS</h1>
-    <h1>BUILT ON THAT <span>LOVE</span></h1>
+    <h1><span>BECOMING</span> THE MOST</h1>
+    <h1>EXCELLENT <span>SCHOOL</span> IN</h1>
+    <h1>SABARAGAMUWA<span>PROVINCE</span></h1>
 </div>
 
 </div>

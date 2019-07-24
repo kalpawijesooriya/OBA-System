@@ -28,7 +28,7 @@
       <li id="nav-news"><a href="news">ABOUT US</a></li>
       <li id="nav-events"><a href="events">EVENTS</a></li>
       <li id="nav-projects"><a href="membership.php">MEMBERSHIP</a></li>            
-      <li id="nav-media"><a href="index.php">GALLERY</a>
+      <li id="nav-media"><a href="image-gallery.php">GALLERY</a>
        <!-- <ul>
             <li id="nav-media-sub"><a href="image-gallery">IMAGE GALLERY</a></li>
             <li id="nav-media-sub"><a href="index.php">VIDEO GALLERY</a></li>
