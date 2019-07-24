@@ -1,61 +1,82 @@
+
+
+
+
+
+$(document).ready(function(e){
+
 document.getElementById("error_email").style.display='none';
 document.getElementById("error_nic").style.display='none';
 document.getElementById("error_bd").style.display='none';
 document.getElementById("error_password").style.display='none';
-function submitMemberData() {
-var nic = document.getElementById("nic").value;
-var selecttitle = document.getElementById("title")
-var title=selecttitle.options[selecttitle.selectedIndex].text;
-var name = document.getElementById("name").value;
-var birthday = document.getElementById("birthday").value;
-var address = document.getElementById("address").value;
-var selectcountry = document.getElementById("country")
-var country=selectcountry.options[selectcountry.selectedIndex].text;
-var phone = document.getElementById("phone").value;
-var mobile = document.getElementById("mobile").value;
-var email = document.getElementById("email").value;
-var index_num = document.getElementById("index_num").value;
-var ol_year = document.getElementById("ol_year").value;
-var al_year = document.getElementById("al_year").value;
-var password = document.getElementById("password").value;
-var confirmPassword =document.getElementById("confirmPass").value;
-var values = birthday.split('/')
-var newbirthday=values[2].trim()+'-'+values[1].trim()+'-'+values[0].trim();
+  $("#register_form").on('submit', function(e){
+   e.preventDefault();
+  var nic = document.getElementById("nic").value;
+  var selecttitle = document.getElementById("title")
+  var title=selecttitle.options[selecttitle.selectedIndex].text;
+  var name = document.getElementById("name").value;
+  var birthday = document.getElementById("birthday").value;
+  var address = document.getElementById("address").value;
+  var selectcountry = document.getElementById("country")
+  var country=selectcountry.options[selectcountry.selectedIndex].text;
+  var phone = document.getElementById("phone").value;
+  var mobile = document.getElementById("mobile").value;
+  var email = document.getElementById("email").value;
+  var index_num = document.getElementById("index_num").value;
+  var ol_year = document.getElementById("ol_year").value;
+  var al_year = document.getElementById("al_year").value;
+  var password = document.getElementById("password").value;
+  var confirmPassword =document.getElementById("confirmPass").value;
 
-var registrationNum=nic.slice(0,nic.length - 1)
-// Returns successful data submission message when the entered information is stored in database.
-var dataString = 'method=register&regestration_number='+registrationNum+'&nic=' + nic + '&title=' + title + '&name=' + name+ '&birthday=' + newbirthday+ '&address=' + address+ '&country=' + country+ '&phone=' + phone+ '&mobile=' + mobile+ '&email=' + email+ '&index_num=' + index_num+ '&ol_year=' + ol_year+ '&al_year=' + al_year+'&password=' + password ;
-// if (name == '' || email == '' || password == '' || phone == ''||mobile == '' || address == '' || nic == '' || password == ''|| ol_year == '' || al_year == '' ||index_num==''|| birthday == ''|| confirmPassword == '') {
-// alert("Please Fill All Fields");
-// }
-if(nic.length!=10){
-  document.getElementById("error_nic").style.display='block';
-} else if(birthday.length!=14){
-  document.getElementById("error_bd").style.display='block';
-} else if (password != confirmPassword) {
-  document.getElementById("error_password").style.display='block';
-    
-}else if(!validateEmail()){
-  document.getElementById("error_email").style.display='block';
-}
-else {
+  // Returns successful data submission message when the entered information is stored in database.
+ 
+  if(nic.length!=10){
+    document.getElementById("error_nic").style.display='block';
+  } else if(birthday.length!=14){
+    document.getElementById("error_bd").style.display='block';
+  } else if (password != confirmPassword) {
+    document.getElementById("error_password").style.display='block';
+      
+  }else if(!validateEmail()){
+    document.getElementById("error_email").style.display='block';
+  }
+  else {
+  
 //AJAX code to submit form.
     $.ajax({
         type: "POST",
         async:false,
-        url: "php/membership/memberHedder.php",
-        data: dataString,
+        data: new FormData(this),
+        contentType: false,
         cache: false,
+        processData:false,
+        url: "php/membership/memberHedder.php",
+        beforeSend: function(){
+          $('.submitBtn').attr("disabled","disabled");
+          $('#fupForm').css("opacity",".5");
+        },
         success: function(s) {
-        alert(s);
+         alert(e)
+         $(".submitBtn").removeAttr("disabled");
      }
     });
     
-}
-return false;
-}
+    }
+    return false;
+    
+    });
+ });
 
-
+ $("#file").change(function() {
+  var file = this.files[0];
+  var imagefile = file.type;
+  var match= ["image/jpeg","image/png","image/jpg"];
+  if(!((imagefile==match[0]) || (imagefile==match[1]) || (imagefile==match[2]))){
+      alert('Please select a valid image file (JPEG/JPG/PNG).');
+      $("#file").val('');
+      return false;
+  }
+})
 //------------------------------------------------------------------------------------------------Styles
 
 var date = document.getElementById('birthday');
@@ -209,6 +230,12 @@ $(document).ready(function () {
   });
   
 });
+
+
+
+
+
+
 
 
     
