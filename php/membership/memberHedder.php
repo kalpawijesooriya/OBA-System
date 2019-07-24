@@ -8,10 +8,9 @@ if(!empty($_POST['nic']) || !empty($_FILES['file']['name'])|| !empty($_POST['tit
           $bddate = explode(" / ", $_POST['birthday']);
           $birthday=$bddate[2].'-'.$bddate[1].'-'.$bddate[0];
           $member = new Member();
+         
           $result = $member->saveMemberData($registrationNumber,$_POST['nic'],$_POST['title'],$_POST['name'], $birthday,$_POST['address'],$_POST['country'],$_POST['phone'],$_POST['mobile'],$_POST['email'],$_POST['index_num'],$_POST['ol_year'],$_POST['al_year'],$_POST['password']);
-          $filename = $_FILES['file']['name'];
-          $member->saveProfilePic($filename,$registrationNumber);
-          echo $result;   
+          echo  $result;   
 }
 
 ?>

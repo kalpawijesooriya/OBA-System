@@ -296,13 +296,15 @@
                         <div class="col-md-9"></div>
                         <div class="col-md-3">
                         <input id="btnsubmit"  type="submit" class="btn btn-primary submitBtn btn-dn-submit submit btn form-control">
-                        </div>
+                        <p class="statusMsg"></p>    
+                    </div>
+                      
                     </div>
                 </div>
             </form>
     </div>
 </section>
-
+<div id="error" hidden></div>
 
 <!-- site body end -->
 

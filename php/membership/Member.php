@@ -3,35 +3,26 @@ require_once '../conn.php';
 
 
 class Member extends Dbh{
-    private static $regestration_num;
-    function saveMemberData($regestration_number,$nic,$title,$name,$birthday,$address,$country,$phone,$mobile,$email,$index_num,$ol_year,$al_year,$password){
-        $createdAt= date("Y-m-d H:i:sa");
-        $this->regestration_num=$regestration_number;
 
-       $query ="INSERT INTO member (regestration_number,nic_num,title,name,birthday,address,country,phone_number,mobile_number,email_address,index_number,olevel_year,alevel_year,password,createdAt) VALUES ('$regestration_number','$nic','$title','$name','$birthday','$address','$country',$phone,$mobile,'$email','$index_num',$ol_year,$al_year,'$password','$createdAt')";
-       //"INSERT INTO member (regestration_number,nic_num,title,name,birthday,address,country,phone_number,mobile_number,email_address,index_number,olevel_year,alevel_year,password) VALUES ('943343519',98658541v','Mr','lslsns',22/12/1996,'sssss','SL',785,78,'ddddd','115',2005,2001,'wwww')";
+    function saveMemberData($regestration_number,$nic,$title,$name,$birthday,$address,$country,$phone,$mobile,$email,$index_num,$ol_year,$al_year,$password){
+       $createdAt= date("Y-m-d H:i:sa");
+       $location= $this->saveProfilePic($regestration_number);
+
+       $query ="INSERT INTO member (regestration_number,nic_num,title,name,birthday,address,country,phone_number,mobile_number,email_address,index_number,olevel_year,alevel_year,password,createdAt,profile_picture_url) VALUES ('$regestration_number','$nic','$title','$name','$birthday','$address','$country',$phone,$mobile,'$email','$index_num',$ol_year,$al_year,'$password','$createdAt','$location')";
        $query2="INSERT INTO user(regestration_number,status)VALUES ('$regestration_number',0)";
         
        $result =$this->connect()->query($query);
        $result =$result.$this->connect()->query($query2);
-
+     
        
     
-       if($result)
-       {
-       return "Success";
-       
-       }
-       else
-       {
-       return "Error!";
-       }
+       return $result?'ok':'err';
     }
 
-    function saveProfilePic($filename,$name)
+    function saveProfilePic($name)
     {      
            /* Getting file name */
-        
+           $filename = $_FILES['file']['name'];
            $temp = explode(".", $filename);
            $newfilename =  $name . '.' . end($temp);
        
@@ -56,9 +47,9 @@ class Member extends Dbh{
         }else{
         /* Upload file */
         if(move_uploaded_file($_FILES['file']['tmp_name'],$location)){
-            echo $location;
+            return $location;
         }else{
-            echo 0;
+            return "../../img/profilepic/default.jpg";
         }
         }
 
