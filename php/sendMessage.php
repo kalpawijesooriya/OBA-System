@@ -42,7 +42,7 @@ function clean_string($string) {
   $email_message .= "Subject: ".clean_string($subject)."\r\n";
   $email_message .= "Message: ".clean_string($message)."\r\n";
 
-mail($to,$subject,$email_message,$headers);
+//mail($to,$subject,$email_message,$headers);
 echo "<script type='text/javascript'>
 alert('Thank you for contacting us. We will be in touch with you very soon.');
 window.location.href='../contact_us.php';
