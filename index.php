@@ -13,7 +13,7 @@
 
       }
       else{
-        echo "<span id ='login_user' style='visibility:hidden; position:absolute;'>no_data</span>";
+        echo "<span id ='login_user' style='visibility:hidden;position:absolute;'>no_data</span>";
       }
   ?>
   <meta charset="UTF-8">
@@ -170,40 +170,40 @@
         </div>
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:500px;overflow:hidden;">
             <div>
-                <img data-u="image" src="img/001.jpg" />
+                <img data-u="image" src="img/gallery/001.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/002.jpg" />
+                <img data-u="image" src="img/gallery/002.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/003.jpg" />
+                <img data-u="image" src="img/gallery/003.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/004.jpg" />
+                <img data-u="image" src="img/gallery/004.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/005.jpg" />
+                <img data-u="image" src="img/gallery/005.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/006.jpg" />
+                <img data-u="image" src="img/gallery/006.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/007.jpg" />
+                <img data-u="image" src="img/gallery/007.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/008.jpg" />
+                <img data-u="image" src="img/gallery/008.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/009.jpg" />
+                <img data-u="image" src="img/gallery/009.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/010.jpg" />
+                <img data-u="image" src="img/gallery/010.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/011.jpg" />
+                <img data-u="image" src="img/gallery/011.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/012.jpg" />
+                <img data-u="image" src="img/gallery/012.jpg" />
             </div>
         </div>
         <!-- Bullet Navigator -->
@@ -269,25 +269,21 @@
     </li>
         <li>            
     <div class="timeline-badge">
-            <div class="timeline-badge-up"><span>22<sup>nd</sup></span></div>
-      <div class="timeline-badge-down"><span>Oct</span></div>
+            <div class="timeline-badge-up"><span>18<sup>th</sup></span></div>
+      <div class="timeline-badge-down"><span>Jul</span></div>
     </div>
     
     <div id="tm-event-1" class="timeline-panel animated">
       <!-- <a href="events/The-36th-Annual-General-Meeting-of-D.-S.-Senanayake-College-Old-Boys-Association"> -->
       <div class="timeline-heading">
-      <h5 class="timeline-title">Lorem ipsum is a sample text</h5>
-      </div>
-      <div class="timeline-body">                
-      <p class="text-left">Contrary to popular belief, Lorem Ipsum is not simply random text. </p>
       </div>
       </a>
     </div>
     </li>
         <li>            
     <div class="timeline-badge">
-            <div class="timeline-badge-up"><span>25<sup>th</sup></span></div>
-      <div class="timeline-badge-down"><span>Mar</span></div>
+            <div class="timeline-badge-up"><span>14<sup>th</sup></span></div>
+      <div class="timeline-badge-down"><span>May</span></div>
     </div>
     
     <div id="tm-event-1" class="timeline-panel animated">
@@ -335,6 +331,7 @@
       </a>
     </div>
     </li>
+       
       </ul>
   </div>
 
@@ -603,11 +600,13 @@ var user_admin_role =  document.getElementById("login_user_role").innerHTML;
 
   function login(){
 
-    if(usr != "no_data"){ //logout by clearing session
-      location.href='./php/auth.php';
+    if(usr == "no_data"){ //logout by clearing session
+      console.log("usr == 'no_data'");
+      location.href='./login.php';
     }
     else{
-      location.href='./login.php';
+      console.log("usr != 'no_data'");
+      location.href='./php/auth.php';
     }
      
   }
