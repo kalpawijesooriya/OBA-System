@@ -45,7 +45,7 @@ function clean_string($string) {
 
   $content = new SendGrid\Content("text/plain", $email_message);
   $mail = new SendGrid\Mail($from, $subject, $to, $content);
-  $apiKey = getenv('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');
+ $apiKey = getenv('SENDGRID_API_KEY');
   $sg = new \SendGrid($apiKey);
 
   $response = $sg->client->mail()->send()->post($mail);
