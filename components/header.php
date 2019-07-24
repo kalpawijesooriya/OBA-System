@@ -37,11 +37,12 @@
       <li id="nav-contact"><a href="contact_us.php">CONTACT US</a></li>
       <li class="">
 
-            <button id="login_btn" class="btn" style="margin-left: 40pt; margin-right: 40pt;margin-top: 6pt;margin-bottom:  6pt;padding: 5pt; right: 0px;"
+            <button id="login_btn" class="btn" style="margin-left: 20pt; margin-right: 20pt;margin-top: 6pt;margin-bottom:  6pt;padding: 6px 30px; right: 0px;"
             onclick="login()">Login</button>
             <p id="login_as" style="color:white;text-align:center"></p>
-
-      </li>      
+      
+      </li>
+      <li ><a href="PaymentGateway.php">Pay Here !</a>
     </ul>
       </nav>
   </div>')
