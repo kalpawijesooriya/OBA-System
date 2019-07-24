@@ -4,7 +4,7 @@ include 'conn.php';
 session_start();
 if(isset($_POST['regestration_number']) && isset($_POST['pw'])){
   $username = $_POST['regestration_number'];
-  $password = $_POST['pw'];
+  $password = $_POST['pw']; 
  
  $result = mysqli_query($conn,"SELECT member.name FROM member JOIN user ON user.regestration_number='$username' AND 
  user.pw='$password' AND member.regestration_number = user.regestration_number");
