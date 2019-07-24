@@ -14,20 +14,19 @@ if(isset($_POST['regestration_number']) && isset($_POST['pw']))
 //  $result = mysqli_query($conn,"SELECT * FROM member JOIN user ON user.regestration_number='$username' AND 
 //  user.pw='$password' AND member.regestration_number = user.regestration_number");
 $result = mysqli_query($conn,"SELECT * FROM member where  
-member.regestration_number = '$username'  AND  member.`password`= '$password';");
+member.regestration_number = '$username'  AND  member.password= '$password';");
 
 // end of change : dj 
  
- if($result)
+ if(mysqli_num_rows($result)>0)
          {
          while ($row = $result ->fetch_assoc()) 
              {
- 
                  $_SESSION['login_user'] =  $row["name"];
                  $_SESSION['regestration_number'] =  $row["regestration_number"];
 
                  $result2 = mysqli_query($conn,"SELECT * FROM admin WHERE admin.regestration_number=".$row['regestration_number']."");
-                 if($result2){
+                 if(mysqli_num_rows($result2)>0){
                   // $result ->fetch_assoc()
                   while ($row2 = $result2 ->fetch_assoc()) 
                   {
@@ -40,21 +39,17 @@ member.regestration_number = '$username'  AND  member.`password`= '$password';")
                     header("location: ../Admin/");
                   }
                   else{
-                    
                     $_SESSION['admin_role'] = "";
                     header("location: ../");
                    }
                   
                  }
-                  
              }
          }
  else
    {
-
-    header("location: ../login.php");
     $_SESSION['login_error'] = "Invalid Credentials";
-
+    header("location: ../login.php");
   }
 }
 else
