@@ -88,9 +88,7 @@
                     <li>
                         <a href="profile.html" class="waves-effect"><i class="fa fa-user fa-fw" aria-hidden="true"></i>Members</a>
                     </li>
-                    <li>
-                        <a href="basic-table.html" class="waves-effect"><i class="fa fa-table fa-fw" aria-hidden="true"></i>Payments</a>
-                    </li>
+                    
                     <li>
                         <a href="fontawesome.html" class="waves-effect"><i class="fa fa-font fa-fw" aria-hidden="true"></i>Events</a>
                     </li>
