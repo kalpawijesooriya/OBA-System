@@ -137,7 +137,7 @@
                             <div id="gmaps-simple" class="gmaps" style="margin: auto; width: 60%; border: 3px solid #73AD21; padding: 10px;">
                                 <div class = "upform" style="margin: auto; width: 20%; padding-top:30px;">
                                     <p><?php echo $statusMsg; ?></p>
-                                    <form action="" method="post" enctype="multipart/form-data" style="margin: auto;">
+                                    <form action="upload.php" method="post" enctype="multipart/form-data" style="margin: auto;">
                                         Select Image File to Upload
                                         <input type="file" name="files[]" multiple>
                                         <input type="submit" name="submit" Value="UPLOAD">
@@ -159,7 +159,7 @@
                 ?>
     </div>
     <tr>
-        <td><img width="20%" height="20%" src="<?php echo $value; ?>" />
+        <td><img width="90px" height="60px" src="<?php echo $value; ?>" />
         <td><form action="deletefile.php" method="POST">
                 <input type="hidden" name="file" value="<?php echo $value; ?>" />
                 <button type="submit" name="submit" onclick="return confirm('Do you really want to delete this photo');" value="<?php echo $value; ?>">Delete Image</button>
