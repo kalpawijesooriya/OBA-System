@@ -27,23 +27,21 @@ member.regestration_number = '$username'  AND  member.password= '$password';");
 
                  $result2 = mysqli_query($conn,"SELECT * FROM admin WHERE admin.regestration_number=".$row['regestration_number']."");
                  if(mysqli_num_rows($result2)>0){
-                  // $result ->fetch_assoc()
-                  while ($row2 = $result2 ->fetch_assoc()) 
-                  {
-                    array_push($admin_role,$row2["job_role"]); //used array incase if one has many roles
-                  }
-
-
-                  if(sizeof($admin_role)>0){
-                    $_SESSION['admin_role'] = implode( ", ", $admin_role );
-                    header("location: ../Admin/");
-                  }
-                  else{
-                    $_SESSION['admin_role'] = "";
-                    header("location: ../");
-                   }
-                  
+                      // $result ->fetch_assoc()
+                      while ($row2 = $result2 ->fetch_assoc()) 
+                      {
+                        array_push($admin_role,$row2["job_role"]); //used array incase if one has many roles
+                      }
+           
+                      if(sizeof($admin_role)>0){
+                        $_SESSION['admin_role'] = implode( ", ", $admin_role );
+                        header("location: ../Admin/");
+                      }
                  }
+                 else{
+                  $_SESSION['admin_role'] = "";
+                  header("location: ../");
+                }
              }
          }
  else
