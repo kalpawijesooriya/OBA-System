@@ -70,12 +70,12 @@
                 <h4>Before you start filling this form </h4>
                     <br>
                     <ul>
-                        <li>Ensure that you have a photograph of you available in jpg format. Make sure it has the characteristics of the sample – <a ng-click="sampleImg()">Click to view Sample</a>
+                        <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book – <a ng-click="sampleImg()">Click to view Sample</a>
                         </li>
-                        <li>You will need your leaving certificate provided by Nalanda College, it has Admission No, Date of Joining & leaving. It has to be scanned in jpg format and uploaded.</li>
-                        <li>You will need to know the membership no or mobile no of the members who are going to propose and second you. If you enter a mobile no please verify beforehand with them that the number you are entering is the number they have provided to our system. It’s usually the number they receive SMS notifications from us.</li>
-                        <li>There will be a random generated code sent to Proposer. Contact him and Enter the Code in given text box. Then Click Verify. If it's success please do the same for Seconder as well.</li>
-                        <li>To validate the proposer/seconder a 6 digit code will be sent to the mobile no of the proposer/seconder. You will not be able to complete filling this form unless you are able to get these codes from them. Hence make sure your proposer/seconder is free and able to answer your call or able to send you these codes while filling the form. </li>
+                        <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</li>
+                        <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</li>
+                        <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</li>
+                        <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </li>
 
                     </ul>
                     <br>
@@ -83,11 +83,11 @@
                     <br>
 
                     <ul>
-                        <li>If you are residing/working outside of Sri Lanka and have membership of any Alumini of Nalanda College in your country, pls select it from the list of foreign associations shown. If it’s not listed drop a mail to secretary@nalandaoba.lk with the association name and names and contact numbers of officials who are in office. We will take steps to include it shortly.</li>
+                        <li>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</li>
                         <li>All mandatory fields are marked with a red asterisk near the field.</li>
                         <li>Enter Initials separated with . (dots)</li>
-                        <li>Ensure your full name displays correctly in the “Full name” field after filling Initials, Surname & Names denoted by initials </li>
-                        <li>Number to Send SMS field should be a Sri Lankan mobile operator number. Enter it in 9 digits WITHOUT first “0” e.g. 772882004</li>
+                        <li>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </li>
+                        <li>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</li>
                     </ul>
                     <br>
                     <h4>Next Step after successful submission</h4>
@@ -99,15 +99,15 @@
                         <li>You will be sent login details to the email address entered. Username will be the NIC and a generated password will be included in the email.</li>
                         <li>If you were unable to print your form in the first instance can do so by loging in subsequently. </li>
                         <li>You may change any data if noticed incorrect by loging to your account.</li>
-                        <li>An email & SMS will be sent to you when meetings will be held where you will need to bring the printout with your signature placed on it along with the Original of your leaving certificate </li>
-                        <li>Life time membership fee is LKR500 & cost of Member id is LKR500, After physical inspection of the leaving certificate this payment can be made at the meeting to the Treasurer (or a authorized representative) and will be given a official receipt. </li>
+                        <li>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </li>
+                        <li>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</li>
                         <li>If the membership requester is unable to present himself (working/residing overseas) he may authorize a 3rd party by a signed letter of authorization along with the printed web form physically signed & the original of the leaving certificate. </li>
                         <li>A option will be available in your login after the leaving certificate is physically inspected to upload a copy of a bank deposit slip. It will be your responsibility to collect the official receipt from the Treasurer as receipts will not be issued online. Upon confirmation of payment membership process will continue. </li>
-                        <li>You will receive a Welcome email from secretary@nalandaoba.lk containing your membership no when your membership is granted.</li>
+                        <li>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</li>
                         <li>Note that Name, DOB, NIC, Information in Leaving Certificate cannot be altered after payment is done hence make sure all these details are correct before making the payment.</li>
                     </ul>
                     <br>
-                    <p>Any Question or Suggestion write to secretary@nalandaoba.lk </p>
+                    <p>Any Question or Suggestion write to secretary@princeoba.lk </p>
                     <br>  
 
             </div>
@@ -272,7 +272,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="loading" style="display: none;"><img src="./Nalanda Vidyalaya Old Boys&#39; Association_files/ajax-loader.gif" width="20" height="20">LOADING...</div>
+                <div class="loading" style="display: none;">LOADING...</div>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
@@ -281,12 +281,12 @@
                         </div>
                     </div>
                     <!-- ngIf: reg.pro_img != null -->
-                    <div class="col-md-3">
+                    <!-- <div class="col-md-3">
                         <div class="form-group">
                             <label class="label-dn-align">Leaving Certificate<span class="required">*</span></label>
                             
                         </div>
-                    </div>
+                    </div> -->
                     <!-- ngIf: reg.le_img != null -->
                 </div>
             </div>
@@ -309,87 +309,7 @@
 
 <!-- site footer -->
 <footer id="section-footer" class="container-fluid site-section">
-<div class="row">
-    
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 site-footer-bx">
-        <div id="site-footer-A1" class="text-center animated">
-            <img class="" src="template/images/site-assets/logo.png" alt="dsscoba-logo">
-            <h5 class="">COUNTRY BEFORE SELF</h5>
-        </div>
-    </div>
-    
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 site-footer-bx">
-        <div id="site-footer-A2" class="text-left site-footer-text-center animated">
-            <h5>SOCIETIES & CLUBS</h5> 
-            <ul class="list-inline site-footer-list site-list-inline-img">
-                <li>
-                    <a href="https://www.facebook.com/groups/dsobawildlifeclub" target="_blank">
-                    <img src="template/images/site-assets/clubs-societies/dsscoba-wildlife.png" alt="dsscoba-wildlife" title="Wildlife Club">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/dsbuddhists" target="_blank">
-                    <img src="template/images/site-assets/clubs-societies/dsscoba-buddhist.png" alt="dsscoba-buddhist" title="Buddhist Society">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/donspsychoparade" target="_blank">
-                    <img src="template/images/site-assets/clubs-societies/dsscoba-psycho.png" alt="dsscoba-psycho-parade" title="Psycho Parade">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/Theewraa" target="_blank">
-                    <img src="template/images/site-assets/clubs-societies/dsscoba-theewra.png" alt="dsscoba-theewra" title="D.S Theewraa">
-                    </a>
-                </li>
-
-            </ul>
-        </div>
-    </div>
-
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 site-footer-bx">
-        <div id="site-footer-A3" class="text-center animated">
-            <h5>CONTACT</h5>
-            <p>
-                <span>DSSC OBA HEADQUARTERS</span>
-                <br>
-                <span>No 62, Gregory Road,</span>
-                <br>
-                <span>Colombo 07</span>
-                <br>
-                <span>Sri Lanka</span>
-                <br><br>
-                <span>dsoba@sltnet.lk</span>
-                <br>
-                <span>+94 115 840 310 | +94 112 688 010</span>
-            </p>
-        </div>
-    </div>
-
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 site-footer-bx">
-        <div id="site-footer-A4" class="text-center animated">
-            <h5>FOLLOW US</h5> 
-            <ul class="list-inline site-social-icons">
-                <li><a href="https://www.facebook.com/OBADSSC/" target="_blank"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i></a></li>
-                <li><a href="https://twitter.com/obadssc" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.instagram.com/obadssc/" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.youtube.com/channel/UC6oSyNbktAqKIh5bt0wGz_A" target="_blank"><i class="fa fa-youtube-square fa-lg" aria-hidden="true"></i></a></li>
-            </ul>
-            <p class="site-privacy-tag">Privacy Policy | <a href="membership">Terms & Conditions</a></p>
-        </div>
-    </div>
-</div>
-
-<div class="row">    
-    <div class="site-copyright-tag">
-    <div class="container text-center">
-        <p>Website Designed & Developed by 2011 Batch</p>
-        <div class="site-scroll-up pull-right text-center">
-        <a id="scrolltotop" href="membership"><i id="fo-icon" class="fa fa-caret-up fa-lg animated" aria-hidden="true"></i></a>
-        </div>
-    </div>
-    </div>
-</div>
+<?php include('./components/footer.php') ?>
 </footer><!-- site footer end -->
 
 </div>
