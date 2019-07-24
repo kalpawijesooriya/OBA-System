@@ -13,7 +13,7 @@
 
       }
       else{
-        echo "<span id ='login_user' style='visibility:hidden; position:absolute;'>no_data</span>";
+        echo "<span id ='login_user' style='visibility:hidden;position:absolute;'>no_data</span>";
       }
   ?>
   <meta charset="UTF-8">
@@ -564,11 +564,13 @@ var user_admin_role =  document.getElementById("login_user_role").innerHTML;
 
   function login(){
 
-    if(usr != "no_data"){ //logout by clearing session
-      location.href='./php/auth.php';
+    if(usr == "no_data"){ //logout by clearing session
+      console.log("usr == 'no_data'");
+      location.href='./login.php';
     }
     else{
-      location.href='./login.php';
+      console.log("usr != 'no_data'");
+      location.href='./php/auth.php';
     }
      
   }
