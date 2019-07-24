@@ -156,10 +156,11 @@
                             <input type="text" id="birthday" class="form-control" name="birthday"  placeholder="Birth Day" required>
                             <h5 id="error_bd" class="error" >Invalid Birthday</h5>
                             <small>Enter date as Day / Month / Year</small>
-                         
+                            <input type="text" id="method"  name="method"  placeholder="Birth Day" hidden>
+
                         </div>
                     </div>
-                   
+                    
                 </div>
                 <div class="row">
                     <div class="col-md-12">
@@ -304,7 +305,7 @@
             </form>
     </div>
 </section>
-<div id="error" hidden></div>
+<div id="error" ></div>
 
 <!-- site body end -->
 

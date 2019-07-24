@@ -50,7 +50,7 @@ document.getElementById("error_password").style.display='none';
         contentType: false,
         cache: false,
         processData:false,
-        url: "php/membership/memberHedder.php",
+        url: "Admin/php/membership/memberHedder.php",
         beforeSend: function(){
           $('.submitBtn').attr("disabled","disabled");
           $('#register_form').css("opacity",".5");
