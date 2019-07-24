@@ -34,7 +34,7 @@
             <li id="nav-media-sub"><a href="index.php">VIDEO GALLERY</a></li>
         </ul> -->
       </li>
-      <li id="nav-contact"><a href="http://dsscoba.org/contact-us">CONTACT US</a></li>
+      <li id="nav-contact"><a href="contact_us.php">CONTACT US</a></li>
       <li class="">
 
             <button id="login_btn" class="btn" style="margin-left: 40pt; margin-right: 40pt;margin-top: 6pt;margin-bottom:  6pt;padding: 5pt; right: 0px;"
