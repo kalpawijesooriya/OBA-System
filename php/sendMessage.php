@@ -11,8 +11,8 @@
     </script>";  
     }
 
-$from = "princeobatest@gmail.com");
-$to =  "pasan1486381@gmail.com");
+$from = "princeobatest@gmail.com";
+$to =  "pasan1486381@gmail.com";
 $subject = $_POST['subject'];
 $message = $_POST['your-message'];
 $name=$_POST['name'];
