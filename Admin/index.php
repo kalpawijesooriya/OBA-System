@@ -165,7 +165,7 @@
                                 Send Message</button>
                         </div>
                     </div>
-<<<<<<< HEAD:Admin/index.html
+
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="panel">
                             <div class="sk-chat-widgets">
@@ -189,8 +189,8 @@
                             </div>
                         </div>
                     </div>
-=======
->>>>>>> 3a2b369dae6b8d9c02fc405ea6c788eae4eeb8bd:Admin/index.php
+
+
                     <!-- /.col -->
                 </div>
             </div>
