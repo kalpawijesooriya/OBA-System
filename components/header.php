@@ -38,7 +38,7 @@
       <li class="">
 
             <button id="login_btn" class="btn" style="margin-left: 40pt; margin-right: 40pt;margin-top: 6pt;margin-bottom:  6pt;padding: 5pt; right: 0px;"
-            onclick="location.href=\'login.php\';">Login</button>
+            onclick="login()">Login</button>
             <p id="login_as" style="color:white;text-align:center"></p>
 
       </li>      
