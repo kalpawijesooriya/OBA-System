@@ -1,5 +1,6 @@
 <?php
-require_once '../conn.php';
+// require_once '../conn.php';
+
 class Member extends Dbh{
     function saveMemberData($regestration_number,$nic,$title,$name,$birthday,$address,$country,$phone,$mobile,$email,$index_num,$ol_year,$al_year,$password){
   
@@ -13,12 +14,29 @@ class Member extends Dbh{
         return $result;
     }
 
-    function getRegesteredMembers(){
-        $query ="SELECT * FROM member";
+    function getPendingMembers(){
+        $query ="SELECT * FROM member WHERE status='Pending'";
         $result =$this->connect()->query($query);   
         return $result;
     }
+
+    function getRegisteredMembers(){
+        $query ="SELECT * FROM member WHERE status='Registered'";
+        $result =$this->connect()->query($query);   
+        return $result;
+    }
+    function approveRegistration(){
+        $regId = $_REQUEST['q'];
+        $query ="UPDATE member SET status='Registered' WHERE regestration_number='$regId'";
+        $result =$this->connect()->query($query);   
+        echo "Done";
+    }
+
 }
+
+
+
+
 
 class Dbh{
     

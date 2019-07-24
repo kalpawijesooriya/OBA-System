@@ -4,12 +4,20 @@ require_once "../php/membership/Member.php";
 
 $member = new Member();
 
-//getMember
-$regMember = $member->getRegesteredMembers();
-if($regMember){
-$no_res =mysqli_num_rows($regMember);
+//getPendingMember
+$pendingMembers = $member->getPendingMembers();
+if($pendingMembers){
+$no_pen =mysqli_num_rows($pendingMembers);
 }else{
-$no_res ='';
+$no_pen ='';
+}
+
+//getPendingMember
+$registeredMembers = $member->getRegisteredMembers();
+if($registeredMembers){
+$no_reg =mysqli_num_rows($registeredMembers);
+}else{
+$no_reg ='';
 }
 ?>
 
@@ -62,7 +70,7 @@ $no_res ='';
             <div class="navbar-header">
                 <div class="top-left-part">
                     <!-- Logo -->
-                    <a class="logo" href="index.html">
+                    <a class="logo" href="index.php">
                         <!-- Logo icon image, you can use font-icon also --><b>
                         <!--This is dark logo icon--><img src="plugins/images/admin-logo.png" alt="home" class="dark-logo" /><!--This is light logo icon--><img src="plugins/images/admin-logo-dark.png" alt="home" class="light-logo" />
                      </b>
@@ -96,10 +104,10 @@ $no_res ='';
                 </div>
                 <ul class="nav" id="side-menu">
                     <li style="padding: 70px 0 0;">
-                        <a href="index.html" class="waves-effect"><i class="fa fa-clock-o fa-fw" aria-hidden="true"></i>Dashboard</a>
+                        <a href="index.php" class="waves-effect"><i class="fa fa-clock-o fa-fw" aria-hidden="true"></i>Dashboard</a>
                     </li>
                     <li>
-                        <a href="profile.html" class="waves-effect"><i class="fa fa-user fa-fw" aria-hidden="true"></i>Profile</a>
+                        <a href="member.php" class="waves-effect"><i class="fa fa-user fa-fw" aria-hidden="true"></i>Profile</a>
                     </li>
                     <li>
                         <a href="basic-table.html" class="waves-effect"><i class="fa fa-table fa-fw" aria-hidden="true"></i>Basic Table</a>
@@ -222,25 +230,55 @@ $no_res ='';
                             <div class="sk-chat-widgets">
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        Registrations Pending
+                                        Registrations Pending Members
                                     </div>
                                     <div class="panel-body">
-                                    <p><?php echo $no_res; ?> result(s) found</p>
+                                    <p><?php echo $no_pen; ?> result(s) found</p>
                                         <ul class="chatonline">
-                                            <li>
+                                           
                                                 <?php
-                                                if($no_res>0){
-                                                    while ($row = mysqli_fetch_array($regMember)) { ?>
+                                                if($no_pen>0){
+                                                    while ($row = mysqli_fetch_array($pendingMembers)) { ?>
+                                                    <li>
+                                                        <div class="call-chat">
+                                                            <button class="btn btn-success btn-lg" type="button" id="approveBtn" value="<?php echo $row['regestration_number']; ?>"><i class="fa fa-check">Approve</i></button>
+                                                            <button class="btn btn-warning btn-lg" type="button"><i class="fa fa-times">Reject</i></button>
+                                                        </div>
+                                                        <a href="javascript:void(0)"><img src="plugins/images/users/varun.jpg" alt="user-img" class="img-circle"> <span><?php echo $row['name']; ?><small class="text-success"><?php echo $row['email_address']; ?></small></span></a>
+                                                        <?php  } 
+                                                        }else{ ?>
+                                                            <div class="col-6 col-lg-3"><p>No result found</p></div>
+                                                    </li>
+                                                <?php  }?>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="panel">
+                            <div class="sk-chat-widgets">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        Registered Members
+                                    </div>
+                                    <div class="panel-body">
+                                    <p><?php echo $no_reg; ?> result(s) found</p>
+                                        <ul class="chatonline">
+                                        <?php
+                                        if($no_reg>0){
+                                            while ($row = mysqli_fetch_array($registeredMembers)) { ?>
+                                            <li>
                                                 <div class="call-chat">
-                                                    <button class="btn btn-success btn-circle btn-lg" type="button"><i class="fa fa-phone"></i></button>
-                                                    <button class="btn btn-info btn-circle btn-lg" type="button"><i class="fa fa-comments-o"></i></button>
+                                                    <button class="btn btn-danger  btn-lg" type="button"><i class="fa fa-times">Remove</i></button>
                                                 </div>
                                                 <a href="javascript:void(0)"><img src="plugins/images/users/varun.jpg" alt="user-img" class="img-circle"> <span><?php echo $row['name']; ?><small class="text-success"><?php echo $row['email_address']; ?></small></span></a>
                                                 <?php  } 
                                                 }else{ ?>
                                                     <div class="col-6 col-lg-3"><p>No result found</p></div>
-                                                <?php  }?>
                                             </li>
+                                        <?php  }?>
                                         </ul>
                                     </div>
                                 </div>
@@ -267,6 +305,61 @@ $no_res ='';
     <script src="js/waves.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="js/custom.min.js"></script>
+
+    <script type="text/javascript">
+    var dataString = document.getElementById("approveBtn").value;
+    
+    $(document).ready(function(){
+        $("#approveBtn").click(function(){
+            $.ajax({
+                url: '../php/membership/MemberController.php',
+                data: {
+                        q: dataString,
+                        action: "approveRegistration"
+                    },
+                success: function(data) {
+                    alert(data);
+                }
+            });
+    });
+    });
+    </script>
+
+    <!-- <script type="text/javascript">
+        var doc= '';
+        $("#q").autocomplete({
+            source: function(request, response) {
+                $.ajax({
+                    url: '../php/membership/Member.php',
+                    dataType: "json",
+                    data: {
+                        q: request.term,
+                        row_num: 1,
+                        action: "doctor_json"
+                    },
+                    success: function(data) {
+                        response($.map(data, function(item) {
+                            var code = item.split("|");
+                            return {
+                                label: code[3] + " " +code[1] + " " + code[2],
+                                value: code[1]+ " " + code[2] ,
+                                data: item
+                            }
+                        }));
+                    }
+                });
+            },
+            autoFocus: true,
+            minLength: 0,
+            select: function(event, ui) {
+                var names = ui.item.data.split("|");
+                doc = names[1]+" "+names[2];
+                $("#q").val(names[0]);
+                $("#doc_id").val(names[0]);
+            }
+        });
+    </script> -->
+
 </body>
 
 </html>
