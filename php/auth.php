@@ -51,8 +51,10 @@ member.regestration_number = '$username'  AND  member.`password`= '$password';")
          }
  else
    {
-    echo "no value found";
-    //header("location: ../");
+
+    header("location: ../login.php");
+    $_SESSION['login_error'] = "Invalid Credentials";
+
   }
 }
 else

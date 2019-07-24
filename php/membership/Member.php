@@ -1,4 +1,5 @@
 <?php
+
 require_once '../conn.php';
 
 
@@ -64,6 +65,54 @@ class Member extends Dbh{
 
         
     }
+
+    function getPendingMembers(){
+        $query ="SELECT * FROM member,user WHERE user.status='1' and member.regestration_number = user.regestration_number";
+        $result =$this->connect()->query($query);   
+        return $result;
+    }
+
+    function getRegisteredMembers(){
+        $query ="SELECT * FROM member,user WHERE user.status='2' and member.regestration_number = user.regestration_number";
+        $result =$this->connect()->query($query);   
+        return $result;
+    }
+
+    function approveRegistration($Id){
+        $regId = $Id;
+        $query ="UPDATE user SET status='2' WHERE regestration_number='$regId'";
+        $result =$this->connect()->query($query);   
+        echo "Done";
+    }
+
+    function removeMember($Id){
+        $regId = $Id;
+        $query ="DELETE FROM user WHERE regestration_number='$regId'";
+        $result =$this->connect()->query($query);   
+        echo "Done";
+        
+    }
+
+}
+
+class Dbh{
+    
+    private $serverName;
+    private $userName;
+    private $password;
+    private $dbName;
+
+   protected function connect()
+   { 
+       $this->serverName="us-cdbr-iron-east-02.cleardb.net";
+       $this->userName="b3ddc9c03fcdea";
+       $this->password="c72fb202";
+       $this->dbName="heroku_c89e249aac6f9c4";
+
+      $conn=new mysqli($this->serverName, $this->userName,$this->password,$this->dbName);
+      return $conn;
+        
+   }
 }
 
 

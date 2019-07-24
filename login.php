@@ -16,7 +16,20 @@
 	<script type="text/javascript" src="template/js/jquery-1.11.2.js"></script>
   <script type="text/javascript" src="template/js/bootstrap.min.js"></script> 
   <script type="text/javascript" src="template/js/lightbox.js"></script> 
-	<script type="text/javascript" src="https://use.fontawesome.com/20bf8ce7c9.js"></script>
+  <script type="text/javascript" src="https://use.fontawesome.com/20bf8ce7c9.js"></script>
+
+  <?php
+      session_start();
+
+      if( isset($_SESSION['login_error']) ){
+        echo "<span id ='get_error_msg' style='visibility:hidden; position:absolute;'>".$_SESSION['login_error']."</span>";
+      }
+      else{
+        echo "<span id ='get_error_msg' style='visibility:hidden; position:absolute;'>success</span>";
+      }
+
+  ?>
+
 </head>
 <body>
 
@@ -80,9 +93,9 @@
                 <input type="checkbox" checked="checked" name="remember" > Remember me
               </label>
             </div>
-        
+          
             <div class="container" style="padding: 20px;">
-              <span class="psw">Forgot <a href="#">password?</a></span>
+            <span id="error_msg" style="margin-right:50px;color:rgb(230, 95, 95);visibility:hidden;position:absolute;"></span><span class="psw">Forgot <a href="#">password?</a></span>
             </div>
 
           </form>
@@ -196,7 +209,17 @@
 
 <script type="text/javascript" src="template/js/jquery.custom.js"></script>   
 <script type="text/javascript" src="template/js/jquery.site.slider.js"></script>   
+<script>
+    window.onload = function(e){
 
+      if(document.getElementById('get_error_msg').innerHTML != "success")
+      {
+        document.getElementById('error_msg').innerHTML = document.getElementById('get_error_msg').innerHTML;
+        document.getElementById('error_msg').style.position = 'relative';
+        document.getElementById('error_msg').style.visibility = 'visible';
+      }
 
+    };
+ </script>
 </body>
 </html>

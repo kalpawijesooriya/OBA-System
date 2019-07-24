@@ -1,6 +1,7 @@
 <?php
 require_once 'Member.php';
 
+
 if(!empty($_POST['nic']) || !empty($_FILES['file']['name'])|| !empty($_POST['title'])|| !empty($_POST['name'])|| !empty($_POST['phone'])|| !empty($_POST['birthday'])|| !empty($_POST['country'])|| !empty($_POST['address'])|| !empty($_POST['mobile'])|| !empty($_POST['index_num'])|| !empty($_POST['ol_year'])|| !empty($_POST['al_year'])|| !empty($_POST['password'])){
 
 
@@ -12,6 +13,10 @@ if(!empty($_POST['nic']) || !empty($_FILES['file']['name'])|| !empty($_POST['tit
           $filename = $_FILES['file']['name'];
           $member->saveProfilePic($filename,$registrationNumber);
           echo $result;   
+}
+else if($_POST['method']=="getRegisteredMembers" ) {
+     $member = new Member();
+     $result = $member->getRegesteredMembers();
 }
 
 ?>
