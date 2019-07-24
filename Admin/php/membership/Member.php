@@ -1,5 +1,6 @@
 <?php
-require_once '../conn.php';
+
+require_once 'conn.php';
 
 
 class Member extends Dbh{
@@ -55,7 +56,36 @@ class Member extends Dbh{
 
         
     }
+
+    function getPendingMembers(){
+        $query ="SELECT * FROM member,user WHERE user.status='1' and member.regestration_number = user.regestration_number";
+        $result =$this->connect()->query($query);   
+        return $result;
+    }
+
+    function getRegisteredMembers(){
+        $query ="SELECT * FROM member,user WHERE user.status='2' and member.regestration_number = user.regestration_number";
+        $result =$this->connect()->query($query);   
+        return $result;
+    }
+
+    function approveRegistration($Id){
+        $regId = $Id;
+        $query ="UPDATE user SET status='2' WHERE regestration_number='$regId'";
+        $result =$this->connect()->query($query);   
+        echo "Done";
+    }
+
+    function removeMember($Id){
+        $regId = $Id;
+        $query ="DELETE FROM user WHERE regestration_number='$regId'";
+        $result =$this->connect()->query($query);   
+        echo "Done";
+        
+    }
+
 }
+
 
 
     

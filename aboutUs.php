@@ -52,7 +52,7 @@
                   <?php 
                     include('./php/conn.php');
           
-                    $result = mysqli_query($conn, "select member.`name` , member.contact_number, member.email_address , member.profile_picture_url , admin.job_role
+                    $result = mysqli_query($conn, "select member.`name` , member.mobile_number, member.email_address , member.profile_picture_url , admin.job_role
                     from heroku_c89e249aac6f9c4.member  inner join heroku_c89e249aac6f9c4.admin on member.regestration_number = admin.regestration_number
                     where admin.started_date < curdate() and admin.end_date > curdate() and admin.job_role != 'commitee member';");
                     while ($row = mysqli_fetch_assoc($result))
@@ -149,7 +149,7 @@
                   <?php 
                     // include('./php/conn.php');
           
-                    $result2 = mysqli_query($conn, "select member.`name` , member.contact_number, member.email_address , member.profile_picture_url , admin.job_role
+                    $result2 = mysqli_query($conn, "select member.`name` , member.mobile_number, member.email_address , member.profile_picture_url , admin.job_role
                     from heroku_c89e249aac6f9c4.member  inner join heroku_c89e249aac6f9c4.admin on member.regestration_number = admin.regestration_number
                     where admin.started_date < curdate() and admin.end_date > curdate() and admin.job_role = 'commitee member';");
 

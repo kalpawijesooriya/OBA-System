@@ -1,6 +1,7 @@
 <?php
 require_once 'Member.php';
 
+
 if(!empty($_POST['nic']) || !empty($_FILES['file']['name'])|| !empty($_POST['title'])|| !empty($_POST['name'])|| !empty($_POST['phone'])|| !empty($_POST['birthday'])|| !empty($_POST['country'])|| !empty($_POST['address'])|| !empty($_POST['mobile'])|| !empty($_POST['index_num'])|| !empty($_POST['ol_year'])|| !empty($_POST['al_year'])|| !empty($_POST['password'])){
 
 
@@ -11,6 +12,10 @@ if(!empty($_POST['nic']) || !empty($_FILES['file']['name'])|| !empty($_POST['tit
          
           $result = $member->saveMemberData($registrationNumber,$_POST['nic'],$_POST['title'],$_POST['name'], $birthday,$_POST['address'],$_POST['country'],$_POST['phone'],$_POST['mobile'],$_POST['email'],$_POST['index_num'],$_POST['ol_year'],$_POST['al_year'],$_POST['password']);
           echo  $result;   
+}
+else if($_POST['method']=="getRegisteredMembers" ) {
+     $member = new Member();
+     $result = $member->getRegesteredMembers();
 }
 
 ?>
