@@ -51,28 +51,7 @@
         <!-- Topbar header - style you can find in pages.scss -->
         <!-- ============================================================== -->
         <nav class="navbar navbar-default navbar-static-top m-b-0">
-            <div class="navbar-header">
-                <div class="top-left-part">
-                    <!-- Logo -->
-                    <a class="logo" href="index.html">
-                        <!-- Logo icon image, you can use font-icon also<b>
-                        This is dark logo icon<img src="plugins/images/admin-logo.png" alt="home" class="dark-logo" />This is light logo icon<img src="plugins/images/admin-logo-dark.png" alt="home" class="light-logo" />
-                     </b>  -->
-                        <!-- Logo text image you can use text also --><span class="hidden-xs">
-                        <!--This is dark logo text--><img src="plugins/images/admin-text.png" alt="home" class="dark-logo" /><!--This is light logo text--><img src="plugins/images/logo.jpg" alt="home" class="light-logo" />
-                     </span> </a>
-                </div>
-                <!-- /Logo -->
-                <ul class="nav navbar-top-links navbar-right pull-right">
-                    <li>
-                        <form role="search" class="app-search hidden-sm hidden-xs m-r-10">
-                            <input type="text" placeholder="Search..." class="form-control"> <a href=""><i class="fa fa-search"></i></a> </form>
-                    </li>
-                    <li>
-                        <a class="profile-pic" href="#"> <img src="plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">Steave</b></a>
-                    </li>
-                </ul>
-            </div>
+        <?php require_once 'common/header.php'; ?>
             <!-- /.navbar-header -->
             <!-- /.navbar-top-links -->
             <!-- /.navbar-static-side -->
@@ -82,39 +61,7 @@
         <!-- Left Sidebar - style you can find in sidebar.scss  -->
         <!-- ============================================================== -->
         <div class="navbar-default sidebar" role="navigation">
-            <div class="sidebar-nav slimscrollsidebar">
-                <div class="sidebar-head">
-                    <h3><span class="fa-fw open-close"><i class="ti-close ti-menu"></i></span> <span class="hide-menu">Navigation</span></h3>
-                </div>
-                <ul class="nav" id="side-menu">
-                    <li style="padding: 70px 0 0;">
-                        <a href="index.html" class="waves-effect"><i class="fa fa-clock-o fa-fw" aria-hidden="true"></i>Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="profile.html" class="waves-effect"><i class="fa fa-user fa-fw" aria-hidden="true"></i>Members</a>
-                    </li>
-                    <li>
-                        <a href="basic-table.html" class="waves-effect"><i class="fa fa-table fa-fw" aria-hidden="true"></i>About Us Page</a>
-                    </li>
-                    <li>
-                        <a href="fontawesome.html" class="waves-effect"><i class="fa fa-font fa-fw" aria-hidden="true"></i>Events</a>
-                    </li>
-                    <li>
-                        <a href="map-google.html" class="waves-effect"><i class="fa fa-globe fa-fw" aria-hidden="true"></i>Gallery</a>
-                    </li>
-                    <li>
-                        <a href="blank.html" class="waves-effect"><i class="fa fa-columns fa-fw" aria-hidden="true"></i>Membership</a>
-                    </li>
-                    <li>
-                        <a href="404.html" class="waves-effect"><i class="fa fa-info-circle fa-fw" aria-hidden="true"></i>Upload Section</a>
-                    </li>
-
-                </ul>
-                <!-- <div class="center p-20">
-                     <a href="https://wrappixel.com/templates/ampleadmin/" target="_blank" class="btn btn-danger btn-block waves-effect waves-light">Upgrade to Pro</a>
-                 </div> -->
-            </div>
-            
+            <?php require_once 'common/navbar.php'; ?>
         </div>
         <!-- ============================================================== -->
         <!-- End Left Sidebar -->
@@ -328,70 +275,6 @@
                                     <div class="mail-contnet">
                                         <h5>Diniya</h5><span class="time">10:20 AM   20  may 2016</span>
                                         <br/><span class="mail-desc">Donec ac condimentum massa. Etiam pellentesque pretium lacus. Phasellus ultricies dictum suscipit. Aenean commodo dui pellentesque molestie feugiat. Aenean commodo dui pellentesque molestie feugiat</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="panel">
-                            <div class="sk-chat-widgets">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        CHAT LISTING
-                                    </div>
-                                    <div class="panel-body">
-                                        <ul class="chatonline">
-                                            <li>
-                                                <div class="call-chat">
-                                                    <button class="btn btn-success btn-circle btn-lg" type="button"><i class="fa fa-phone"></i></button>
-                                                    <button class="btn btn-info btn-circle btn-lg" type="button"><i class="fa fa-comments-o"></i></button>
-                                                </div>
-                                                <a href="javascript:void(0)"><img src="plugins/images/users/varun.jpg" alt="user-img" class="img-circle"> <span>Varun Dhavan <small class="text-success">online</small></span></a>
-                                            </li>
-                                            <li>
-                                                <div class="call-chat">
-                                                    <button class="btn btn-success btn-circle btn-lg" type="button"><i class="fa fa-phone"></i></button>
-                                                    <button class="btn btn-info btn-circle btn-lg" type="button"><i class="fa fa-comments-o"></i></button>
-                                                </div>
-                                                <a href="javascript:void(0)"><img src="plugins/images/users/genu.jpg" alt="user-img" class="img-circle"> <span>Genelia Deshmukh <small class="text-warning">Away</small></span></a>
-                                            </li>
-                                            <li>
-                                                <div class="call-chat">
-                                                    <button class="btn btn-success btn-circle btn-lg" type="button"><i class="fa fa-phone"></i></button>
-                                                    <button class="btn btn-info btn-circle btn-lg" type="button"><i class="fa fa-comments-o"></i></button>
-                                                </div>
-                                                <a href="javascript:void(0)"><img src="plugins/images/users/ritesh.jpg" alt="user-img" class="img-circle"> <span>Ritesh Deshmukh <small class="text-danger">Busy</small></span></a>
-                                            </li>
-                                            <li>
-                                                <div class="call-chat">
-                                                    <button class="btn btn-success btn-circle btn-lg" type="button"><i class="fa fa-phone"></i></button>
-                                                    <button class="btn btn-info btn-circle btn-lg" type="button"><i class="fa fa-comments-o"></i></button>
-                                                </div>
-                                                <a href="javascript:void(0)"><img src="plugins/images/users/arijit.jpg" alt="user-img" class="img-circle"> <span>Arijit Sinh <small class="text-muted">Offline</small></span></a>
-                                            </li>
-                                            <li>
-                                                <div class="call-chat">
-                                                    <button class="btn btn-success btn-circle btn-lg" type="button"><i class="fa fa-phone"></i></button>
-                                                    <button class="btn btn-info btn-circle btn-lg" type="button"><i class="fa fa-comments-o"></i></button>
-                                                </div>
-                                                <a href="javascript:void(0)"><img src="plugins/images/users/govinda.jpg" alt="user-img" class="img-circle"> <span>Govinda Star <small class="text-success">online</small></span></a>
-                                            </li>
-                                            <li>
-                                                <div class="call-chat">
-                                                    <button class="btn btn-success btn-circle btn-lg" type="button"><i class="fa fa-phone"></i></button>
-                                                    <button class="btn btn-info btn-circle btn-lg" type="button"><i class="fa fa-comments-o"></i></button>
-                                                </div>
-                                                <a href="javascript:void(0)"><img src="plugins/images/users/hritik.jpg" alt="user-img" class="img-circle"> <span>John Abraham<small class="text-success">online</small></span></a>
-                                            </li>
-                                            <li>
-                                                <div class="call-chat">
-                                                    <button class="btn btn-success btn-circle btn-lg" type="button"><i class="fa fa-phone"></i></button>
-                                                    <button class="btn btn-info btn-circle btn-lg" type="button"><i class="fa fa-comments-o"></i></button>
-                                                </div>
-                                                <a href="javascript:void(0)"><img src="plugins/images/users/varun.jpg" alt="user-img" class="img-circle"> <span>Varun Dhavan <small class="text-success">online</small></span></a>
-                                            </li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
