@@ -26,13 +26,13 @@
 
 <!-- adding the header component  -->
 
-  <header>   
-    <section class="container">
-      <?php include './components/header.php' ?>
-    </section>
-</header>
+      <header>   
+          <section class="container">
+            <?php include './components/header.php' ?>
+          </section>
+      </header>
 
-<div class="wrapper row2">
+      <div class="wrapper row2">
         <div id="container" class="clear">
          
           <div id="about-us" class="clear">
@@ -184,5 +184,13 @@
           
         </div>
       </div>
+
+      <!-- site footer -->
+      
+      <footer id="section-footer" class="container-fluid site-section">
+        <?php include('./components/footer.php') ?>
+      </footer>
+      
+      <!-- site footer end -->
   </body>
 </html>
