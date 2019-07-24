@@ -24,10 +24,7 @@
                         <a href="404.html" class="waves-effect"><i class="fa fa-font fa-fw" aria-hidden="true"></i>Events</a>
                     </li>
                     <li>
-                        <a href="404.html" class="waves-effect"><i class="fa fa-globe fa-fw" aria-hidden="true"></i>Gallery</a>
-                    </li>
-                    <li>
-                        <a href="404.html" class="waves-effect"><i class="fa fa-columns fa-fw" aria-hidden="true"></i>Membership</a>
+                        <a href="gallery.php" class="waves-effect"><i class="fa fa-globe fa-fw" aria-hidden="true"></i>Gallery</a>
                     </li>
                     <li>
                         <a href="404.html" class="waves-effect"><i class="fa fa-info-circle fa-fw" aria-hidden="true"></i>Upload Section</a>
