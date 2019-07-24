@@ -24,9 +24,9 @@
                         <br>
                         <span>Sri Lanka</span>
                         <br><br>
-                        <span>dsoba@sltnet.lk</span>
+                        <span>johndoe@loremipsum.com</span>
                         <br>
-                        <span>+94 115 840 310 | +94 112 688 010</span>
+                        <span>+94 888 888 888 | +94 888 888 888</span>
                     </p>
                 </div>
             </div>
