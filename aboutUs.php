@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
+    <!-- <link
       rel="stylesheet"
       type="text/css"
       href="template/css/bootstrap.min.css"
-    />
+    /> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <script type="text/javascript" src="https://use.fontawesome.com/20bf8ce7c9.js"></script>
     <link rel="stylesheet" type="text/css" href="template/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="template/css/style.css">
@@ -51,7 +52,7 @@
                     {
                       if($row['job_role'] == "president"){
                         ?>
-                        <div class="col-lg order-1 -4 col-md-4 ">
+                        <div class="col-lg-4  col-md-4 order-1">
                           <!-- <li class="one_quarter first"> -->
                             <figure>
                               <img src="img/team-member.gif" alt="" height="200" width="200">
@@ -68,7 +69,7 @@
                   <?php } 
                       else if($row['job_role'] == "vice president"){
                         ?>
-                        <div class="col-lg -4 col-md-4 order-2">
+                        <div class="col-lg-4 col-md-4 order-2">
                           <!-- <li class="one_quarter first"> -->
                             <figure>
                               <img src="img/team-member.gif" alt="" height="200" width="200">
@@ -83,7 +84,7 @@
                         </div>
                   <?php }
                       else if ($row['job_role'] == "secretary"){ ?>
-                        <div class="col-lg -4 col-md-4 order-3">
+                        <div class="col-lg-4 col-md-4 order-3">
                           <!-- <li class="one_quarter first"> -->
                             <figure>
                               <img src="img/team-member.gif" alt="" height="200" width="200">
@@ -113,7 +114,7 @@
                         </div>
                     <?php }
                       else if ($row['job_role'] == "tresurer"){ ?>
-                      <div class="col-lg -4 col-md-4 order-5">
+                      <div class="col-lg-4 col-md-4 order-5">
                           <!-- <li class="one_quarter first"> -->
                             <figure>
                               <img src="img/team-member.gif" alt="" height="200" width="200">
