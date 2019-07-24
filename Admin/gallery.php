@@ -137,7 +137,7 @@
                             <div id="gmaps-simple" class="gmaps" style="margin: auto; width: 60%; border: 3px solid #73AD21; padding: 10px;">
                                 <div class = "upform" style="margin: auto; width: 20%; padding-top:30px;">
                                     <p><?php echo $statusMsg; ?></p>
-                                    <form action="upload.php" method="post" enctype="multipart/form-data" style="margin: auto;">
+                                    <form action="" method="post" enctype="multipart/form-data" style="margin: auto;">
                                         Select Image File to Upload
                                         <input type="file" name="files[]" multiple>
                                         <input type="submit" name="submit" Value="UPLOAD">
