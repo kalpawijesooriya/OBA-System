@@ -2,7 +2,7 @@
     $statusMsg = $errorMsg = $insertValuesSQL = $errorUpload = $errorUploadType = "";
     if(isset($_POST['submit'])){
         // Include the database configuration file
-        
+       
         
         // File upload configuration
         $targetDir = "../img/gallery/";
@@ -47,7 +47,7 @@
             // }
         }else{
             $statusMsg = 'Please select a file to upload.';
-        
+            header("Location:gallery.php");
         }
-    }
+   }
 ?>
