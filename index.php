@@ -170,40 +170,40 @@
         </div>
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
             <div>
-                <img data-u="image" src="img/001.jpg" />
+                <img data-u="image" src="img/gallery/001.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/002.jpg" />
+                <img data-u="image" src="img/gallery/002.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/003.jpg" />
+                <img data-u="image" src="img/gallery/003.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/004.jpg" />
+                <img data-u="image" src="img/gallery/004.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/005.jpg" />
+                <img data-u="image" src="img/gallery/005.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/006.jpg" />
+                <img data-u="image" src="img/gallery/006.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/007.jpg" />
+                <img data-u="image" src="img/gallery/007.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/008.jpg" />
+                <img data-u="image" src="img/gallery/008.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/009.jpg" />
+                <img data-u="image" src="img/gallery/009.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/010.jpg" />
+                <img data-u="image" src="img/gallery/010.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/011.jpg" />
+                <img data-u="image" src="img/gallery/011.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/012.jpg" />
+                <img data-u="image" src="img/gallery/012.jpg" />
             </div>
         </div>
         <!-- Bullet Navigator -->
