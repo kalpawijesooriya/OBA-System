@@ -11,13 +11,12 @@
     </script>";  
     }
 
-
-$to = "pasan1486381@gmail.com";
+$from = "princeobatest@gmail.com";
+$to =  "pasan1486381@gmail.com";
 $subject = $_POST['subject'];
 $message = $_POST['your-message'];
 $name=$_POST['name'];
 $email=$_POST['email'];
-$headers = "From: webmaster@obasystem.com";
 $error_message = "";
 $email_message="";
 $string_exp = "/^[A-Za-z .'-]+$/";
@@ -41,6 +40,7 @@ function clean_string($string) {
   $email_message .= "Email: ".clean_string($email)."\r\n";
   $email_message .= "Subject: ".clean_string($subject)."\r\n";
   $email_message .= "Message: ".clean_string($message)."\r\n";
+
 
 //mail($to,$subject,$email_message,$headers);
 echo "<script type='text/javascript'>
