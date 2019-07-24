@@ -144,7 +144,7 @@ $no_reg ='';
                                             while ($row = mysqli_fetch_array($registeredMembers)) { ?>
                                             <li>
                                                 <div class="call-chat">
-                                                    <button class="btn btn-danger  btn-lg" type="button"><i class="fa fa-times">Remove</i></button>
+                                                    <button class="btn btn-danger  btn-lg" id="removeBtn" value="<?php echo $row['regestration_number']; ?>" type="button"><i class="fa fa-times">Remove</i></button>
                                                 </div>
                                                 <a href="javascript:void(0)"><img src="plugins/images/users/varun.jpg" alt="user-img" class="img-circle"> <span><?php echo $row['name']; ?><small class="text-success"><?php echo $row['email_address']; ?></small></span></a>
                                                 <?php  } 
@@ -181,6 +181,7 @@ $no_reg ='';
 
     <script type="text/javascript">
     var dataString = document.getElementById("approveBtn").value;
+    var dataString = document.getElementById("removeBtn").value;
     
     $(document).ready(function(){
         $("#approveBtn").click(function(){
@@ -195,44 +196,20 @@ $no_reg ='';
                 }
             });
     });
+    $("#removeBtn").click(function(){
+            $.ajax({
+                url: '../php/membership/MemberController.php',
+                data: {
+                        q: dataString,
+                        action: "removeMember"
+                    },
+                success: function(data) {
+                    location.reload();
+                }
+            });
+    });
     });
     </script>
-
-    <!-- <script type="text/javascript">
-        var doc= '';
-        $("#q").autocomplete({
-            source: function(request, response) {
-                $.ajax({
-                    url: '../php/membership/Member.php',
-                    dataType: "json",
-                    data: {
-                        q: request.term,
-                        row_num: 1,
-                        action: "doctor_json"
-                    },
-                    success: function(data) {
-                        response($.map(data, function(item) {
-                            var code = item.split("|");
-                            return {
-                                label: code[3] + " " +code[1] + " " + code[2],
-                                value: code[1]+ " " + code[2] ,
-                                data: item
-                            }
-                        }));
-                    }
-                });
-            },
-            autoFocus: true,
-            minLength: 0,
-            select: function(event, ui) {
-                var names = ui.item.data.split("|");
-                doc = names[1]+" "+names[2];
-                $("#q").val(names[0]);
-                $("#doc_id").val(names[0]);
-            }
-        });
-    </script> -->
-
 </body>
 
 </html>

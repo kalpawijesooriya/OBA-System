@@ -8,14 +8,26 @@ switch ($action) {
     case "approveRegistration":
     approveRegistration();
     break;
+
+    case "removeMember":
+    removeMember();
+    break;
 }
 
 function approveRegistration(){
     $regId = $_REQUEST['q'];
-// echo "$regId"+"OOO";
 
-    $event_obj = new Member();
+    $member = new Member();
 
-    $result = $event_obj->approveRegistration($regId);
+    $result = $member->approveRegistration($regId);
 }
+
+function removeMember(){
+    $regId = $_REQUEST['q'];
+
+    $member = new Member();
+
+    $result = $member->removeMember($regId);
+}
+
 ?>
