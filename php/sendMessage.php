@@ -1,5 +1,7 @@
 <?php
 
+require ("../sendgrid-php/sendgrid-php.php");
+
    // validation expected data exists
    if(!isset($_POST['email']) ||
    !isset($_POST['name']) ||
@@ -11,13 +13,12 @@
     </script>";  
     }
 
-
-$to = "pasan1486381@gmail.com";
+$from = new SendGrid\Email(null, "princeobatest@gmail.com");
+$to = new SendGrid\Email(null, "pasan1486381@gmail.com");
 $subject = $_POST['subject'];
 $message = $_POST['your-message'];
 $name=$_POST['name'];
 $email=$_POST['email'];
-$headers = "From: webmaster@obasystem.com";
 $error_message = "";
 $email_message="";
 $string_exp = "/^[A-Za-z .'-]+$/";
@@ -42,10 +43,20 @@ function clean_string($string) {
   $email_message .= "Subject: ".clean_string($subject)."\r\n";
   $email_message .= "Message: ".clean_string($message)."\r\n";
 
-mail($to,$subject,$email_message,$headers);
-echo "<script type='text/javascript'>
-alert('Thank you for contacting us. We will be in touch with you very soon.');
-window.location.href='../contact_us.php';
-</script>";  
+  $content = new SendGrid\Content("text/plain", $email_message);
+  $mail = new SendGrid\Mail($from, $subject, $to, $content);
+  $apiKey = getenv('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');
+  $sg = new \SendGrid($apiKey);
+
+  $response = $sg->client->mail()->send()->post($mail);
+  echo $response->statusCode();
+  echo $response->headers();
+  echo $response->body();
+
+//mail($to,$subject,$email_message,$headers);
+// echo "<script type='text/javascript'>
+// alert('Thank you for contacting us. We will be in touch with you very soon.');
+// window.location.href='../contact_us.php';
+// </script>";  
 
 ?>
