@@ -68,7 +68,7 @@
             foreach($dir as $value){
              ?>
                 <a class="col-lg-3 col-md-3 col-sm-3 col-xs-6 col-site-xs-12 site-grid-base-3 site-grid-bx site-album-image" href="<?php echo $value; ?>" data-lightbox="site-album-set" data-title="Image-Gallery">
-                   <div style="height: 120px; width:180px; padding:0; margin:0; border:0;"> <img class="site-album-item" src="<?php echo $value; ?>"/></div>
+                   <div style="height: 180px; width:270px; padding:0; margin:0; border:0;"> <img class="site-album-item" src="<?php echo $value; ?>"/></div>
                 </a>
              <?php
                     }
