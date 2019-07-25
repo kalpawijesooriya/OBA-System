@@ -46,7 +46,7 @@
             <!-- team introduction -->
             <section id="team">
               <div class="container">
-              <h1> Execative Commitee </h1>
+              <h1> Executive committee </h1>
 
               <!--  displaying the excecative member info  -->
                 <div class="row">
@@ -72,7 +72,7 @@
                               <figcaption>
                                 <p class="member_name"><?php echo($row['name']) ?> </p>
                                 <p class="member_title"> <?php echo($row['job_role']) ?>  </p>
-                                <p class="member_mobile"> <?php echo($row['contact_number']) ?> </p>
+                                <p class="member_mobile"> <?php echo($row['mobile_number']) ?> </p>
                                 <p class="mem_email"> <?php echo($row['email_address']) ?> </p>
                               </figcaption>
                             </figure>
@@ -89,7 +89,7 @@
                               <figcaption>
                                 <p class="member_name"><?php echo($row['name']) ?> </p>
                                 <p class="member_title"> <?php echo($row['job_role']) ?>  </p>
-                                <p class="member_mobile"> <?php echo($row['contact_number']) ?> </p>
+                                <p class="member_mobile"> <?php echo($row['mobile_number']) ?> </p>
                                 <p class="mem_email"> <?php echo($row['email_address']) ?> </p>
                               </figcaption>
                             </figure>
@@ -104,7 +104,7 @@
                               <figcaption>
                                 <p class="member_name"><?php echo($row['name']) ?> </p>
                                 <p class="member_title"> <?php echo($row['job_role']) ?>  </p>
-                                <p class="member_mobile"> <?php echo($row['contact_number']) ?> </p>
+                                <p class="member_mobile"> <?php echo($row['mobile_number']) ?> </p>
                                 <p class="mem_email"> <?php echo($row['email_address']) ?> </p>
                               </figcaption>
                             </figure>
@@ -119,7 +119,7 @@
                               <figcaption>
                                 <p class="member_name"><?php echo($row['name']) ?> </p>
                                 <p class="member_title"> <?php echo($row['job_role']) ?>  </p>
-                                <p class="member_mobile"> <?php echo($row['contact_number']) ?> </p>
+                                <p class="member_mobile"> <?php echo($row['mobile_number']) ?> </p>
                                 <p class="mem_email"> <?php echo($row['email_address']) ?> </p>
                               </figcaption>
                             </figure>
@@ -134,7 +134,7 @@
                               <figcaption>
                                 <p class="member_name"><?php echo($row['name']) ?> </p>
                                 <p class="member_title"> <?php echo($row['job_role']) ?>  </p>
-                                <p class="member_mobile"> <?php echo($row['contact_number']) ?> </p>
+                                <p class="member_mobile"> <?php echo($row['mobile_number']) ?> </p>
                                 <p class="mem_email"> <?php echo($row['email_address']) ?> </p>
                               </figcaption>
                             </figure>
@@ -168,7 +168,7 @@
                               <figcaption>
                                 <p class="member_name"><?php echo($row2['name']) ?> </p>
                                 <p class="member_title"> <?php echo($row2['job_role']) ?>  </p>
-                                <p class="member_mobile"> <?php echo($row2['contact_number']) ?> </p>
+                                <p class="member_mobile"> <?php echo($row2['mobile_number']) ?> </p>
                                 <p class="mem_email"> <?php echo($row2['email_address']) ?> </p>
                               </figcaption>
                             </figure>
