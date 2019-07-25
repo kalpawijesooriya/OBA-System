@@ -14,7 +14,8 @@
     <link rel="stylesheet" type="text/css" href="template/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="template/css/style.css">
 	<link rel="stylesheet" type="text/css" href="template/css/lightbox.css">
-  <link rel="stylesheet" type="text/css" href="template/css/animate.css">  
+  <link rel="stylesheet" type="text/css" href="template/css/animate.css"> 
+  <link rel="stylesheet" type="text/css" href="template/css/aboutUs.css">  
   
 	<script type="text/javascript" src="template/js/jquery-1.11.2.js"></script>
   <script type="text/javascript" src="template/js/bootstrap.min.js"></script> 
@@ -38,14 +39,14 @@
           <div id="about-us" class="clear">
            
             <section id="about-intro" class="clear">
-            <h1> Price Collegue Old Boys Association </h1>
+            <h1> Prince College Old Boys Association </h1>
               <p>In odio. Mauris feugiat. Nunc posuere, felis sit amet faucibus convallis, tortor enim viverra quam, hendrerit interdum dui quam ut lacus. Ut dui dui, viverra ac, vulputate scelerisque, viverra molestie, tortor. Nullam quis odio id justo accumsan ullamcorper. Mauris lectus enim, luctus vitae, viverra a, pharetra mollis, diam. Donec sed lorem eget nibh sagittis dictum. Curabitur libero. Integer molestie mi sed tellus.</p>
               <p>Praesent imperdiet justo at sem. Nam accumsan dui eget diam.Nulla quis ante eget pede fringilla rutrum. Proin mollis tristique orci. Nam est. Fusce felis nisl, volutpat vel, sollicitudin eu, luctus sit amet, sem. Curabitur risus erat, scelerisque sit amet, mollis id, consectetuer eu, neque. Curabitur sodales semper arcu. Sed ullamcorper arcu eu ante. Vestibulum sed lacus. Quisque vitae libero. Sed quis turpis vitae lectus vehicula tincidunt. Aliquam quam mi, rutrum malesuada, consequat vitae, accumsan ut, lacus. Nulla dictum vestibulum lorem.</p>
             </section>
             <!-- team introduction -->
             <section id="team">
               <div class="container">
-              <h1> Excecative Commitee </h1>
+              <h1> Execative Commitee </h1>
 
               <!--  displaying the excecative member info  -->
                 <div class="row">
@@ -57,7 +58,7 @@
                     where admin.started_date < curdate() and admin.end_date > curdate() and admin.job_role != 'commitee member';");
                     while ($row = mysqli_fetch_assoc($result))
                     {
-                      $imgUrl = "img/team-member.gif";
+                      $imgUrl = "img/team_member.jpg";
                         if( !empty($row['profile_picture_url'])){
                           $imgUrl = $row['profile_picture_url'];
                         }
@@ -67,7 +68,7 @@
                         <div class="col-lg-4  col-md-4 order-1">
                           <!-- <li class="one_quarter first"> -->
                             <figure>
-                              <img src="<?php echo $imgUrl ?>" alt="" height="200" width="200">
+                              <img src="<?php echo $imgUrl ?>" alt="" height="200" width="200" class="circular-square">
                               <figcaption>
                                 <p class="member_name"><?php echo($row['name']) ?> </p>
                                 <p class="member_title"> <?php echo($row['job_role']) ?>  </p>
@@ -84,7 +85,7 @@
                         <div class="col-lg-4 col-md-4 order-2">
                           <!-- <li class="one_quarter first"> -->
                             <figure>
-                              <img src="<?php echo $imgUrl ?>" alt="" height="200" width="200">
+                              <img src="<?php echo $imgUrl ?>" alt="" height="200" width="200" class="circular-square">
                               <figcaption>
                                 <p class="member_name"><?php echo($row['name']) ?> </p>
                                 <p class="member_title"> <?php echo($row['job_role']) ?>  </p>
@@ -99,7 +100,7 @@
                         <div class="col-lg-4 col-md-4 order-3">
                           <!-- <li class="one_quarter first"> -->
                             <figure>
-                              <img src="<?php echo $imgUrl ?>" alt="" height="200" width="200">
+                              <img src="<?php echo $imgUrl ?>" alt="" height="200" width="200" class="circular-square">
                               <figcaption>
                                 <p class="member_name"><?php echo($row['name']) ?> </p>
                                 <p class="member_title"> <?php echo($row['job_role']) ?>  </p>
@@ -114,7 +115,7 @@
                         <div class="col-lg -4 col-md-4 order-4">
                           <!-- <li class="one_quarter first"> -->
                             <figure>
-                              <img src="<?php echo $imgUrl ?>" alt="">
+                              <img src="<?php echo $imgUrl ?>" height="200" width="200" alt="" class="circular-square">
                               <figcaption>
                                 <p class="member_name"><?php echo($row['name']) ?> </p>
                                 <p class="member_title"> <?php echo($row['job_role']) ?>  </p>
@@ -129,7 +130,7 @@
                       <div class="col-lg-4 col-md-4 order-5">
                           <!-- <li class="one_quarter first"> -->
                             <figure>
-                              <img src="<?php echo $imgUrl ?>" alt="" height="200" width="200">
+                              <img src="<?php echo $imgUrl ?>" alt="" height="200" width="200" class="circular-square">
                               <figcaption>
                                 <p class="member_name"><?php echo($row['name']) ?> </p>
                                 <p class="member_title"> <?php echo($row['job_role']) ?>  </p>
@@ -163,7 +164,7 @@
                       <div class="col-lg -3 col-md-4 order-1">
                           <!-- <li class="one_quarter first"> -->
                             <figure>
-                              <img src="<?php echo $imgUrl2 ?>" alt="" height="150" width="150">
+                              <img src="<?php echo $imgUrl2 ?>" alt="" height="150" width="150" class="circular-square">
                               <figcaption>
                                 <p class="member_name"><?php echo($row2['name']) ?> </p>
                                 <p class="member_title"> <?php echo($row2['job_role']) ?>  </p>
