@@ -91,7 +91,7 @@ $no_reg ='';
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
                         <h4 class="page-title">Members</h4> </div>
                     <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
-                        <a href="" target="_blank" class="btn btn-danger pull-right m-l-20 hidden-xs hidden-sm waves-effect waves-light">REGISTER NEW MEMBER</a>
+                        <a href="../membershipform.php" target="_blank" class="btn btn-danger pull-right m-l-20 hidden-xs hidden-sm waves-effect waves-light">REGISTER NEW MEMBER</a>
                         <ol class="breadcrumb">
                             <li><a href="#">Dashboard</a></li>
                             <li class="active">Members</li>

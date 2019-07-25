@@ -84,8 +84,11 @@
             <p class="lead" style="font-size:30px"><strong>LKR 2,250.00</strong></p>
           </div>
           <div class="panel-footer site-panel-footer"> <a class="btn btn-lg btn-block site-panel-btn" href="membershipform.php">Online Membership Form </a> 
-          </div>
+            </div>
+            <div class="panel-footer site-panel-footer"> <a class="btn btn-lg btn-block site-panel-btn" href="PaymentGateway.php">Pay Your Membership Fee Here </a> 
+            </div>
         </div>
+       
       </div> 
     </div>
 
@@ -98,7 +101,6 @@
         <h5>Join the Community</h5>             
     </div>
     <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPrince-OBA-1304854939660799%2F&tabs=cover%20photo&width=400&height=400&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId=1107689822724816" width="400" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-</div>
 </div>
 </section>
 
