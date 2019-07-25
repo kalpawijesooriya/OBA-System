@@ -267,19 +267,19 @@
       </a>
     </div>
     </li>
-        <li>            
+        <!-- <li>            
     <div class="timeline-badge">
             <div class="timeline-badge-up"><span>18<sup>th</sup></span></div>
       <div class="timeline-badge-down"><span>Jul</span></div>
     </div>
     
     <div id="tm-event-1" class="timeline-panel animated">
-      <!-- <a href="events/The-36th-Annual-General-Meeting-of-D.-S.-Senanayake-College-Old-Boys-Association"> -->
+      <a href="events/The-36th-Annual-General-Meeting-of-D.-S.-Senanayake-College-Old-Boys-Association">
       <div class="timeline-heading">
       </div>
       </a>
     </div>
-    </li>
+    </li> -->
         <li>            
     <div class="timeline-badge">
             <div class="timeline-badge-up"><span>14<sup>th</sup></span></div>
@@ -340,7 +340,7 @@
 <div class="col-lg-8 col-md-8 site-focus-right">
 
   <div class="site-section-header">
-    <h3>Latest News</h3>
+    <h3>Latest Events</h3>
     <a href="news">View all</a>
   </div> 
 
@@ -425,7 +425,7 @@
 
 
 <!-- site top news section -->
-<section id="section-posts" class="container-fluid site-section">
+<!-- <section id="section-posts" class="container-fluid site-section">
 <div class="row">
   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 site-grid-base-2 site-grid-bx">
     <a><h5>Lorem Ipsum is simply</h5></a>
@@ -469,7 +469,7 @@
     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<span><a href="news/Let’s-Rise-together"> Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a></span></p>    
   </div>
 </div>
-</section>
+</section> -->
 <!-- site top news section end -->
 
 <!-- site separator -->
