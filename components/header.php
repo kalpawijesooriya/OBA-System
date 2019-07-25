@@ -42,7 +42,6 @@
             <p id="login_as" style="color:white;text-align:center"></p>
       
       </li>
-      <li ><a href="PaymentGateway.php">Pay Here !</a>
     </ul>
       </nav>
   </div>')
