@@ -128,7 +128,7 @@ a:active {
 --------------------------------------------------------------*/
 
 header {
-    background: #800000;
+    background: #5a0009;
     padding-top: 10px;
     padding-bottom: 10px;
     z-index: 9999;
@@ -581,7 +581,7 @@ nav {
 --------------------------------------------------------------*/
 
 #section-footer {
-    background-color: #800000;
+    background-color: #5a0009;
     /*margin: 0;*/
     overflow-y: hidden;
     border-bottom: 3px solid #edb52e;
@@ -1560,7 +1560,7 @@ video {
 --------------------------------------------------------------*/
 
 #section-separator {
-    background: rgba(0, 0, 0, 0.9);
+    background: #5a0009;
 }
 
 .site-big-text h1 {
