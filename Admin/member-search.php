@@ -1,7 +1,7 @@
 <?php session_start();
 require_once "./php/membership/Member.php";
 // require_once "../conn.php";
-
+$gender ='1';
 $member = new Member();
 
 //getPendingMember
@@ -31,7 +31,7 @@ $no_reg ='';
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="16x16" href="plugins/images/favicon.png">
-    <title>Ample Admin Template - The Ultimate Multipurpose admin template</title>
+    <title>ODA Admin</title>
     <!-- Bootstrap Core CSS -->
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Menu CSS -->
@@ -85,6 +85,8 @@ $no_reg ='';
         <!-- ============================================================== -->
         <!-- Page Content -->
         <!-- ============================================================== -->
+        
+        <form action="" method="GET" class="form">
         <div id="page-wrapper">
             <div class="container-fluid">
                 <div class="row bg-title">
@@ -98,6 +100,43 @@ $no_reg ='';
                         </ol>
                     </div>
                 </div>
+                <div class="container">
+            <div class="row">
+               <!--  -->
+               <div class="col-12">
+        <form action="" method="GET" class="form">
+               <div class="row" style="background: #ffffff;padding-top: 25px;margin-bottom: 35px;">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <input type="text" class="form-control"  id="q" placeholder="Name"  name="q">
+                        <input type="hidden" class="form-control"  id="doc_id" placeholder="Doctor's Name"  name="doc_id">
+                      </div>    
+                    </div>
+                    <div class="col-md-2 text-center" >
+                        <div class="form-group">
+                        <i style="font-size:20px; font-color:white">A/L</i> <input type="radio" <?php $retVal = ($gender==1) ? 'checked' : '' ; //echo $retVal; ?> name="gender" value="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         <i style="font-size:20px; font-color:white">O/L</i> <input type="radio" <?php $retVal = ($gender==2) ? 'checked' : '' ; //echo $retVal; ?> name="gender" value="2">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <select class="form-control"  id="department"  name="department">
+                            <option value="">Select Year</option>
+                            <?php for($i=1950; $i<=date("Y"); $i++) { ?>   
+                        <option value="<?php echo "$i"; ?>"><?php echo "$i"; ?></option>
+                        <?php } ?>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <input type="submit" class="btn btn-success" id="search" value="Search" name="search">&nbsp;&nbsp;
+                        <input type="reset" class="btn btn-danger" id="reset" value="Reset" name="reset">
+                      </div>
+                    </div>
+                    </div></form>
+                            </div>
+                            </div></div>
                 <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="panel">
                             <div class="sk-chat-widgets">
