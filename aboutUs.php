@@ -65,7 +65,7 @@
                       if($row['job_role'] == "president"){
                         
                         ?>
-                        <div class="col-lg-4  col-md-4 order-1">
+                        <div class="col-lg-4  col-md-4 order-1 profile_pic">
                           <!-- <li class="one_quarter first"> -->
                             <figure>
                               <img src="<?php echo $imgUrl ?>" alt="" height="200" width="200" class="circular-square">
@@ -82,7 +82,7 @@
                   <?php } 
                       else if($row['job_role'] == "vice president"){
                         ?>
-                        <div class="col-lg-4 col-md-4 order-2">
+                        <div class="col-lg-4 col-md-4 order-2 profile_pic">
                           <!-- <li class="one_quarter first"> -->
                             <figure>
                               <img src="<?php echo $imgUrl ?>" alt="" height="200" width="200" class="circular-square">
@@ -97,7 +97,7 @@
                         </div>
                   <?php }
                       else if ($row['job_role'] == "secretary"){ ?>
-                        <div class="col-lg-4 col-md-4 order-3">
+                        <div class="col-lg-4 col-md-4 order-3 profile_pic">
                           <!-- <li class="one_quarter first"> -->
                             <figure>
                               <img src="<?php echo $imgUrl ?>" alt="" height="200" width="200" class="circular-square">
@@ -112,7 +112,7 @@
                         </div>
                     <?php }
                       else if ($row['job_role'] == "vice_secretary"){ ?>
-                        <div class="col-lg -4 col-md-4 order-4">
+                        <div class="col-lg -4 col-md-4 order-4 profile_pic">
                           <!-- <li class="one_quarter first"> -->
                             <figure>
                               <img src="<?php echo $imgUrl ?>" height="200" width="200" alt="" class="circular-square">
@@ -127,7 +127,7 @@
                         </div>
                     <?php }
                       else if ($row['job_role'] == "tresurer"){ ?>
-                      <div class="col-lg-4 col-md-4 order-5">
+                      <div class="col-lg-4 col-md-4 order-5 profile_pic">
                           <!-- <li class="one_quarter first"> -->
                             <figure>
                               <img src="<?php echo $imgUrl ?>" alt="" height="200" width="200" class="circular-square">
@@ -161,7 +161,7 @@
                           $imgUrl2 = $row2['profile_picture_url'];
                         }
                       ?>
-                      <div class="col-lg -3 col-md-4 order-1">
+                      <div class="col-lg -3 col-md-4 order-1 profile_pic">
                           <!-- <li class="one_quarter first"> -->
                             <figure>
                               <img src="<?php echo $imgUrl2 ?>" alt="" height="150" width="150" class="circular-square">
