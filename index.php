@@ -146,7 +146,7 @@
 
 </section>
 
-</header><!-- site header+navigation end -->
+</header><!-- site header+navigation end -->   
 
 <!-- site body -->
 
