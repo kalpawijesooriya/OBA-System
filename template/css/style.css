@@ -1774,6 +1774,10 @@ video {
 }
 
 .required {
-    content: "*";
-    color: red;
+  content: "*";
+  color: red;
 }
+.error{
+  color: red;
+}
+
