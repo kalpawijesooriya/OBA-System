@@ -43,34 +43,13 @@
             <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
         </svg>
     </div>
-    <!-- ============================================================== -->
-    <!-- Wrapper -->
-    <!-- ============================================================== -->
     <div id="wrapper">
-        <!-- ============================================================== -->
-        <!-- Topbar header - style you can find in pages.scss -->
-        <!-- ============================================================== -->
         <nav class="navbar navbar-default navbar-static-top m-b-0">
         <?php require_once 'common/header.php'; ?>
-            <!-- /.navbar-header -->
-            <!-- /.navbar-top-links -->
-            <!-- /.navbar-static-side -->
         </nav>
-        <!-- End Top Navigation -->
-        <!-- ============================================================== -->
-        <!-- Left Sidebar - style you can find in sidebar.scss  -->
-        <!-- ============================================================== -->
         <div class="navbar-default sidebar" role="navigation">
-
-            <?php require_once 'common/navbar.php'; ?>
-
-        </div>
-        <!-- ============================================================== -->
-        <!-- End Left Sidebar -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- Page Content -->
-        <!-- ============================================================== -->
+        <?php require_once 'common/navbar.php'; ?>
+    </div>
         <div id="page-wrapper">
             <div class="container-fluid">
                 <div class="row bg-title">
@@ -146,106 +125,7 @@
                         </div>
                     </div>
                 </div>
-                <!--/.row -->
-                <!--row -->
-                <!-- /.row -->
-                <!-- <div class="row">
-                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                        <div class="white-box">
-                            <h3 class="box-title">Products Yearly Sales</h3>
-                            <ul class="list-inline text-right">
-                                <li>
-                                    <h5><i class="fa fa-circle m-r-5 text-info"></i>Mac</h5> </li>
-                                <li>
-                                    <h5><i class="fa fa-circle m-r-5 text-inverse"></i>Windows</h5> </li>
-                            </ul>
-                            <div id="ct-visits" style="height: 405px;"></div>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- ============================================================== -->
-                <!-- table -->
-                <!-- ============================================================== -->
-                <!-- <div class="row">
-                    <div class="col-md-12 col-lg-12 col-sm-12">
-                        <div class="white-box">
-                            <div class="col-md-3 col-sm-4 col-xs-6 pull-right">
-                                <select class="form-control pull-right row b-none">
-                                    <option>March 2017</option>
-                                    <option>April 2017</option>
-                                    <option>May 2017</option>
-                                    <option>June 2017</option>
-                                    <option>July 2017</option>
-                                </select>
-                            </div>
-                            <h3 class="box-title">Recent sales</h3>
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>NAME</th>
-                                            <th>STATUS</th>
-                                            <th>DATE</th>
-                                            <th>PRICE</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td class="txt-oflo">Elite admin</td>
-                                            <td>SALE</td>
-                                            <td class="txt-oflo">April 18, 2017</td>
-                                            <td><span class="text-success">$24</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td class="txt-oflo">Real Homes WP Theme</td>
-                                            <td>EXTENDED</td>
-                                            <td class="txt-oflo">April 19, 2017</td>
-                                            <td><span class="text-info">$1250</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td class="txt-oflo">Ample Admin</td>
-                                            <td>EXTENDED</td>
-                                            <td class="txt-oflo">April 19, 2017</td>
-                                            <td><span class="text-info">$1250</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td class="txt-oflo">Medical Pro WP Theme</td>
-                                            <td>TAX</td>
-                                            <td class="txt-oflo">April 20, 2017</td>
-                                            <td><span class="text-danger">-$24</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td class="txt-oflo">Hosting press html</td>
-                                            <td>SALE</td>
-                                            <td class="txt-oflo">April 21, 2017</td>
-                                            <td><span class="text-success">$24</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>6</td>
-                                            <td class="txt-oflo">Digital Agency PSD</td>
-                                            <td>SALE</td>
-                                            <td class="txt-oflo">April 23, 2017</td>
-                                            <td><span class="text-danger">-$14</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td>7</td>
-                                            <td class="txt-oflo">Helping Hands WP Theme</td>
-                                            <td>MEMBER</td>
-                                            <td class="txt-oflo">April 22, 2017</td>
-                                            <td><span class="text-success">$64</span></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
+ 
                 <!-- ============================================================== -->
                 <!-- chat-listing & recent comments -->
                 <!-- ============================================================== -->
@@ -253,40 +133,47 @@
                     <!-- .col -->
                     <div class="col-md-12 col-lg-8 col-sm-12">
                         <div class="white-box">
-                            <h3 class="box-title">Messages</h3>
-                            <div class="comment-center p-t-10">
-                                <div class="comment-body">
-                                    <div class="user-img"> <img src="plugins/images/users/pawandeep.jpg" alt="user" class="img-circle">
+                            <h3 class="box-title">Send a Message to Members....</h3>
+                            <textarea style="width: 100%;height: 150px;padding: 12px 20px;box-sizing: border-box;
+                            border: 2px solid #ccc;border-radius: 4px;background-color: #f8f8f8;resize: none;" rows="4" cols="90">
+                                
+                            </textarea>
+                            <button style="background-color:orange;border: none;color: black;padding: 12px 20px;text-align: center;text-decoration: none;
+                            display: inline-block;font-size: 18px;margin: 4px 2px;cursor: pointer;">
+                                Send Message</button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="panel">
+                            <div class="sk-chat-widgets">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        CHANGE MEMBERSHIP FEE
                                     </div>
-                                    <div class="mail-contnet">
-                                        <h5>Pasan</h5><span class="time">10:20 AM   20  may 2016</span>
-                                        <br/><span class="mail-desc">Donec ac condimentum massa. Etiam pellentesque pretium lacus. Phasellus ultricies dictum suscipit. Aenean commodo dui pellentesque molestie feugiat. Aenean commodo dui pellentesque molestie feugiat</span><a href="javacript:void(0)" class="btn btn btn-rounded btn-default btn-outline m-r-5"><i class="ti-check text-success m-r-5"></i>Reply</a>
-                                    </div>
-                                </div>
-                                <div class="comment-body">
-                                    <div class="user-img"> <img src="plugins/images/users/sonu.jpg" alt="user" class="img-circle">
-                                    </div>
-                                    <div class="mail-contnet">
-                                        <h5>Akalanka</h5><span class="time">10:20 AM   20  may 2016</span>
-                                        <br/><span class="mail-desc">Donec ac condimentum massa. Etiam pellentesque pretium lacus. Phasellus ultricies dictum suscipit. Aenean commodo dui pellentesque molestie feugiat. Aenean commodo dui pellentesque molestie feugiat</span><a href="javacript:void(0)" class="btn btn btn-rounded btn-default btn-outline m-r-5"><i class="ti-check text-success m-r-5"></i>Reply</a>
-                                    </div>
-                                </div>
-                                <div class="comment-body b-none">
-                                    <div class="user-img"> <img src="plugins/images/users/arijit.jpg" alt="user" class="img-circle">
-                                    </div>
-                                    <div class="mail-contnet">
-                                        <h5>Diniya</h5><span class="time">10:20 AM   20  may 2016</span>
-                                        <br/><span class="mail-desc">Donec ac condimentum massa. Etiam pellentesque pretium lacus. Phasellus ultricies dictum suscipit. Aenean commodo dui pellentesque molestie feugiat. Aenean commodo dui pellentesque molestie feugiat</span>
+                                    <div class="panel-body">
+                                        <label for="cfee">Current Fee</label>
+                                        <input style="width: 100%;padding: 12px 20px;margin: 8px 0;display: inline-block;
+                                        border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;" type="text" id="cfee" name="cfee" placeholder="Current Fee..">
+                                        <br><br>
+                                        <label for="nfee">New Fee</label>
+                                        <input style="width: 100%;padding: 12px 20px;margin: 8px 0;display: inline-block;
+                                        border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;" type="text" id="nfee" name="nfee" placeholder="New Fee..">
+                                        <button style="background-color:orange;border: none;color: black;padding: 12px 20px;text-align: center;text-decoration: none;
+                                        display: inline-block;font-size: 18px;margin: 4px 2px;cursor: pointer;">
+                                        Change</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+
                     <!-- /.col -->
                 </div>
             </div>
             <!-- /.container-fluid -->
-            <footer class="footer text-center"> 2019 &copy; Powered by Gnex Technologies </footer>
+            <footer class="footer text-center"> 2019 &copy; Powered by gNEX solutions </footer>
         </div>
         <!-- ============================================================== -->
         <!-- End Page Content -->

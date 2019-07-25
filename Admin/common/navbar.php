@@ -18,19 +18,16 @@
                             </ul>
                     </li>
                     <li>
-                        <a href="404.html" class="waves-effect"><i class="fa fa-table fa-fw" aria-hidden="true"></i>About Us Page</a>
+                        <a href="404.php" class="waves-effect"><i class="fa fa-table fa-fw" aria-hidden="true"></i>About Us Page</a>
                     </li>
                     <li>
-                        <a href="404.html" class="waves-effect"><i class="fa fa-font fa-fw" aria-hidden="true"></i>Events</a>
+                        <a href="404.php" class="waves-effect"><i class="fa fa-font fa-fw" aria-hidden="true"></i>Events</a>
                     </li>
                     <li>
-                        <a href="404.html" class="waves-effect"><i class="fa fa-globe fa-fw" aria-hidden="true"></i>Gallery</a>
+                        <a href="gallery.php" class="waves-effect"><i class="fa fa-globe fa-fw" aria-hidden="true"></i>Gallery</a>
                     </li>
                     <li>
-                        <a href="404.html" class="waves-effect"><i class="fa fa-columns fa-fw" aria-hidden="true"></i>Membership</a>
-                    </li>
-                    <li>
-                        <a href="404.html" class="waves-effect"><i class="fa fa-info-circle fa-fw" aria-hidden="true"></i>Upload Section</a>
+                        <a href="404.php" class="waves-effect"><i class="fa fa-info-circle fa-fw" aria-hidden="true"></i>Upload Section</a>
                     </li>
                 </ul>
 </div>

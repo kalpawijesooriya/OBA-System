@@ -1,5 +1,5 @@
 <?php session_start();
-require_once "../php/membership/Member.php";
+require_once "./php/membership/Member.php";
 // require_once "../conn.php";
 
 $member = new Member();

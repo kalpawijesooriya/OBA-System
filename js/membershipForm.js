@@ -10,6 +10,7 @@ document.getElementById("error_nic").style.display='none';
 document.getElementById("error_bd").style.display='none';
 document.getElementById("error_password").style.display='none';
   $("#register_form").on('submit', function(e){
+    
    e.preventDefault();
   var nic = document.getElementById("nic").value;
   var selecttitle = document.getElementById("title")
@@ -45,19 +46,26 @@ document.getElementById("error_password").style.display='none';
 //AJAX code to submit form.
     $.ajax({
         type: "POST",
-        async:false,
         data: new FormData(this),
         contentType: false,
         cache: false,
         processData:false,
-        url: "php/membership/memberHedder.php",
+        url: "Admin/php/membership/memberHedder.php",
         beforeSend: function(){
           $('.submitBtn').attr("disabled","disabled");
-          $('#fupForm').css("opacity",".5");
+          $('#register_form').css("opacity",".5");
         },
-        success: function(s) {
-         alert(e)
-         $(".submitBtn").removeAttr("disabled");
+        success: function(msg) {
+          $('.statusMsg').html('');
+          document.getElementById("error").innerHTML=msg;
+          if(msg == 'ok'){
+              $('#register_form')[0].reset();
+              $('.statusMsg').html('<span style="font-size:15px;color:#34A853">Form data submitted successfully.</span>');
+          }else{
+              $('.statusMsg').html('<span style="font-size:15px;color:#EA4335">Some problem occurred, please try again.</span>');
+          }
+          $('#register_form').css("opacity","");
+          $(".submitBtn").removeAttr("disabled");
      }
     });
     
