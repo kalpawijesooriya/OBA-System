@@ -84,8 +84,11 @@
             <p class="lead" style="font-size:30px"><strong>LKR 2,250.00</strong></p>
           </div>
           <div class="panel-footer site-panel-footer"> <a class="btn btn-lg btn-block site-panel-btn" href="membershipform.php">Online Membership Form </a> 
-          </div>
+            </div>
+            <div class="panel-footer site-panel-footer"> <a class="btn btn-lg btn-block site-panel-btn" href="PaymentGateway.php">Pay Your Membership Fee Here </a> 
+            </div>
         </div>
+       
       </div> 
     </div>
 
@@ -98,7 +101,6 @@
         <h5>Join the Community</h5>             
     </div>
     <div class="fb-page" data-href="https://www.facebook.com/Prince.oldboys.association/" data-width="400" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Prince.oldboys.association/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Prince.oldboys.association/">Prince College OBA</a></blockquote></div>   
-</div>
 </div>
 </section>
 

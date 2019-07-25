@@ -159,40 +159,40 @@
         </div>
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:500px;overflow:hidden;">
             <div>
-                <img data-u="image" src="img/gallery/001.jpg" />
+                <img data-u="image" src="img/slider/001.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/gallery/002.jpg" />
+                <img data-u="image" src="img/slider/002.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/gallery/003.jpg" />
+                <img data-u="image" src="img/slider/003.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/gallery/004.jpg" />
+                <img data-u="image" src="img/slider/004.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/gallery/005.jpg" />
+                <img data-u="image" src="img/slider/005.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/gallery/006.jpg" />
+                <img data-u="image" src="img/slider/006.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/gallery/007.jpg" />
+                <img data-u="image" src="img/slider/007.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/gallery/008.jpg" />
+                <img data-u="image" src="img/slider/008.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/gallery/009.jpg" />
+                <img data-u="image" src="img/slider/009.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/gallery/010.jpg" />
+                <img data-u="image" src="img/slider/010.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/gallery/011.jpg" />
+                <img data-u="image" src="img/slider/011.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/gallery/012.jpg" />
+                <img data-u="image" src="img/slider/012.jpg" />
             </div>
         </div>
         <!-- Bullet Navigator -->
@@ -233,7 +233,7 @@
 <div class="col-lg-4 col-md-4 site-focus-left">
 
   <div class="site-section-header">
-    <h3>Events</h3>
+    <h3>Upcoming Events</h3>
     <a href="events">View all</a>
   </div> 
 
@@ -256,19 +256,19 @@
       </a>
     </div>
     </li>
-        <li>            
+        <!-- <li>            
     <div class="timeline-badge">
             <div class="timeline-badge-up"><span>18<sup>th</sup></span></div>
       <div class="timeline-badge-down"><span>Jul</span></div>
     </div>
     
     <div id="tm-event-1" class="timeline-panel animated">
-      <!-- <a href="events/The-36th-Annual-General-Meeting-of-D.-S.-Senanayake-College-Old-Boys-Association"> -->
+      <a href="events/The-36th-Annual-General-Meeting-of-D.-S.-Senanayake-College-Old-Boys-Association">
       <div class="timeline-heading">
       </div>
       </a>
     </div>
-    </li>
+    </li> -->
         <li>            
     <div class="timeline-badge">
             <div class="timeline-badge-up"><span>14<sup>th</sup></span></div>
@@ -329,7 +329,7 @@
 <div class="col-lg-8 col-md-8 site-focus-right">
 
   <div class="site-section-header">
-    <h3>Latest News</h3>
+    <h3>Latest Events</h3>
     <a href="news">View all</a>
   </div> 
 
@@ -414,7 +414,7 @@
 
 
 <!-- site top news section -->
-<section id="section-posts" class="container-fluid site-section">
+<!-- <section id="section-posts" class="container-fluid site-section">
 <div class="row">
   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 site-grid-base-2 site-grid-bx">
     <a><h5>Lorem Ipsum is simply</h5></a>
@@ -458,7 +458,7 @@
     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<span><a href="news/Let’s-Rise-together"> Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a></span></p>    
   </div>
 </div>
-</section>
+</section> -->
 <!-- site top news section end -->
 
 <!-- site separator -->
@@ -483,7 +483,7 @@
     <div class="site-img-bx">
     <img src="template/images/site-assets/site-gridimages/IG01.png" alt="" class="image">
     <div class="overlay">
-    <div class="text text-center"><a href="xxxxxxxx" target="_blank">Lorem ipsum dolor sit amet</a></div>
+    <div class="text text-center"><a href="#" target="_blank">Lorem ipsum dolor sit amet</a></div>
     </div>
     </div>  
   </div>
@@ -492,7 +492,7 @@
     <div class="site-img-bx">
     <img src="template/images/site-assets/site-gridimages/IG02.png" alt="" class="image">
     <div class="overlay">
-    <div class="text text-center"><a href="xxxxxxxx" target="_blank">Lorem ipsum dolor sit amet</a></div>
+    <div class="text text-center"><a href="#" target="_blank">Lorem ipsum dolor sit amet</a></div>
     </div>
     </div>  
   </div>
@@ -501,7 +501,7 @@
     <div class="site-img-bx">
     <img src="template/images/site-assets/site-gridimages/IG03.png" alt="" class="image">
     <div class="overlay">
-    <div class="text text-center"><a href="xxxxxxxx" target="_blank">Lorem ipsum dolor sit amet</a></div>
+    <div class="text text-center"><a href="#" target="_blank">Lorem ipsum dolor sit amet</a></div>
     </div>
     </div>  
   </div>
@@ -510,7 +510,7 @@
     <div class="site-img-bx">
     <img src="template/images/site-assets/site-gridimages/IG04.png" alt="" class="image">
     <div class="overlay">
-    <div class="text text-center"><a href="xxxxxxxx" target="_blank">Lorem ipsum dolor sit amet</a></div>
+    <div class="text text-center"><a href="#" target="_blank">Lorem ipsum dolor sit amet</a></div>
     </div>
     </div>  
   </div>
@@ -519,7 +519,7 @@
     <div class="site-img-bx">
     <img src="template/images/site-assets/site-gridimages/IG05.png" alt="" class="image">
     <div class="overlay">
-    <div class="text text-center"><a href="xxxxxxxx" target="_blank">Lorem ipsum dolor sit amet</a></div>
+    <div class="text text-center"><a href="#" target="_blank">Lorem ipsum dolor sit amet</a></div>
     </div>
     </div>  
   </div>
