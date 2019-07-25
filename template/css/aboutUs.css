@@ -1,0 +1,20 @@
+#about-intro {
+  padding-left: 20%;
+  padding-right: 10%;
+}
+
+.circular-square {
+  border-radius: 50%;
+}
+
+.circular-square {
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+  /* padding-bottom: 5%; */
+}
+
+.row {
+  padding-top: 10%;
+}

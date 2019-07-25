@@ -100,7 +100,7 @@
     <div class="site-section-subheader">
         <h5>Join the Community</h5>             
     </div>
-    <div class="fb-page" data-href="https://www.facebook.com/Prince.oldboys.association/" data-width="400" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Prince.oldboys.association/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Prince.oldboys.association/">Prince College OBA</a></blockquote></div>   
+    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPrince-OBA-1304854939660799%2F&tabs=cover%20photo&width=400&height=400&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId=1107689822724816" width="400" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 </div>
 </section>
 
