@@ -135,17 +135,6 @@
     <div class="box box7"></div>
     <div class="box box8"></div>
 </div>
-
-<!-- <div id="preloader" class="preloader">
-  <div class="lines">
-  <div class="line line-1"></div>
-  <div class="line line-2"></div>
-  <div class="line line-3"></div></div>  
-  <div class="loading-text">LOADING</div>f
-</div> -->
-<!-- site preloader end -->
-
-
 <!-- site content -->
 <div id="site-content">
 
@@ -157,7 +146,7 @@
 
 </section>
 
-</header><!-- site header+navigation end -->
+</header><!-- site header+navigation end -->   
 
 <!-- site body -->
 
@@ -494,7 +483,7 @@
     <div class="site-img-bx">
     <img src="template/images/site-assets/site-gridimages/IG01.png" alt="" class="image">
     <div class="overlay">
-    <div class="text text-center"><a href="xxxxxxxx" target="_blank">Lorem ipsum dolor sit amet</a></div>
+    <div class="text text-center"><a href="#" target="_blank">Lorem ipsum dolor sit amet</a></div>
     </div>
     </div>  
   </div>
@@ -503,7 +492,7 @@
     <div class="site-img-bx">
     <img src="template/images/site-assets/site-gridimages/IG02.png" alt="" class="image">
     <div class="overlay">
-    <div class="text text-center"><a href="xxxxxxxx" target="_blank">Lorem ipsum dolor sit amet</a></div>
+    <div class="text text-center"><a href="#" target="_blank">Lorem ipsum dolor sit amet</a></div>
     </div>
     </div>  
   </div>
@@ -512,7 +501,7 @@
     <div class="site-img-bx">
     <img src="template/images/site-assets/site-gridimages/IG03.png" alt="" class="image">
     <div class="overlay">
-    <div class="text text-center"><a href="xxxxxxxx" target="_blank">Lorem ipsum dolor sit amet</a></div>
+    <div class="text text-center"><a href="#" target="_blank">Lorem ipsum dolor sit amet</a></div>
     </div>
     </div>  
   </div>
@@ -521,7 +510,7 @@
     <div class="site-img-bx">
     <img src="template/images/site-assets/site-gridimages/IG04.png" alt="" class="image">
     <div class="overlay">
-    <div class="text text-center"><a href="xxxxxxxx" target="_blank">Lorem ipsum dolor sit amet</a></div>
+    <div class="text text-center"><a href="#" target="_blank">Lorem ipsum dolor sit amet</a></div>
     </div>
     </div>  
   </div>
@@ -530,7 +519,7 @@
     <div class="site-img-bx">
     <img src="template/images/site-assets/site-gridimages/IG05.png" alt="" class="image">
     <div class="overlay">
-    <div class="text text-center"><a href="xxxxxxxx" target="_blank">Lorem ipsum dolor sit amet</a></div>
+    <div class="text text-center"><a href="#" target="_blank">Lorem ipsum dolor sit amet</a></div>
     </div>
     </div>  
   </div>
