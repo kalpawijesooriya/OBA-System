@@ -1,6 +1,6 @@
-#about-intro {
-  padding-left: 20%;
-  padding-right: 10%;
+.about-intro {
+  padding-left: 10%;
+ padding-right: 10%;
 }
 
 .circular-square {
@@ -16,5 +16,17 @@
 }
 
 .row {
-  padding-top: 10%;
+  
+}
+
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: groove;
+  border-width: 1px;
+  width:100%;
+  margin-top: 30px;
 }
