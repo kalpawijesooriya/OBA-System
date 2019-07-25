@@ -38,14 +38,14 @@
           <div id="about-us" class="clear">
            
             <section id="about-intro" class="clear">
-            <h1> Price Collegue Old Boys Association </h1>
+            <h1> Price Colleague Old Boys Association </h1>
               <p>In odio. Mauris feugiat. Nunc posuere, felis sit amet faucibus convallis, tortor enim viverra quam, hendrerit interdum dui quam ut lacus. Ut dui dui, viverra ac, vulputate scelerisque, viverra molestie, tortor. Nullam quis odio id justo accumsan ullamcorper. Mauris lectus enim, luctus vitae, viverra a, pharetra mollis, diam. Donec sed lorem eget nibh sagittis dictum. Curabitur libero. Integer molestie mi sed tellus.</p>
               <p>Praesent imperdiet justo at sem. Nam accumsan dui eget diam.Nulla quis ante eget pede fringilla rutrum. Proin mollis tristique orci. Nam est. Fusce felis nisl, volutpat vel, sollicitudin eu, luctus sit amet, sem. Curabitur risus erat, scelerisque sit amet, mollis id, consectetuer eu, neque. Curabitur sodales semper arcu. Sed ullamcorper arcu eu ante. Vestibulum sed lacus. Quisque vitae libero. Sed quis turpis vitae lectus vehicula tincidunt. Aliquam quam mi, rutrum malesuada, consequat vitae, accumsan ut, lacus. Nulla dictum vestibulum lorem.</p>
             </section>
             <!-- team introduction -->
             <section id="team">
               <div class="container">
-              <h1> Excecative Commitee </h1>
+              <h1> Executive committee </h1>
 
               <!--  displaying the excecative member info  -->
                 <div class="row">
@@ -71,7 +71,7 @@
                               <figcaption>
                                 <p class="member_name"><?php echo($row['name']) ?> </p>
                                 <p class="member_title"> <?php echo($row['job_role']) ?>  </p>
-                                <p class="member_mobile"> <?php echo($row['contact_number']) ?> </p>
+                                <p class="member_mobile"> <?php echo($row['mobile_number']) ?> </p>
                                 <p class="mem_email"> <?php echo($row['email_address']) ?> </p>
                               </figcaption>
                             </figure>
@@ -88,7 +88,7 @@
                               <figcaption>
                                 <p class="member_name"><?php echo($row['name']) ?> </p>
                                 <p class="member_title"> <?php echo($row['job_role']) ?>  </p>
-                                <p class="member_mobile"> <?php echo($row['contact_number']) ?> </p>
+                                <p class="member_mobile"> <?php echo($row['mobile_number']) ?> </p>
                                 <p class="mem_email"> <?php echo($row['email_address']) ?> </p>
                               </figcaption>
                             </figure>
@@ -103,7 +103,7 @@
                               <figcaption>
                                 <p class="member_name"><?php echo($row['name']) ?> </p>
                                 <p class="member_title"> <?php echo($row['job_role']) ?>  </p>
-                                <p class="member_mobile"> <?php echo($row['contact_number']) ?> </p>
+                                <p class="member_mobile"> <?php echo($row['mobile_number']) ?> </p>
                                 <p class="mem_email"> <?php echo($row['email_address']) ?> </p>
                               </figcaption>
                             </figure>
@@ -118,7 +118,7 @@
                               <figcaption>
                                 <p class="member_name"><?php echo($row['name']) ?> </p>
                                 <p class="member_title"> <?php echo($row['job_role']) ?>  </p>
-                                <p class="member_mobile"> <?php echo($row['contact_number']) ?> </p>
+                                <p class="member_mobile"> <?php echo($row['mobile_number']) ?> </p>
                                 <p class="mem_email"> <?php echo($row['email_address']) ?> </p>
                               </figcaption>
                             </figure>
@@ -133,7 +133,7 @@
                               <figcaption>
                                 <p class="member_name"><?php echo($row['name']) ?> </p>
                                 <p class="member_title"> <?php echo($row['job_role']) ?>  </p>
-                                <p class="member_mobile"> <?php echo($row['contact_number']) ?> </p>
+                                <p class="member_mobile"> <?php echo($row['mobile_number']) ?> </p>
                                 <p class="mem_email"> <?php echo($row['email_address']) ?> </p>
                               </figcaption>
                             </figure>
@@ -167,7 +167,7 @@
                               <figcaption>
                                 <p class="member_name"><?php echo($row2['name']) ?> </p>
                                 <p class="member_title"> <?php echo($row2['job_role']) ?>  </p>
-                                <p class="member_mobile"> <?php echo($row2['contact_number']) ?> </p>
+                                <p class="member_mobile"> <?php echo($row2['mobile_number']) ?> </p>
                                 <p class="mem_email"> <?php echo($row2['email_address']) ?> </p>
                               </figcaption>
                             </figure>
