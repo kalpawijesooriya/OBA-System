@@ -141,7 +141,7 @@
   <div class="line line-1"></div>
   <div class="line line-2"></div>
   <div class="line line-3"></div></div>  
-  <div class="loading-text">LOADING</div>
+  <div class="loading-text">LOADING</div>f
 </div> -->
 <!-- site preloader end -->
 
@@ -163,47 +163,47 @@
 
 <!-- site main slider -->
 <div class="slider">
-    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:500px;overflow:hidden;visibility:hidden;">
         <!-- Loading Screen -->
         <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
             <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
         </div>
-        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:500px;overflow:hidden;">
             <div>
-                <img data-u="image" src="img/gallery/001.jpg" />
+                <img data-u="image" src="img/slider/001.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/gallery/002.jpg" />
+                <img data-u="image" src="img/slider/002.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/gallery/003.jpg" />
+                <img data-u="image" src="img/slider/003.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/gallery/004.jpg" />
+                <img data-u="image" src="img/slider/004.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/gallery/005.jpg" />
+                <img data-u="image" src="img/slider/005.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/gallery/006.jpg" />
+                <img data-u="image" src="img/slider/006.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/gallery/007.jpg" />
+                <img data-u="image" src="img/slider/007.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/gallery/008.jpg" />
+                <img data-u="image" src="img/slider/008.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/gallery/009.jpg" />
+                <img data-u="image" src="img/slider/009.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/gallery/010.jpg" />
+                <img data-u="image" src="img/slider/010.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/gallery/011.jpg" />
+                <img data-u="image" src="img/slider/011.jpg" />
             </div>
             <div>
-                <img data-u="image" src="img/gallery/012.jpg" />
+                <img data-u="image" src="img/slider/012.jpg" />
             </div>
         </div>
         <!-- Bullet Navigator -->
@@ -244,7 +244,7 @@
 <div class="col-lg-4 col-md-4 site-focus-left">
 
   <div class="site-section-header">
-    <h3>Events</h3>
+    <h3>Upcoming Events</h3>
     <a href="events">View all</a>
   </div> 
 
@@ -257,17 +257,17 @@
     </div>
     
     <div id="tm-event-1" class="timeline-panel animated">
-      <a href="events/Psycho-Parade-2018">
+      <!-- <a href="events/Psycho-Parade-2018"> -->
       <div class="timeline-heading">
-      <h5 class="timeline-title">Lorem Ipsum</h5>
+      <h5 class="timeline-title">Lorem ipsum is a sample text</h5>
       </div>
       <div class="timeline-body">                
-      <p class="text-left">9.00 AM at School Premises</p>
+      <p class="text-left">Contrary to popular belief, Lorem Ipsum is not simply random text. s</p>
       </div>
       </a>
     </div>
     </li>
-        <li>            
+        <!-- <li>            
     <div class="timeline-badge">
             <div class="timeline-badge-up"><span>18<sup>th</sup></span></div>
       <div class="timeline-badge-down"><span>Jul</span></div>
@@ -276,14 +276,10 @@
     <div id="tm-event-1" class="timeline-panel animated">
       <a href="events/The-36th-Annual-General-Meeting-of-D.-S.-Senanayake-College-Old-Boys-Association">
       <div class="timeline-heading">
-      <h5 class="timeline-title">Lorem Ipsum</h5>
-      </div>
-      <div class="timeline-body">                
-      <p class="text-left">11.00 AM Onwards at School Main Hall</p>
       </div>
       </a>
     </div>
-    </li>
+    </li> -->
         <li>            
     <div class="timeline-badge">
             <div class="timeline-badge-up"><span>14<sup>th</sup></span></div>
@@ -291,12 +287,46 @@
     </div>
     
     <div id="tm-event-1" class="timeline-panel animated">
-      <a href="events/Psycho-Parade-2017">
+      <!-- <a href="events/Psycho-Parade-2017"> -->
       <div class="timeline-heading">
-      <h5 class="timeline-title">Motor Parade 2017</h5>
+      <h5 class="timeline-title">Lorem ipsum is a sample text</h5>
       </div>
       <div class="timeline-body">                
-      <p class="text-left">9.00 AM at School Premises</p>
+      <p class="text-left">Contrary to popular belief, Lorem Ipsum is not simply random text. </p>
+      </div>
+      </a>
+    </div>
+    </li>
+        <li>            
+    <div class="timeline-badge">
+            <div class="timeline-badge-up"><span>10<sup>th</sup></span></div>
+      <div class="timeline-badge-down"><span>Feb</span></div>
+    </div>
+    
+    <div id="tm-event-1" class="timeline-panel animated">
+      <!-- <a href="http://dsscoba.org/events/Golden-Jubilee-Celebration-&ndash;-DS-Turned-50"> -->
+      <div class="timeline-heading">
+      <h5 class="timeline-title">Lorem ipsum is a sample text </h5>
+      </div>
+      <div class="timeline-body">                
+      <p class="text-left">Contrary to popular belief, Lorem Ipsum is not simply random text. </p>
+      </div>
+      </a>
+    </div>
+    </li>
+        <li>            
+    <div class="timeline-badge">
+            <div class="timeline-badge-up"><span>05<sup>th</sup></span></div>
+      <div class="timeline-badge-down"><span>Jan</span></div>
+    </div>
+    
+    <div id="tm-event-1" class="timeline-panel animated">
+      <!-- <a href="events/Theewraa-Live"> -->
+      <div class="timeline-heading">
+      <h5 class="timeline-title">Lorem ipsum is a sample text</h5>
+      </div>
+      <div class="timeline-body">                
+      <p class="text-left">Contrary to popular belief, Lorem Ipsum is not simply random text. </p>
       </div>
       </a>
     </div>
@@ -310,7 +340,7 @@
 <div class="col-lg-8 col-md-8 site-focus-right">
 
   <div class="site-section-header">
-    <h3>Latest News</h3>
+    <h3>Latest Events</h3>
     <a href="news">View all</a>
   </div> 
 
@@ -340,13 +370,15 @@
       <div class="site-post-details">
       <div class="site-clearfix"></div>
       <div class="site-post-title">
-      <h3><a href="">Lorem ipsum dolor sit amet</a></h3>
+      <h3><a href="rvervrever">Lorem ipsum is a sample text</a></h3>
       </div>
       <div class="site-post-excerpt">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus finibus nibh et aliquam. Cras sollicitudin et elit mollis rutrum. Donec non accumsan arcu, et hendrerit dolor. Aliquam aliquam sed sapien finibus eleifend. Donec at accumsan purus, sit amet rutrum nisi. Aenean quis rhoncus elit, ut consectetur diam. Sed dapibus tempor eros. Integer ut sem in augue pellentesque volutpat. Aenean sit amet mauris at felis tempus blandit. Donec lacinia est justo, at mattis massa laoreet at. Cras sit amet lacinia augue, at pharetra purus. In et lacus quis nunc tincidunt porta vel id libero. Suspendisse fermentum nisi quis ultrices imperdiet. Sed pulvinar porta felis eget euismod.</p>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+       when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged.</p>
       </div>
       <div class="site-post-readmore">
-      <a href="">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+      <a href="revervrev">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
       </div>
       </div>
     </div>
@@ -354,13 +386,15 @@
       <div class="site-post-details">
       <div class="site-clearfix"></div>
       <div class="site-post-title">
-      <h3><a href="">Lorem ipsum dolor sit amet</a></h3>
+      <h3><a href="rvreverver">Lorem ipsum is a sample text</a></h3>
       </div>
       <div class="site-post-excerpt">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus finibus nibh et aliquam. Cras sollicitudin et elit mollis rutrum. Donec non accumsan arcu, et hendrerit dolor. Aliquam aliquam sed sapien finibus eleifend. Donec at accumsan purus, sit amet rutrum nisi. Aenean quis rhoncus elit, ut consectetur diam. Sed dapibus tempor eros. Integer ut sem in augue pellentesque volutpat. Aenean sit amet mauris at felis tempus blandit. Donec lacinia est justo, at mattis massa laoreet at. Cras sit amet lacinia augue, at pharetra purus. In et lacus quis nunc tincidunt porta vel id libero. Suspendisse fermentum nisi quis ultrices imperdiet. Sed pulvinar porta felis eget euismod.</p>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+       when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged.</p>
       </div>
       <div class="site-post-readmore">
-      <a href="">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+      <a href="evrerververv">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
       </div>
       </div>
     </div>
@@ -368,13 +402,15 @@
       <div class="site-post-details">
       <div class="site-clearfix"></div>
       <div class="site-post-title">
-      <h3><a href="">Lorem ipsum dolor sit amet</a></h3>
+      <h3><a href="erververver">Lorem ipsum is a sample text</a></h3>
       </div>
       <div class="site-post-excerpt">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus finibus nibh et aliquam. Cras sollicitudin et elit mollis rutrum. Donec non accumsan arcu, et hendrerit dolor. Aliquam aliquam sed sapien finibus eleifend. Donec at accumsan purus, sit amet rutrum nisi. Aenean quis rhoncus elit, ut consectetur diam. Sed dapibus tempor eros. Integer ut sem in augue pellentesque volutpat. Aenean sit amet mauris at felis tempus blandit. Donec lacinia est justo, at mattis massa laoreet at. Cras sit amet lacinia augue, at pharetra purus. In et lacus quis nunc tincidunt porta vel id libero. Suspendisse fermentum nisi quis ultrices imperdiet. Sed pulvinar porta felis eget euismod.</p>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+       when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged.</p>
       </div>
       <div class="site-post-readmore">
-      <a href="">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+      <a href="vervreverv">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
       </div>
       </div>
     </div>
@@ -389,11 +425,11 @@
 
 
 <!-- site top news section -->
-<section id="section-posts" class="container-fluid site-section">
+<!-- <section id="section-posts" class="container-fluid site-section">
 <div class="row">
   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 site-grid-base-2 site-grid-bx">
-    <a><h5>Mini Auditorium Opening Ceremony</h5></a>
-    <p>The 29th of September saw the successful completion and handing over of one of the largest infrastructure development projects in the history of the Old Boys Association of D.S. Senanayake College.</p>
+    <a><h5>Lorem Ipsum is simply</h5></a>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took </p>
 
     <div>
       <a href="news/Mini-Auditorium-Opening-Ceremony">
@@ -402,12 +438,12 @@
       </a>
     </div>
 
-    <p>The Mini Auditorium of D.S.Senanayake College was declared open with the presence of Hon. Minister Harsha De Silva. This venture was commenced under the leadership of the OBA Senior President Madura Wickramaratne and the President Susantha Dissanayake. The mini auditorium consists of facilities to accommodate over 300 plus people. The founder principle late Mr. R. I. T. Alles wife Rohini Alles graced this occasion along with other prominent dignitaries.<span><a href="news/Mini-Auditorium-Opening-Ceremony"> Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a></span></p>    
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<span><a href="news/Mini-Auditorium-Opening-Ceremony"> Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a></span></p>    
   </div>
 
   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 site-grid-base-2 site-grid-bx">
-    <a><h5>DSSC OBA CSR Project at Jaffna</h5></a>
-    <p>A project successfully completed by the Old Boys' Association of D.S. Senanayake College. A CSR project of donating items worth of Rs. 1.7mn to Jaffna Atchuvely Saraswathy College.</p>
+    <a><h5>Lorem Ipsum is simply</h5></a>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took</p>
 
     <div>
       <a href="news/DSSC-OBA-CSR-Project-at-Jaffna">
@@ -416,12 +452,12 @@
       </a>
     </div>
 
-    <p>Project was headed by Susantha Subashan Dissanayake ayya, the President of OBA along with project chairman Kosala Suresh , Mahesh Hettige ayya and OBA brothers with the commendable support from 52nd and 522nd Divisions of SL Army. A sincere appreciation to the OBA Senior President Madura Wickramarathne ayya and the Executive Committee and to everyone who extend their support towards this noble event.<span><a href="news/DSSC-OBA-CSR-Project-at-Jaffna"> Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a></span></p>    
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<span><a href="news/DSSC-OBA-CSR-Project-at-Jaffna"> Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a></span></p>    
   </div>
 
   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 site-grid-base-2 site-grid-bx">
-    <a><h5>Let’s Rise together</h5></a>
-    <p>As our Motherland faced another tragic natural disaster as last year, the sons of mother DS came once again to help our beloved country men living our motto 'Country before self'.</p>
+    <a><h5>Lorem Ipsum is simply</h5></a>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took</p>
 
     <div>
       <a href="news/Let’s-Rise-together">
@@ -430,10 +466,10 @@
       </a>
     </div>
 
-    <p>As the news broke out throughout the country of this disaster, our OBA immediately initiated to collect essential goods to be distributed which resulted in donations flowing in from our donors within the country and brothers who donated from our foreign OBA units who operated very responsively.<span><a href="news/Let’s-Rise-together"> Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a></span></p>    
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<span><a href="news/Let’s-Rise-together"> Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a></span></p>    
   </div>
 </div>
-</section>
+</section> -->
 <!-- site top news section end -->
 
 <!-- site separator -->
@@ -443,7 +479,7 @@
 <div class="col-lg-12 col-md-12 site-big-text">
     <h1><span>BECOMING</span> THE MOST</h1>
     <h1>EXCELLENT <span>SCHOOL</span> IN</h1>
-    <h1>SABARAGAMUWA<span>PROVINCE</span></h1>
+    <h1>SABARAGAMUWA <span>PROVINCE</span></h1>
 </div>
 
 </div>
@@ -458,7 +494,7 @@
     <div class="site-img-bx">
     <img src="template/images/site-assets/site-gridimages/IG01.png" alt="" class="image">
     <div class="overlay">
-    <div class="text text-center"><a href="http://dsscphotography.com/portfolio-item/golden-jubilee-celebration/" target="_blank">Golden Jubilee Celebration</a></div>
+    <div class="text text-center"><a href="xxxxxxxx" target="_blank">Lorem ipsum dolor sit amet</a></div>
     </div>
     </div>  
   </div>
@@ -467,7 +503,7 @@
     <div class="site-img-bx">
     <img src="template/images/site-assets/site-gridimages/IG02.png" alt="" class="image">
     <div class="overlay">
-    <div class="text text-center"><a href="http://dsscphotography.com/portfolio-item/theewraa-golden-jubilee-live/" target="_blank">Theewraa - Golden Jubilee Live</a></div>
+    <div class="text text-center"><a href="xxxxxxxx" target="_blank">Lorem ipsum dolor sit amet</a></div>
     </div>
     </div>  
   </div>
@@ -476,7 +512,7 @@
     <div class="site-img-bx">
     <img src="template/images/site-assets/site-gridimages/IG03.png" alt="" class="image">
     <div class="overlay">
-    <div class="text text-center"><a href="http://dsscphotography.com/portfolio-item/steps-17/" target="_blank">Steps 17</a></div>
+    <div class="text text-center"><a href="xxxxxxxx" target="_blank">Lorem ipsum dolor sit amet</a></div>
     </div>
     </div>  
   </div>
@@ -485,7 +521,7 @@
     <div class="site-img-bx">
     <img src="template/images/site-assets/site-gridimages/IG04.png" alt="" class="image">
     <div class="overlay">
-    <div class="text text-center"><a href="http://dsscphotography.com/portfolio-item/big-match-ticket-launch/" target="_blank">Big Match Ticket Launch</a></div>
+    <div class="text text-center"><a href="xxxxxxxx" target="_blank">Lorem ipsum dolor sit amet</a></div>
     </div>
     </div>  
   </div>
@@ -494,7 +530,7 @@
     <div class="site-img-bx">
     <img src="template/images/site-assets/site-gridimages/IG05.png" alt="" class="image">
     <div class="overlay">
-    <div class="text text-center"><a href="http://dsscphotography.com/portfolio-item/medical-camp/" target="_blank">Medical Camp</a></div>
+    <div class="text text-center"><a href="xxxxxxxx" target="_blank">Lorem ipsum dolor sit amet</a></div>
     </div>
     </div>  
   </div>
@@ -503,7 +539,7 @@
     <div class="site-img-bx">
     <img src="template/images/site-assets/site-gridimages/IG06.png" alt="" class="image">
     <div class="overlay">
-    <div class="text text-center"><a href="http://dsscphotography.com/portfolio-item/aipadma-dance-show/" target="_blank">Aipadma Dance Show</a></div>
+    <div class="text text-center"><a href="xxxxxxxx" target="_blank">Lorem ipsum dolor sit amet</a></div>
     </div>
     </div>  
   </div>
@@ -512,7 +548,7 @@
     <div class="site-img-bx">
     <img src="template/images/site-assets/site-gridimages/IG07.png" alt="" class="image">
     <div class="overlay">
-    <div class="text text-center"><a href="http://dsscphotography.com/portfolio-item/ds-students-brand-awards-16/" target="_blank">D S Students Brand Awards 2016</a></div>
+    <div class="text text-center"><a href="xxxxxxxx" target="_blank">Lorem ipsum dolor sit amet</a></div>
     </div>
     </div>  
   </div>
@@ -521,7 +557,7 @@
     <div class="site-img-bx">
     <img src="template/images/site-assets/site-gridimages/IG08.png" alt="" class="image">
     <div class="overlay">
-    <div class="text text-center"><a href="http://dsscphotography.com/portfolio-item/d-s-aura-2016/" target="_blank">D S Aura 2016</a></div>
+    <div class="text text-center"><a href="xxxxxxxx" target="_blank">Lorem ipsum dolor sit amet</a></div>
     </div>
     </div>  
   </div>
