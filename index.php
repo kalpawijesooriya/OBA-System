@@ -135,17 +135,6 @@
     <div class="box box7"></div>
     <div class="box box8"></div>
 </div>
-
-<!-- <div id="preloader" class="preloader">
-  <div class="lines">
-  <div class="line line-1"></div>
-  <div class="line line-2"></div>
-  <div class="line line-3"></div></div>  
-  <div class="loading-text">LOADING</div>f
-</div> -->
-<!-- site preloader end -->
-
-
 <!-- site content -->
 <div id="site-content">
 
@@ -157,7 +146,7 @@
 
 </section>
 
-</header><!-- site header+navigation end -->
+</header><!-- site header+navigation end -->   
 
 <!-- site body -->
 

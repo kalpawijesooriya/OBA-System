@@ -727,8 +727,8 @@ nav {
 @media screen and (min-width: 1200px) {
     .site-section {
         width: 100%;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 158px;
+        padding-right: 158px;
     }
 }
 
@@ -1774,10 +1774,10 @@ video {
 }
 
 .required {
-  content: "*";
-  color: red;
-}
-.error{
-  color: red;
+    content: "*";
+    color: red;
 }
 
+.error {
+    color: red;
+}
