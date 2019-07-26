@@ -277,7 +277,7 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="form-group">
-                            <label>Your Photograph<span class="required">*</span></label>
+                            <label>Your Photograph</label>
                             <input type="file" id="file" name="file" />
                         </div>
                     </div>

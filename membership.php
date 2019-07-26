@@ -81,7 +81,7 @@
             <h3 class="text-center">Year MEMBERSHIP</h3>
           </div>
           <div class="panel-body text-center site-panel-body">
-            <p class="lead" style="font-size:30px"><strong>LKR 2,250.00</strong></p>
+            <p class="lead" style="font-size:30px"><strong>LKR 2,500.00</strong></p>
           </div>
           <div class="panel-footer site-panel-footer"> <a class="btn btn-lg btn-block site-panel-btn" href="membershipform.php">Online Membership Form </a> 
             </div>
