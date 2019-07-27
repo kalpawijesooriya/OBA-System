@@ -5,10 +5,15 @@ require_once 'conn.php';
 
 class Member extends Dbh{
 
-    function saveMemberData($regestration_number,$nic,$title,$name,$birthday,$address,$country,$phone,$mobile,$email,$index_num,$ol_year,$al_year,$password){
+    function saveMemberData($regestration_number,$nic,$title,$name,$birthday,$address,$country,$phone,$mobile,$email,$index_num,$ol_year,$al_year,$password, $imgLocation){
         $createdAt= date("Y-m-d H:i:sa");
-        $location= $this->saveProfilePic($regestration_number);
-        $query ="INSERT INTO member (regestration_number,nic_num,title,name,birthday,address,country,phone_number,mobile_number,email_address,index_number,olevel_year,alevel_year,password,createdAt,profile_picture_url) VALUES ('$regestration_number','$nic','$title','$name','$birthday','$address','$country',$phone,$mobile,'$email','$index_num',$ol_year,$al_year,'$password','$createdAt','$location')";
+        if($imgLocation==""){
+            $imgLocation= $this->saveProfilePic($regestration_number);
+        }
+
+        
+        
+        $query ="INSERT INTO member (regestration_number,nic_num,title,name,birthday,address,country,phone_number,mobile_number,email_address,index_number,olevel_year,alevel_year,password,createdAt,profile_picture_url) VALUES ('$regestration_number','$nic','$title','$name','$birthday','$address','$country',$phone,$mobile,'$email','$index_num',$ol_year,$al_year,'$password','$createdAt','$imgLocation')";
         $query2="INSERT INTO user(regestration_number,status)VALUES ('$regestration_number',0)";
          
         $result =$this->connect()->query($query);
@@ -18,12 +23,12 @@ class Member extends Dbh{
      
         return $result?'ok':'err';
      }
-     function saveProfilePic($name)
+     function saveProfilePic($regNum)
      {      
             /* Getting file name */
             $filename = $_FILES['file']['name'];
             $temp = explode(".", $filename);
-            $newfilename =  $name . '.' . end($temp);
+            $newfilename =  $regNum . '.' . end($temp);
         
              /* Location */
          $location = "../../plugins/images/users/". $newfilename;
@@ -42,7 +47,7 @@ class Member extends Dbh{
          if(move_uploaded_file($_FILES['file']['tmp_name'],$location)){
              return $location;
          }else{
-             return "../../img/profilepic/default.jpg";
+             return "../../img/profilepic/man.jpg";
          }
          }
          
