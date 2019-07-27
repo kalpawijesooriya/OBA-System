@@ -185,7 +185,7 @@ $no_reg ='';
     $(document).ready(function(){
         $("#approveBtn").click(function(){
             $.ajax({
-                url: '../php/membership/MemberController.php',
+                url: './php/membership/MemberController.php',
                 data: {
                         q: dataString,
                         action: "approveRegistration"
@@ -197,42 +197,6 @@ $no_reg ='';
     });
     });
     </script>
-
-    <!-- <script type="text/javascript">
-        var doc= '';
-        $("#q").autocomplete({
-            source: function(request, response) {
-                $.ajax({
-                    url: '../php/membership/Member.php',
-                    dataType: "json",
-                    data: {
-                        q: request.term,
-                        row_num: 1,
-                        action: "doctor_json"
-                    },
-                    success: function(data) {
-                        response($.map(data, function(item) {
-                            var code = item.split("|");
-                            return {
-                                label: code[3] + " " +code[1] + " " + code[2],
-                                value: code[1]+ " " + code[2] ,
-                                data: item
-                            }
-                        }));
-                    }
-                });
-            },
-            autoFocus: true,
-            minLength: 0,
-            select: function(event, ui) {
-                var names = ui.item.data.split("|");
-                doc = names[1]+" "+names[2];
-                $("#q").val(names[0]);
-                $("#doc_id").val(names[0]);
-            }
-        });
-    </script> -->
-
 </body>
 
 </html>
