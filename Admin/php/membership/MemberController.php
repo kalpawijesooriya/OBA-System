@@ -1,7 +1,6 @@
 <?php
 session_start();
 include_once 'Member.php';
-echo "aaa";
 $action = $_REQUEST['action'];
 
 switch ($action) {
