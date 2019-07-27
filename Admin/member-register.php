@@ -1,7 +1,6 @@
 <?php session_start();
 require_once "./php/membership/Member.php";
 // require_once "../conn.php";
-
 $member = new Member();
 
 //getPendingMember
@@ -12,7 +11,7 @@ $no_pen =mysqli_num_rows($pendingMembers);
 $no_pen ='';
 }
 
-//getPendingMember
+//getRegisteredMember
 $registeredMembers = $member->getRegisteredMembers();
 if($registeredMembers){
 $no_reg =mysqli_num_rows($registeredMembers);
@@ -31,7 +30,7 @@ $no_reg ='';
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="16x16" href="plugins/images/favicon.png">
-    <title>Ample Admin Template - The Ultimate Multipurpose admin template</title>
+    <title>Prince ODA Admin</title>
     <!-- Bootstrap Core CSS -->
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Menu CSS -->
@@ -42,6 +41,9 @@ $no_reg ='';
     <link href="css/style.css" rel="stylesheet">
     <!-- color CSS -->
     <link href="css/colors/default.css" id="theme" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -98,7 +100,7 @@ $no_reg ='';
                         </ol>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-6 col-sm-12" id="memberList">
                         <div class="panel">
                             <div class="sk-chat-widgets">
                                 <div class="panel panel-default">
@@ -114,10 +116,12 @@ $no_reg ='';
                                                     while ($row = mysqli_fetch_array($pendingMembers)) { ?>
                                                     <li>
                                                         <div class="call-chat">
-                                                            <button class="btn btn-success btn-lg" type="button" id="approveBtn" value="<?php echo $row['regestration_number']; ?>"><i class="fa fa-check">Approve</i></button>
-                                                            <button class="btn btn-warning btn-lg" type="button"><i class="fa fa-times">Reject</i></button>
+                                                            <button class="btn btn-success" data-toggle="modal" data-target="#edit<?php echo $row['regestration_number']; ?>"><span class = "glyphicon glyphicon-pencil"></span> View</button>  <button class="btn btn-danger delete" data-toggle="modal" data-target="#delete<?php echo $row['regestration_number']; ?>"><span class = "glyphicon glyphicon-trash"></span> Remove</button>                                                      
                                                         </div>
-                                                        <a href="javascript:void(0)"><img src="plugins/images/users/varun.jpg" alt="user-img" class="img-circle"> <span><?php echo $row['name']; ?><small class="text-success"><?php echo $row['email_address']; ?></small></span></a>
+                                                        <a href="javascript:void(0)"><img src="<?php echo $row['profile_picture_url']; ?>" alt="user-img" class="img-circle"> <span><?php echo $row['name']; ?><small class="text-success"><?php echo $row['email_address']; ?></small></span></a>
+                                                        
+                                                <?php include('member_modal.php'); ?>
+                                                <?php include('member_deleteModal.php'); ?>
                                                         <?php  } 
                                                         }else{ ?>
                                                             <div class="col-6 col-lg-3"><p>No result found</p></div>
@@ -144,9 +148,10 @@ $no_reg ='';
                                             while ($row = mysqli_fetch_array($registeredMembers)) { ?>
                                             <li>
                                                 <div class="call-chat">
-                                                    <button class="btn btn-danger  btn-lg" type="button"><i class="fa fa-times">Remove</i></button>
+                                                    <button class="btn btn-danger delete" data-toggle="modal" data-target="#delete<?php echo $row['regestration_number']; ?>"><span class = "glyphicon glyphicon-trash"></span> Remove</button>
                                                 </div>
-                                                <a href="javascript:void(0)"><img src="plugins/images/users/varun.jpg" alt="user-img" class="img-circle"> <span><?php echo $row['name']; ?><small class="text-success"><?php echo $row['email_address']; ?></small></span></a>
+                                                <a href="javascript:void(0)"><img src="<?php echo $row['profile_picture_url']; ?>" alt="user-img" class="img-circle"> <span><?php echo $row['name']; ?><small class="text-success"><?php echo $row['email_address']; ?></small></span></a>
+                                                <?php include('member_deleteModal.php'); ?>
                                                 <?php  } 
                                                 }else{ ?>
                                                     <div class="col-6 col-lg-3"><p>No result found</p></div>
@@ -180,22 +185,44 @@ $no_reg ='';
     <script src="js/custom.min.js"></script>
 
     <script type="text/javascript">
-    var dataString = document.getElementById("approveBtn").value;
-    
     $(document).ready(function(){
-        $("#approveBtn").click(function(){
-            $.ajax({
-                url: './php/membership/MemberController.php',
-                data: {
-                        q: dataString,
-                        action: "approveRegistration"
+        $(document).on('click', '.acceptMember', function(){
+                $dataString=$(this).val();
+                $('#edit'+$dataString).modal('hide');
+                $('body').removeClass('modal-open');
+                $('.modal-backdrop').remove();
+                    $.ajax({
+                        type: "POST",
+                        url: "./php/membership/MemberController.php",
+                        data: {
+                            q: $dataString,
+                            action: "approveRegistration",
+                        },
+                        success: function(){
+                            location.reload();
+                        }
+                    });
+        });
+
+        $(document).on('click', '.deleteMember', function(){
+            $dataString=$(this).val();
+            $('#edit'+$dataString).modal('hide');
+            $('body').removeClass('modal-open');
+            $('.modal-backdrop').remove();
+                $.ajax({
+                    type: "POST",
+                    url: "./php/membership/MemberController.php",
+                    data: {
+                        q: $dataString,
+                        action: "removeMember",
                     },
-                success: function(data) {
-                    location.reload();
-                }
-            });
+                    success: function(){
+                        location.reload();
+                    }
+                });
+        });
     });
-    });
+	
     </script>
 </body>
 
