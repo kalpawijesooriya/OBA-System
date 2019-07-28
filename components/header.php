@@ -2,8 +2,8 @@
 if( isset($_SESSION['login_user']) ){
  $profile_section='
 
-  <a style="width:110%;display: grid; grid-template-columns: 50% 60% ;">
-    <div class="" style="margin-left:-10px;">
+  <a style="width:200px;padding:0;display:grid; grid-template-columns: 40% 60%;">
+    <div class="" style="overflow:hidden">
       <div id="frame_img_nav"  class="circular-square">
         <img id="img_nav" src="img/team_member.jpg" alt="">
       </div>
