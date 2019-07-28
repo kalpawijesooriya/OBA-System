@@ -18,7 +18,8 @@
 }
 
 .row {
-  
+  margin:auto;
+  width: 100%;
 }
 
 hr { 
@@ -36,8 +37,10 @@ hr {
 .profile_pic{
   width: 250px !important;
   height: fit-content;
-  text-align:center; 
+  text-align:center;
+  /* margin: 0.3em;  */
 }
+
 #img_frame_com{
   overflow: hidden !important;
   width: 150px;
@@ -45,6 +48,7 @@ hr {
   margin:auto;
   background-position: center center
 }
+
 #img_com{
   width:150px;
   height:auto;
@@ -55,8 +59,8 @@ hr {
   width: 200px;
   height: 200px;
   margin:auto;
-  
 }
+
 #img_exec{
   width:230px;
   height:auto;
