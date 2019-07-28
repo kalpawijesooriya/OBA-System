@@ -9,9 +9,8 @@
       type="text/css"
       href="template/css/bootstrap.min.css"
     /> -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <script type="text/javascript" src="https://use.fontawesome.com/20bf8ce7c9.js"></script>
-    <link rel="stylesheet" type="text/css" href="template/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="template/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="template/css/style.css">
 	<link rel="stylesheet" type="text/css" href="template/css/lightbox.css">
   <link rel="stylesheet" type="text/css" href="template/css/animate.css"> 
@@ -22,6 +21,20 @@
   <script type="text/javascript" src="template/js/lightbox.js"></script> 
 	<script type="text/javascript" src="https://use.fontawesome.com/20bf8ce7c9.js"></script>
     <title>About Us</title>
+    <?php
+      session_start();
+
+      if( isset($_SESSION['login_user']) ){
+        echo "<span id ='login_user' style='visibility:hidden; position:absolute;'>".$_SESSION['login_user']."</span>";
+        echo "<span id ='login_user_reg' style='visibility:hidden; position:absolute;'>".$_SESSION['regestration_number']."</span>";
+        echo "<span id ='login_user_role' style='visibility:hidden; position:absolute;'>".$_SESSION['admin_role']."</span>";
+
+      }
+      else{
+        echo "<span id ='login_user' style='visibility:hidden;position:absolute;'>no_data</span>";
+      }
+  ?>
+
   </head>
   <body>
 
@@ -73,7 +86,7 @@
                             </div>
                               <figcaption  style="margin-top:10px; text-align:center;overflow-wrap: break-word;" width="250">
                                 <p class="member_name"><?php echo($row['name']) ?> </p>
-                                <p class="member_title"> <?php echo($row['job_role']) ?>  </p>
+                                <p class="member_title"> <?php echo($row['job_role']) ?> </p>
                                 <p class="member_mobile"> <?php echo($row['mobile_number']) ?> </p>
                                 <p class="mem_email"> <?php echo($row['email_address']) ?> </p>
                               </figcaption>
@@ -203,5 +216,37 @@
       </footer>
       
       <!-- site footer end -->
+
+<script>
+
+    var usr = document.getElementById("login_user").innerHTML;
+    var user_reg =  document.getElementById("login_user_reg").innerHTML;
+    var user_admin_role =  document.getElementById("login_user_role").innerHTML;
+
+      window.onload = function(e){
+          if(usr != "no_data"){
+
+            var btn = document.getElementById("login_btn");
+            var login_as =  document.getElementById("login_as");  
+
+            btn.innerHTML="Logout";
+            login_as.innerHTML="Logged in as "+ usr;
+          }
+      };
+
+      function login(){
+
+        if(usr == "no_data"){ //logout by clearing session
+          console.log("usr == 'no_data'");
+          location.href='./login.php';
+        }
+        else{
+          console.log("usr != 'no_data'");
+          location.href='./php/auth.php';
+        }
+        
+      }
+
+</script>
   </body>
 </html>
