@@ -10,6 +10,8 @@
       href="template/css/bootstrap.min.css"
     /> -->
     <script type="text/javascript" src="https://use.fontawesome.com/20bf8ce7c9.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="template/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="template/css/style.css">
 	<link rel="stylesheet" type="text/css" href="template/css/lightbox.css">
@@ -32,6 +34,9 @@
       }
       else{
         echo "<span id ='login_user' style='visibility:hidden;position:absolute;'>no_data</span>";
+        echo "<span id ='login_user_reg' style='visibility:hidden;position:absolute;'>no_data</span>";
+        echo "<span id ='login_user_role' style='visibility:hidden;position:absolute;'>no_data</span>";
+
       }
   ?>
 
@@ -62,7 +67,7 @@
               <h1 style="margin-top:50px"> Executive committee </h1>
               <div  style="margin-top:50px;margin-bottom:50px">
                               <!--  displaying the excecative member info  -->
-               <div class="row">
+               <div class="row" >
                   <?php 
                     include('./php/conn.php');
           
@@ -100,14 +105,14 @@
                         <div class="col-lg-4 col-md-4 order-2 profile_pic" style="margin-top:20px;">
                           <!-- <li class="one_quarter first"> -->
                             <figure>
-                            <div  id="img_frame_exec"  class="circular-square">
+                              <div  id="img_frame_exec"  class="circular-square">
                                <img id="img_exec" src="<?php echo $imgUrl ?>" alt="">
                               </div>
                               <figcaption  style="margin-top:10px; text-align:center;overflow-wrap: break-word;" width="250">
-                                <p class="member_name"><?php echo($row['name']) ?> </p>
-                                <p class="member_title"> <?php echo($row['job_role']) ?>  </p>
-                                <p class="member_mobile"> <?php echo($row['mobile_number']) ?> </p>
-                                <p class="mem_email"> <?php echo($row['email_address']) ?> </p>
+                                <p class="member_name"><?php echo($row['name'])?> </p>
+                                <p class="member_title"> <?php echo($row['job_role'])?>  </p>
+                                <p class="member_mobile"> <?php echo($row['mobile_number'])?> </p>
+                                <p class="mem_email"> <?php echo($row['email_address'])?> </p>
                               </figcaption>
                             </figure>
                           <!-- </li> -->
@@ -118,13 +123,13 @@
                           <!-- <li class="one_quarter first"> -->
                             <figure>
                             <div  id="img_frame_exec"  class="circular-square">
-                               <img  id="img_exec" src="<?php echo $imgUrl ?>" alt="">
+                               <img  id="img_exec" src="<?php echo $imgUrl?>" alt="">
                               </div>
                               <figcaption  style="margin-top:10px; text-align:center;overflow-wrap: break-word;" width="250">
-                                <p class="member_name"><?php echo($row['name']) ?> </p>
-                                <p class="member_title"> <?php echo($row['job_role']) ?>  </p>
-                                <p class="member_mobile"> <?php echo($row['mobile_number']) ?> </p>
-                                <p class="mem_email"> <?php echo($row['email_address']) ?> </p>
+                                <p class="member_name"><?php echo($row['name'])?> </p>
+                                <p class="member_title"> <?php echo($row['job_role'])?>  </p>
+                                <p class="member_mobile"> <?php echo($row['mobile_number'])?> </p>
+                                <p class="mem_email"> <?php echo($row['email_address'])?> </p>
                               </figcaption>
                             </figure>
                           <!-- </li> -->
@@ -138,10 +143,10 @@
                                <img id="img_exec" src="<?php echo $imgUrl ?>" alt="">
                               </div>
                               <figcaption style="margin-top:10px; text-align:center;overflow-wrap: break-word;" width="250">
-                                <p class="member_name"><?php echo($row['name']) ?> </p>
-                                <p class="member_title"> <?php echo($row['job_role']) ?>  </p>
-                                <p class="member_mobile"> <?php echo($row['mobile_number']) ?> </p>
-                                <p class="mem_email"> <?php echo($row['email_address']) ?> </p>
+                                <p class="member_name"><?php echo($row['name'])?> </p>
+                                <p class="member_title"> <?php echo($row['job_role'])?>  </p>
+                                <p class="member_mobile"> <?php echo($row['mobile_number'])?> </p>
+                                <p class="mem_email"> <?php echo($row['email_address'])?> </p>
                               </figcaption>
                             </figure>
                           <!-- </li> -->
@@ -155,10 +160,10 @@
                                <img id="img_exec" src="<?php echo $imgUrl ?>" alt="">
                               </div>
                               <figcaption  style="margin-top:10px; text-align:center;overflow-wrap: break-word;" width="250">
-                                <p class="member_name"><?php echo($row['name']) ?> </p>
-                                <p class="member_title"> <?php echo($row['job_role']) ?>  </p>
-                                <p class="member_mobile"> <?php echo($row['mobile_number']) ?> </p>
-                                <p class="mem_email"> <?php echo($row['email_address']) ?> </p>
+                                <p class="member_name"><?php echo($row['name'])?> </p>
+                                <p class="member_title"> <?php echo($row['job_role'])?>  </p>
+                                <p class="member_mobile"> <?php echo($row['mobile_number'])?> </p>
+                                <p class="mem_email"> <?php echo($row['email_address'])?> </p>
                               </figcaption>
                             </figure>
                           <!-- </li> -->
@@ -191,10 +196,10 @@
                                <img id="img_com" src="<?php echo $imgUrl2 ?>" alt="">
                               </div>
                               <figcaption  style="margin-top:10px; text-align:center;overflow-wrap: break-word;" >
-                                <p class="member_name" ><?php echo($row2['name']) ?> </p>
-                                <p class="member_title" > <?php echo($row2['job_role']) ?>  </p>
-                                <p class="member_mobile" > <?php echo($row2['mobile_number']) ?> </p>
-                                <p class="mem_email" > <?php echo($row2['email_address']) ?> </p>
+                                <p class="member_name"><?php echo($row2['name']) ?> </p>
+                                <p class="member_title"> <?php echo($row2['job_role']) ?>  </p>
+                                <p class="member_mobile"> <?php echo($row2['mobile_number']) ?> </p>
+                                <p class="mem_email"> <?php echo($row2['email_address']) ?> </p>
                               </figcaption>
                             </figure>
                           <!-- </li> -->
@@ -229,8 +234,8 @@
             var btn = document.getElementById("login_btn");
             var login_as =  document.getElementById("login_as");  
 
-            btn.innerHTML="Logout";
-            login_as.innerHTML="Logged in as "+ usr;
+            btn.innerHTML="LOGOUT";
+            login_as.innerHTML=usr;
           }
       };
 

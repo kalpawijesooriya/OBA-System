@@ -582,8 +582,8 @@ var user_admin_role =  document.getElementById("login_user_role").innerHTML;
         var btn = document.getElementById("login_btn");
         var login_as =  document.getElementById("login_as");  
 
-        btn.innerHTML="Logout";
-        login_as.innerHTML="Logged in as "+ usr;
+        btn.innerHTML="LOGOUT";
+        login_as.innerHTML=usr;
       }
   };
 
