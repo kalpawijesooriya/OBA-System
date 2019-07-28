@@ -12,6 +12,8 @@
   border-top-right-radius: 50% 50%;
   border-bottom-right-radius: 50% 50%;
   border-bottom-left-radius: 50% 50%;
+  
+ 
   /* padding-bottom: 5%; */
 }
 
@@ -26,7 +28,45 @@ hr {
   margin-left: auto;
   margin-right: auto;
   border-style: groove;
-  border-width: 1px;
+  border-width: 0.5px;
   width:100%;
   margin-top: 30px;
+}
+
+.profile_pic{
+  width: 250px !important;
+  height: fit-content;
+  text-align:center; 
+}
+#img_frame_com{
+  overflow: hidden !important;
+  width: 150px;
+  height: 150px;
+  margin:auto;
+  background-position: center center
+}
+#img_com{
+  width:150px;
+  height:auto;
+}
+
+#img_frame_exec{
+  overflow: hidden !important;
+  width: 200px;
+  height: 200px;
+  margin:auto;
+  
+}
+#img_exec{
+  width:230px;
+  height:auto;
+  margin-left:-10px;
+}
+
+.member_name{
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.member_title{
+  text-transform: capitalize;
 }

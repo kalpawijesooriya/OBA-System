@@ -68,8 +68,10 @@
                         <div class="col-lg-4  col-md-4 order-1 profile_pic" style="margin-top:20px;">
                           <!-- <li class="one_quarter first"> -->
                             <figure>
-                              <img src="<?php echo $imgUrl ?>" alt="" height="200" width="200" class="circular-square">
-                              <figcaption  style="margin-top:10px;">
+                            <div id="img_frame_exec"  class="circular-square">
+                               <img id="img_exec"src="<?php echo $imgUrl ?>" alt="">
+                            </div>
+                              <figcaption  style="margin-top:10px; text-align:center;overflow-wrap: break-word;" width="250">
                                 <p class="member_name"><?php echo($row['name']) ?> </p>
                                 <p class="member_title"> <?php echo($row['job_role']) ?>  </p>
                                 <p class="member_mobile"> <?php echo($row['mobile_number']) ?> </p>
@@ -85,8 +87,10 @@
                         <div class="col-lg-4 col-md-4 order-2 profile_pic" style="margin-top:20px;">
                           <!-- <li class="one_quarter first"> -->
                             <figure>
-                              <img src="<?php echo $imgUrl ?>" alt="" height="200" width="200" class="circular-square">
-                              <figcaption  style="margin-top:10px;">
+                            <div  id="img_frame_exec"  class="circular-square">
+                               <img id="img_exec" src="<?php echo $imgUrl ?>" alt="">
+                              </div>
+                              <figcaption  style="margin-top:10px; text-align:center;overflow-wrap: break-word;" width="250">
                                 <p class="member_name"><?php echo($row['name']) ?> </p>
                                 <p class="member_title"> <?php echo($row['job_role']) ?>  </p>
                                 <p class="member_mobile"> <?php echo($row['mobile_number']) ?> </p>
@@ -100,8 +104,10 @@
                         <div class="col-lg-4 col-md-4 order-3 profile_pic" style="margin-top:20px;">
                           <!-- <li class="one_quarter first"> -->
                             <figure>
-                              <img src="<?php echo $imgUrl ?>" alt="" height="200" width="200" class="circular-square">
-                              <figcaption  style="margin-top:10px;">
+                            <div  id="img_frame_exec"  class="circular-square">
+                               <img  id="img_exec" src="<?php echo $imgUrl ?>" alt="">
+                              </div>
+                              <figcaption  style="margin-top:10px; text-align:center;overflow-wrap: break-word;" width="250">
                                 <p class="member_name"><?php echo($row['name']) ?> </p>
                                 <p class="member_title"> <?php echo($row['job_role']) ?>  </p>
                                 <p class="member_mobile"> <?php echo($row['mobile_number']) ?> </p>
@@ -115,8 +121,10 @@
                         <div class="col-lg -4 col-md-4 order-4 profile_pic" style="margin-top:20px;">
                           <!-- <li class="one_quarter first"> -->
                             <figure>
-                              <img src="<?php echo $imgUrl ?>" height="200" width="200" alt="" class="circular-square">
-                              <figcaption  style="margin-top:10px;">
+                            <div  id="img_frame_exec"  class="circular-square">
+                               <img id="img_exec" src="<?php echo $imgUrl ?>" alt="">
+                              </div>
+                              <figcaption style="margin-top:10px; text-align:center;overflow-wrap: break-word;" width="250">
                                 <p class="member_name"><?php echo($row['name']) ?> </p>
                                 <p class="member_title"> <?php echo($row['job_role']) ?>  </p>
                                 <p class="member_mobile"> <?php echo($row['mobile_number']) ?> </p>
@@ -127,11 +135,13 @@
                         </div>
                     <?php }
                       else if ($row['job_role'] == "tresurer"){ ?>
-                      <div class="col-lg-4 col-md-4 order-5 profile_pic" style="margin-top:20px;">
+                      <div  class="col-lg-4 col-md-4 order-2 profile_pic" style="margin-top:20px;">
                           <!-- <li class="one_quarter first"> -->
                             <figure>
-                              <img src="<?php echo $imgUrl ?>" alt="" height="200" width="200" class="circular-square">
-                              <figcaption  style="margin-top:10px;">
+                            <div  id="img_frame_exec"  class="circular-square">
+                               <img id="img_exec" src="<?php echo $imgUrl ?>" alt="">
+                              </div>
+                              <figcaption  style="margin-top:10px; text-align:center;overflow-wrap: break-word;" width="250">
                                 <p class="member_name"><?php echo($row['name']) ?> </p>
                                 <p class="member_title"> <?php echo($row['job_role']) ?>  </p>
                                 <p class="member_mobile"> <?php echo($row['mobile_number']) ?> </p>
@@ -161,11 +171,13 @@
                         }
                       ?>
                       <hr>
-                      <div class="col-lg -3 col-md-4 order-1 profile_pic" style="margin-top:40px;">
+                      <div class=" col-lg-4 col-md-4 order-2 profile_pic" style="margin-top:40px;">
                           <!-- <li class="one_quarter first"> -->
                             <figure>
-                              <img src="<?php echo $imgUrl2 ?>" alt="" height="150" width="150" class="circular-square">
-                              <figcaption  style="margin-top:10px;">
+                              <div  id="img_frame_com"  class="circular-square">
+                               <img id="img_com" src="<?php echo $imgUrl2 ?>" alt="">
+                              </div>
+                              <figcaption  style="margin-top:10px; text-align:center;overflow-wrap: break-word;" >
                                 <p class="member_name" ><?php echo($row2['name']) ?> </p>
                                 <p class="member_title" > <?php echo($row2['job_role']) ?>  </p>
                                 <p class="member_mobile" > <?php echo($row2['mobile_number']) ?> </p>
