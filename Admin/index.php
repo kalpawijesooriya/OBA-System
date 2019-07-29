@@ -12,21 +12,20 @@ $no_pen ='';
 }
 
 //getNewRegisteredMember
-$registeredMembers = $member->getNewRegisteredMembers();
-if($registeredMembers){
-$no_reg =mysqli_num_rows($registeredMembers);
+$newregisteredMembers = $member->getNewRegisteredMembers();
+if($newregisteredMembers){
+$no_newreg =mysqli_num_rows($newregisteredMembers);
 }else{
-$no_reg ='';
+$no_newreg ='';
 }
 
 //getTotalMember
-$registeredMembers = $member->getTotalMembers();
-if($registeredMembers){
-$no_reg =mysqli_num_rows($registeredMembers);
+$totalMembers = $member->getRegisteredMembers();
+if($totalMembers){
+$no_totalreg =mysqli_num_rows($totalMembers);
 }else{
-$no_reg ='';
+$no_totalreg ='';
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -106,7 +105,7 @@ $no_reg ='';
                                 <li>
                                     <div id="sparklinedash"></div>
                                 </li>
-                                <li class="text-right"><i class="ti-arrow-up text-success"></i> <span class="counter text-success">10</span></li>
+                                <li class="text-right"><i class="ti-arrow-up text-success"></i> <span class="counter text-success"><?php echo "$no_newreg";?></span></li>
                             </ul>
                         </div>
                     </div>
@@ -117,7 +116,7 @@ $no_reg ='';
                                 <li>
                                     <div id="sparklinedash2"></div>
                                 </li>
-                                <li class="text-right"><i class="ti-arrow-up text-purple"></i> <span class="counter text-purple">12</span></li>
+                                <li class="text-right"><i class="ti-arrow-up text-purple"></i> <span class="counter text-purple"><?php echo "$no_pen";?></span></li>
                             </ul>
                         </div>
                     </div>
@@ -128,7 +127,7 @@ $no_reg ='';
                                 <li>
                                     <div id="sparklinedash3"></div>
                                 </li>
-                                <li class="text-right"><i class="ti-arrow-up text-info"></i> <span class="counter text-info">911</span></li>
+                                <li class="text-right"><i class="ti-arrow-up text-info"></i> <span class="counter text-info"><?php echo "$no_totalreg";?></span></li>
                             </ul>
                         </div>
                     </div>
@@ -139,7 +138,7 @@ $no_reg ='';
                                 <li>
                                     <div id="sparklinedash3"></div>
                                 </li>
-                                <li class="text-right"><i class="ti-arrow-up text-info"></i> <span class="counter text-info">911</span></li>
+                                <li class="text-right"><i class="ti-arrow-up text-info"></i> <span class="counter text-info">999</span></li>
                             </ul>
                         </div>
                     </div>
@@ -150,7 +149,7 @@ $no_reg ='';
                                 <li>
                                     <div id="sparklinedash3"></div>
                                 </li>
-                                <li class="text-right"><i class="ti-arrow-up text-info"></i> <span class="counter text-info">911</span></li>
+                                <li class="text-right"><i class="ti-arrow-up text-info"></i> <span class="counter text-info">999</span></li>
                             </ul>
                         </div>
                     </div>
