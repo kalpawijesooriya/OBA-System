@@ -1,3 +1,33 @@
+<?php session_start();
+require_once "./php/membership/Member.php";
+// require_once "../conn.php";
+$member = new Member();
+
+//getPendingMember
+$pendingMembers = $member->getPendingMembers();
+if($pendingMembers){
+$no_pen =mysqli_num_rows($pendingMembers);
+}else{
+$no_pen ='';
+}
+
+//getNewRegisteredMember
+$registeredMembers = $member->getNewRegisteredMembers();
+if($registeredMembers){
+$no_reg =mysqli_num_rows($registeredMembers);
+}else{
+$no_reg ='';
+}
+
+//getTotalMember
+$registeredMembers = $member->getTotalMembers();
+if($registeredMembers){
+$no_reg =mysqli_num_rows($registeredMembers);
+}else{
+$no_reg ='';
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
