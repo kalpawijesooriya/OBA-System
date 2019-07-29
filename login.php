@@ -70,7 +70,7 @@
 <section id="section-page" class="container-fluid site-section">
 <div class="row">  
 
-<div class="col-lg-9 col-md-9 site-section-left">
+<div class="col-lg-12 col-md-12 ">
 
   <div class="site-section-header">
     <h3>LOGIN TO MEMBERS AREA</h3>
