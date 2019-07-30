@@ -8,6 +8,8 @@ class Member extends Dbh{
     function saveMemberData($regestration_number,$nic,$title,$name,$birthday,$address,$country,$phone,$mobile,$email,$index_num,$ol_year,$al_year,$password, $imgLocation){
         $createdAt= date("Y-m-d H:i:sa");
         if($imgLocation==""){
+            $imgLocation="plugins/images/users/man.png" ;
+        }else{
             $imgLocation= $this->saveProfilePic($regestration_number);
         }
 
@@ -31,7 +33,7 @@ class Member extends Dbh{
             $newfilename =  $regNum . '.' . end($temp);
         
              /* Location */
-         $location = "plugins/images/users/". $newfilename;
+         $location = "../../plugins/images/users/". $newfilename;
          $uploadOk = 1;
          $imageFileType = pathinfo($location,PATHINFO_EXTENSION);
              /* Valid extensions */
@@ -45,7 +47,7 @@ class Member extends Dbh{
          }else{
          /* Upload file */
          if(move_uploaded_file($_FILES['file']['tmp_name'],$location)){
-             return $location;
+             return "plugins/images/users/". $newfilename;
          }else{
              return "plugins/images/users/man.png";
          }
