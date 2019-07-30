@@ -62,7 +62,31 @@ $no_totalreg ='';
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
+    <link rel="stylesheet" type="text/css" href="../template/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../template/css/lightbox.css">
+     <link rel="stylesheet" type="text/css" href="../template/css/animate.css">  
+  
+	<script type="text/javascript" src="../template/js/jquery-1.11.2.js"></script>
+     <script type="text/javascript" src="../template/js/bootstrap.min.js"></script> 
+     <script type="text/javascript" src="../template/js/lightbox.js"></script> 
+	<script type="text/javascript" src="https://use.fontawesome.com/20bf8ce7c9.js"></script>
 
+
+
+<?php
+
+
+      if( isset($_SESSION['login_user']) ){
+        echo "<span id ='login_user' style='visibility:hidden; position:absolute;'>".$_SESSION['login_user']."</span>";
+        echo "<span id ='login_user_reg' style='visibility:hidden; position:absolute;'>".$_SESSION['regestration_number']."</span>";
+        echo "<span id ='login_user_role' style='visibility:hidden; position:absolute;'>".$_SESSION['admin_role']."</span>";
+
+      }
+      else{
+        echo "<span id ='login_user' style='visibility:hidden;position:absolute;'>no_data</span>";
+      }
+  ?>
 </head>
 
 <body class="fix-header">
@@ -75,9 +99,12 @@ $no_totalreg ='';
         </svg>
     </div>
     <div id="wrapper">
-        <nav class="navbar navbar-default navbar-static-top m-b-0">
-        <?php require_once 'common/header.php'; ?>
-        </nav>
+        <header>
+            <nav class="navbar navbar-default navbar-static-top m-b-0" style="margin-top:0px;">
+            <?php require_once 'common/header.php'; ?>
+            </nav>
+        </header>
+
         <div class="navbar-default sidebar" role="navigation">
         <?php require_once 'common/navbar.php'; ?>
     </div>
@@ -237,6 +264,37 @@ $no_totalreg ='';
     <script src="js/custom.min.js"></script>
     <script src="js/dashboard1.js"></script>
     <script src="plugins/bower_components/toast-master/js/jquery.toast.js"></script>
+
+    <script>
+
+var usr = document.getElementById("login_user").innerHTML;
+var user_reg =  document.getElementById("login_user_reg").innerHTML;
+var user_admin_role =  document.getElementById("login_user_role").innerHTML;
+
+  window.onload = function(e){
+      if(usr != "no_data"){
+
+        var btn = document.getElementById("login_btn");
+        var login_as =  document.getElementById("login_as");  
+
+        btn.innerHTML="LOGOUT";
+        login_as.innerHTML=usr;
+      }
+  };
+
+  function login(){
+
+    if(usr == "no_data"){ //logout by clearing session
+      console.log("usr == 'no_data'");
+      location.href='../login.php';
+    }
+    else{
+      console.log("usr != 'no_data'");
+      location.href='../php/auth.php';
+    }
+     
+  }
+</script>
 </body>
 
 </html>

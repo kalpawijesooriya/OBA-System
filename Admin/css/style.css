@@ -9731,3 +9731,8 @@ ul.pro-amenities li span i{
         width:300px
     }
 }
+
+/* added by rasitha  */
+.navbar {
+    background: #5a0009 !important;
+}

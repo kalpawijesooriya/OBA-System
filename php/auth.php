@@ -35,7 +35,7 @@ member.regestration_number = '$username'  AND  member.password= '$password';");
            
                       if(sizeof($admin_role)>0){
                         $_SESSION['admin_role'] = implode( ", ", $admin_role );
-                        header("location: ../Admin/");
+                        header("location: ../");
                       }
                  }
                  else{

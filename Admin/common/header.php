@@ -1,22 +1,105 @@
-<div class="navbar-header">
-                <div class="top-left-part">
-                    <!-- Logo -->
-                    <a class="logo" href="index.php">
-                        <!-- Logo icon image, you can use font-icon also<b>
-                        This is dark logo icon<img src="plugins/images/admin-logo.png" alt="home" class="dark-logo" />This is light logo icon<img src="plugins/images/admin-logo-dark.png" alt="home" class="light-logo" />
-                     </b>  -->
-                        <!-- Logo text image you can use text also --><span class="hidden-xs">
-                        <!--This is dark logo text--><img src="plugins/images/admin-text.png" alt="home" class="dark-logo" /><!--This is light logo text--><img src="plugins/images/logo.jpg" alt="home" class="light-logo" />
-                     </span> </a>
-                </div>
-                <!-- /Logo -->
-                <ul class="nav navbar-top-links navbar-right pull-right">
-                    <li>
-                        <form role="search" class="app-search hidden-sm hidden-xs m-r-10">
-                            <input type="text" placeholder="Search..." class="form-control"> <a href=""><i class="fa fa-search"></i></a> </form>
-                    </li>
-                    <li>
-                         <a class="profile-pic" href="#"> <img src="plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">Dumindu</b></a>
-                    </li>
-                </ul>
-            </div>
+<?php 
+if( isset($_SESSION['login_user']) ){
+
+    $dashboard_button_element = '';
+    if( strlen($_SESSION['admin_role'] )>1){
+            $dashboard_button_element = '<li><a id="dash_btn" href="../Admin">DASHBOARD</a></li>';
+        }
+
+ $profile_section='
+
+  <a style="width:200px;padding:0;display:grid; grid-template-columns: 40% 60%;">
+    <div class="" style="overflow:hidden">
+      <div id="frame_img_nav"  class="circular-square">
+        <img id="img_nav" src="../img/team_member.jpg" alt="">
+      </div>
+    </div>
+    <div class="" style="height:100%;margin-top:20%;">
+       <span id="login_as" style="color:white;text-align:left;overflow-wrap:break-word;"></span>
+    </div>
+  </a>
+  
+  <ul>
+     <li><a id="login_btn" onclick="login()">LOGIN</a></li>
+     '.$dashboard_button_element.'
+  </ul>
+';}
+else{
+  $profile_section='<a id="login_btn" onclick="login()">LOGIN</a>';
+}
+
+echo('
+
+    <div class="col-lg-4 col-md-4 responsive-col-full-width/">
+    <div class="site-brand text-center">
+      <a href="index.php">
+        <div class="pull-left site-pull-left">        
+          <img src="../template/images/site-assets/logo.png" alt="dsscoba-logo">
+        </div>
+        <div class="pull-right site-pull-right">
+       
+          <h4>NEW TOWN PRINCE COLLEGE</h4>
+          <p>Old Boys\' Association</p>
+        </div>
+        <div class="clearfix"></div>
+      </a>
+    </div>   
+    <div class="button nvbtn"></div>         
+</div>
+<div class="col-md-8 responsive-col-full-width">
+
+  <div class="col-md-8">
+    <nav id=\'cssmenu\'>
+      <div id="head-mobile"></div>
+      <!-- <div class="button"></div> -->
+      <ul>
+      <li id="nav-home"><a href="../index.php">HOME</a></li>
+      <li id="nav-news"><a href="../aboutUs.php">ABOUT US</a></li>
+      <li id="nav-events"><a href="../events">EVENTS</a></li>
+      <li id="nav-projects"><a href="../membership.php">MEMBERSHIP</a></li>            
+      <li id="nav-media"><a href="../image-gallery.php">GALLERY</a>
+       <!-- <ul>
+            <li id="nav-media-sub"><a href="../image-gallery">IMAGE GALLERY</a></li>
+            <li id="nav-media-sub"><a href="../index.php">VIDEO GALLERY</a></li>
+        </ul> -->
+      </li>
+      <li id="nav-contact"><a href="../contact_us.php">CONTACT US</a></li>
+      <li>'.$profile_section.'
+      </li>
+    </ul>
+      </nav>
+  </div>
+  
+  
+  <style>
+  .circular-square {
+    border-radius: 50%;
+  }
+
+  .circular-square {
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    /* padding-bottom: 5%; */
+  }
+
+  #frame_img_nav{
+    overflow: hidden !important;
+    width: 60px;
+    height: 60px;
+    margin:auto;
+    background-position: center center
+    margin-left:0px !important;
+  }
+  
+  #img_nav{
+    width:60px;
+    height:auto;
+  }
+  #login_btn{
+    
+  }
+
+  </style>')
+?>

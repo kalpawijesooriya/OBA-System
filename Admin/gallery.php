@@ -22,6 +22,31 @@
     <link href="css/colors/default.css" id="theme" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
    
+
+    <link rel="stylesheet" type="text/css" href="../template/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../template/css/lightbox.css">
+     <link rel="stylesheet" type="text/css" href="../template/css/animate.css">  
+  
+	<script type="text/javascript" src="../template/js/jquery-1.11.2.js"></script>
+     <script type="text/javascript" src="../template/js/bootstrap.min.js"></script> 
+     <script type="text/javascript" src="../template/js/lightbox.js"></script> 
+	<script type="text/javascript" src="https://use.fontawesome.com/20bf8ce7c9.js"></script>
+
+<?php
+      session_start();
+
+      if( isset($_SESSION['login_user']) ){
+        echo "<span id ='login_user' style='visibility:hidden; position:absolute;'>".$_SESSION['login_user']."</span>";
+        echo "<span id ='login_user_reg' style='visibility:hidden; position:absolute;'>".$_SESSION['regestration_number']."</span>";
+        echo "<span id ='login_user_role' style='visibility:hidden; position:absolute;'>".$_SESSION['admin_role']."</span>";
+
+      }
+      else{
+        echo "<span id ='login_user' style='visibility:hidden;position:absolute;'>no_data</span>";
+      }
+  ?>
+
 </head>
 
 <body class="fix-header">
@@ -37,7 +62,7 @@
     <!-- Wrapper -->
     <!-- ============================================================== -->
     <div id="wrapper">
-        <nav class="navbar navbar-default navbar-static-top m-b-0">
+        <nav class="navbar navbar-default navbar-static-top m-b-0" style="margin-top:0px;">
         <?php require_once 'common/header.php'; ?>
         </nav>
         <div class="navbar-default sidebar" role="navigation">
@@ -55,7 +80,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
                         <h4 class="page-title">Gallery - Administrator</h4> </div>
                     <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
-                        <a href="#" target="_blank" class="btn btn-danger pull-right m-l-20 hidden-xs hidden-sm waves-effect waves-light">Upgrade to Pro</a>
+                        
                         <ol class="breadcrumb">
                             <li><a href="#">Dashboard</a></li>
                             <li class="active">Gallery</li>
@@ -146,6 +171,47 @@
     <script src="plugins/bower_components/gmaps/gmaps.min.js"></script>
     <script src="plugins/bower_components/gmaps/jquery.gmaps.js"></script> -->
 
+    <link rel="stylesheet" type="text/css" href="../template/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../template/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../template/css/lightbox.css">
+     <link rel="stylesheet" type="text/css" href="../template/css/animate.css">  
+  
+	<script type="text/javascript" src="../template/js/jquery-1.11.2.js"></script>
+     <script type="text/javascript" src="../template/js/bootstrap.min.js"></script> 
+     <script type="text/javascript" src="../template/js/lightbox.js"></script> 
+	<script type="text/javascript" src="https://use.fontawesome.com/20bf8ce7c9.js"></script>
+
+
+    <script>
+
+var usr = document.getElementById("login_user").innerHTML;
+var user_reg =  document.getElementById("login_user_reg").innerHTML;
+var user_admin_role =  document.getElementById("login_user_role").innerHTML;
+
+  window.onload = function(e){
+      if(usr != "no_data"){
+
+        var btn = document.getElementById("login_btn");
+        var login_as =  document.getElementById("login_as");  
+
+        btn.innerHTML="LOGOUT";
+        login_as.innerHTML=usr;
+      }
+  };
+
+  function login(){
+
+    if(usr == "no_data"){ //logout by clearing session
+      console.log("usr == 'no_data'");
+      location.href='../login.php';
+    }
+    else{
+      console.log("usr != 'no_data'");
+      location.href='../php/auth.php';
+    }
+     
+  }
+</script>
 </body>
 
 </html>
