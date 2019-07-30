@@ -47,7 +47,7 @@ class Member extends Dbh{
          if(move_uploaded_file($_FILES['file']['tmp_name'],$location)){
              return $location;
          }else{
-             return "plugins/images/users/man.jpg";
+             return "plugins/images/users/man.png";
          }
          }
          

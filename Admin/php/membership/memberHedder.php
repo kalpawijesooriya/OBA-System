@@ -14,7 +14,7 @@ else if(!empty($_POST['nic']) || !empty($_POST['title'])|| !empty($_POST['name']
     $imgLocation="";
      if( !empty($_FILES['file']['name']))
      {
-      
+        $imgLocation=$_FILES['file']['name'];
      }else{
         $imgLocation ="plugins/images/users/man.png";
      }
