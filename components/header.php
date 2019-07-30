@@ -1,26 +1,32 @@
 <?php 
 if( isset($_SESSION['login_user']) ){
- $profile_section='
 
-  <a style="width:200px;padding:0;display:grid; grid-template-columns: 40% 60%;">
-    <div class="" style="overflow:hidden">
-      <div id="frame_img_nav"  class="circular-square">
-        <img id="img_nav" src="img/team_member.jpg" alt="">
-      </div>
+  $dashboard_button_element = '';
+  if( strlen($_SESSION['admin_role'] )>1){
+          $dashboard_button_element = '<li><a id="dash_btn" href="Admin">DASHBOARD</a></li>';
+      }
+
+
+$profile_section='
+
+<a style="width:200px;padding:0;display:grid; grid-template-columns: 40% 60%;">
+  <div class="" style="overflow:hidden">
+    <div id="frame_img_nav"  class="circular-square">
+      <img id="img_nav" src="img/team_member.jpg" alt="">
     </div>
-    <div class="" style="height:100%;margin-top:20%;">
-       <span id="login_as" style="color:white;text-align:left;overflow-wrap:break-word;"></span>
-    </div>
-  </a>
-  
-  <ul>
-     <li><a id="login_btn" onclick="login()">LOGIN</a></li>
-  </ul>
+  </div>
+  <div class="" style="height:100%;margin-top:20%;">
+     <span id="login_as" style="color:white;text-align:left;overflow-wrap:break-word;"></span>
+  </div>
+</a>
 
-
+<ul>
+   <li><a id="login_btn" onclick="login()">LOGIN</a></li>
+   '.$dashboard_button_element.'
+</ul>
 ';}
 else{
-  $profile_section='<a id="login_btn" onclick="login()">LOGIN</a>';
+$profile_section='<a id="login_btn" onclick="login()">LOGIN</a>';
 }
 
 echo('
