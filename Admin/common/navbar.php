@@ -29,6 +29,9 @@
                     <li>
                         <a href="404.php" class="waves-effect"><i class="fa fa-info-circle fa-fw" aria-hidden="true"></i>Upload Section</a>
                     </li>
+                    <li>
+                        <a href="../index.php" class="waves-effect"><i class="fa fa-globe fa-fw" aria-hidden="true"></i>View Site</a>
+                    </li>
                 </ul>
 </div>
         

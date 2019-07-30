@@ -53,8 +53,14 @@ class Member extends Dbh{
          
      }
 
-    function getPendingMembers(){
+    function getNewRegisteredMembers(){
         $query ="SELECT * FROM member,user WHERE user.status='0' and member.regestration_number = user.regestration_number";
+        $result =$this->connect()->query($query);   
+        return $result;
+    }
+
+    function getPendingMembers(){
+        $query ="SELECT * FROM member,user WHERE user.status='2' and member.regestration_number = user.regestration_number";
         $result =$this->connect()->query($query);   
         return $result;
     }
