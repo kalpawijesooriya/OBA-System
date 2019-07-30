@@ -31,7 +31,7 @@ class Member extends Dbh{
             $newfilename =  $regNum . '.' . end($temp);
         
              /* Location */
-         $location = "../../plugins/images/users/". $newfilename;
+         $location = "plugins/images/users/". $newfilename;
          $uploadOk = 1;
          $imageFileType = pathinfo($location,PATHINFO_EXTENSION);
              /* Valid extensions */
@@ -47,7 +47,7 @@ class Member extends Dbh{
          if(move_uploaded_file($_FILES['file']['tmp_name'],$location)){
              return $location;
          }else{
-             return "../../img/profilepic/man.jpg";
+             return "plugins/images/users/man.jpg";
          }
          }
          
