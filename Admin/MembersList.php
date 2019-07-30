@@ -4,7 +4,7 @@ require_once "./php/membership/Member.php";
 $member = new Member();
 
 //getPendingMember
-$pendingMembers = $member->getPendingMembers();
+$pendingMembers = $member->getNewRegisteredMembers();
 if($pendingMembers){
 $no_pen =mysqli_num_rows($pendingMembers);
 }else{

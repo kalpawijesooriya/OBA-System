@@ -78,7 +78,7 @@
                     {
                       $imgUrl = "img/team_member.jpg";
                         if( !empty($row['profile_picture_url'])){
-                          $imgUrl = $row['profile_picture_url'];
+                          $imgUrl = 'Admin/'.$row['profile_picture_url'];
                         }
                       if($row['job_role'] == "president"){
                         
@@ -185,7 +185,7 @@
                     { 
                       $imgUrl2 = "img/team-member.gif";
                         if( !empty($row2['profile_picture_url'])){
-                          $imgUrl2 = $row2['profile_picture_url'];
+                          $imgUrl2 = 'Admin/'.$row2['profile_picture_url'];
                         }
                       ?>
                       <hr>
