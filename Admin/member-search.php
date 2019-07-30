@@ -12,7 +12,7 @@ $no_pen =mysqli_num_rows($pendingMembers);
 $no_pen ='';
 }
 
-//getPendingMember
+//getRegisteredMember
 $registeredMembers = $member->getRegisteredMembers();
 if($registeredMembers){
 $no_reg =mysqli_num_rows($registeredMembers);
@@ -31,7 +31,7 @@ $no_reg ='';
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="16x16" href="plugins/images/favicon.png">
-    <title>ODA Admin</title>
+    <title>Prince ODA Admin</title>
     <!-- Bootstrap Core CSS -->
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Menu CSS -->
@@ -185,7 +185,7 @@ $no_reg ='';
                                                 <div class="call-chat">
                                                     <button class="btn btn-danger  btn-lg" id="removeBtn" value="<?php echo $row['regestration_number']; ?>" type="button"><i class="fa fa-times">Remove</i></button>
                                                 </div>
-                                                <a href="javascript:void(0)"><img src="plugins/images/users/varun.jpg" alt="user-img" class="img-circle"> <span><?php echo $row['name']; ?><small class="text-success"><?php echo $row['email_address']; ?></small></span></a>
+                                                <a href="javascript:void(0)"><img src="<?php echo $row['profile_picture_url']; ?>" alt="user-img" class="img-circle"> <span><?php echo $row['name']; ?><small class="text-success"><?php echo $row['email_address']; ?></small></span></a>
                                                 <?php  } 
                                                 }else{ ?>
                                                     <div class="col-6 col-lg-3"><p>No result found</p></div>
@@ -225,7 +225,7 @@ $no_reg ='';
     $(document).ready(function(){
         $("#approveBtn").click(function(){
             $.ajax({
-                url: '../php/membership/MemberController.php',
+                url: './php/membership/MemberController.php',
                 data: {
                         q: dataString,
                         action: "approveRegistration"
@@ -237,7 +237,7 @@ $no_reg ='';
     });
     $("#removeBtn").click(function(){
             $.ajax({
-                url: '../php/membership/MemberController.php',
+                url: './php/membership/MemberController.php',
                 data: {
                         q: dataString,
                         action: "removeMember"

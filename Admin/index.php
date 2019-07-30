@@ -1,3 +1,32 @@
+<?php session_start();
+require_once "./php/membership/Member.php";
+// require_once "../conn.php";
+$member = new Member();
+
+//getPendingMember
+$pendingMembers = $member->getPendingMembers();
+if($pendingMembers){
+$no_pen =mysqli_num_rows($pendingMembers);
+}else{
+$no_pen ='';
+}
+
+//getNewRegisteredMember
+$newregisteredMembers = $member->getNewRegisteredMembers();
+if($newregisteredMembers){
+$no_newreg =mysqli_num_rows($newregisteredMembers);
+}else{
+$no_newreg ='';
+}
+
+//getTotalMember
+$totalMembers = $member->getRegisteredMembers();
+if($totalMembers){
+$no_totalreg =mysqli_num_rows($totalMembers);
+}else{
+$no_totalreg ='';
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +37,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="16x16" href="plugins/images/favicon.png">
-    <title>Prince OBA - Administrator</title>
+    <title>Prince OBA Admin</title>
     <!-- Bootstrap Core CSS -->
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Menu CSS -->
@@ -32,6 +61,8 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
+
+
 </head>
 
 <body class="fix-header">
@@ -76,7 +107,7 @@
                                 <li>
                                     <div id="sparklinedash"></div>
                                 </li>
-                                <li class="text-right"><i class="ti-arrow-up text-success"></i> <span class="counter text-success">10</span></li>
+                                <li class="text-right"><i class="ti-arrow-up text-success"></i> <span class="counter text-success"><?php echo "$no_newreg";?></span></li>
                             </ul>
                         </div>
                     </div>
@@ -87,7 +118,7 @@
                                 <li>
                                     <div id="sparklinedash2"></div>
                                 </li>
-                                <li class="text-right"><i class="ti-arrow-up text-purple"></i> <span class="counter text-purple">12</span></li>
+                                <li class="text-right"><i class="ti-arrow-up text-purple"></i> <span class="counter text-purple"><?php echo "$no_pen";?></span></li>
                             </ul>
                         </div>
                     </div>
@@ -98,7 +129,7 @@
                                 <li>
                                     <div id="sparklinedash3"></div>
                                 </li>
-                                <li class="text-right"><i class="ti-arrow-up text-info"></i> <span class="counter text-info">911</span></li>
+                                <li class="text-right"><i class="ti-arrow-up text-info"></i> <span class="counter text-info"><?php echo "$no_totalreg";?></span></li>
                             </ul>
                         </div>
                     </div>
@@ -109,7 +140,7 @@
                                 <li>
                                     <div id="sparklinedash3"></div>
                                 </li>
-                                <li class="text-right"><i class="ti-arrow-up text-info"></i> <span class="counter text-info">911</span></li>
+                                <li class="text-right"><i class="ti-arrow-up text-info"></i> <span class="counter text-info">999</span></li>
                             </ul>
                         </div>
                     </div>
@@ -120,7 +151,7 @@
                                 <li>
                                     <div id="sparklinedash3"></div>
                                 </li>
-                                <li class="text-right"><i class="ti-arrow-up text-info"></i> <span class="counter text-info">911</span></li>
+                                <li class="text-right"><i class="ti-arrow-up text-info"></i> <span class="counter text-info">999</span></li>
                             </ul>
                         </div>
                     </div>

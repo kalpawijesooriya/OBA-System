@@ -6,7 +6,7 @@
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 site-footer-bx">
                 <div id="site-footer-A1" class="text-center animated">
                     <img class="" src="template/images/site-assets/logo.png" alt="dsscoba-logo">
-                    <h5 class="">Lorem ipsum is a dummy text</h5>
+                    <h5 class="">Let righteousness be your guiding light</h5>
                 </div>
             </div>
             
