@@ -15,8 +15,6 @@ else if(!empty($_POST['nic']) || !empty($_POST['title'])|| !empty($_POST['name']
      if( !empty($_FILES['file']['name']))
      {
         $imgLocation=$_FILES['file']['name'];
-     }else{
-        $imgLocation ="plugins/images/users/man.png";
      }
     $result = $member->saveMemberData($registrationNumber,$_POST['nic'],$_POST['title'],$_POST['name'], $birthday,$_POST['address'],$_POST['country'],$_POST['phone'],$_POST['mobile'],$_POST['email'],$_POST['index_num'],$_POST['ol_year'],$_POST['al_year'],$_POST['password'], $imgLocation);
     echo  $result;   
