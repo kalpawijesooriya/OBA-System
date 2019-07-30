@@ -147,7 +147,7 @@
                         <div class="form-group">
                         <label class="control-label">Payment Amount (LKR.) </label>                       
                             <div class="controls">
-                                <input type="text" id="amount" name="amount" value="1500" readonly>
+                                <input type="text" id="amount" name="amount" value="2500" readonly>
                                 <!-- this amount should not hard coded. it should come through php variable  -->
                             </div>
                         </div>
