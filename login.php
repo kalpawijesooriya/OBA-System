@@ -12,7 +12,9 @@
   <link rel="stylesheet" type="text/css" href="template/css/style.css">
 	<link rel="stylesheet" type="text/css" href="template/css/lightbox.css">
   <link rel="stylesheet" type="text/css" href="template/css/animate.css">  
-  
+  <link rel="stylesheet" type="text/css" href="template/css/util.css"> 
+  <link rel="stylesheet" type="text/css" href="template/css/main.css"> 
+
 	<script type="text/javascript" src="template/js/jquery-1.11.2.js"></script>
   <script type="text/javascript" src="template/js/bootstrap.min.js"></script> 
   <script type="text/javascript" src="template/js/lightbox.js"></script> 
@@ -68,58 +70,74 @@
 <!-- site body -->
 
 <section id="section-page" class="container-fluid site-section">
-<div class="row">  
+<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
+				<form class="login100-form validate-form flex-sb flex-w" action="./php/auth.php" method="POST">
+					<span class="login100-form-title p-b-32">
+						Account Login
+					</span>
 
-<div class="col-lg-12 col-md-12 ">
+					<span class="txt1 p-b-11">
+						Username
+					</span>
+					<div class="wrap-input100 validate-input m-b-36" data-validate = "Username is required">
+           
+            <input class="input100" id="regestration_number" type="text" placeholder="Enter Registration Number" name="regestration_number" required> 
+						<span class="focus-input100"></span>
+					</div>
+					
+					<span class="txt1 p-b-11">
+						Password
+					</span>
+					<div class="wrap-input100 validate-input m-b-12" data-validate = "Password is required">
+						<span class="btn-show-pass">
+							<i class="fa fa-eye"></i>
+            </span>
+            <input id="pw" type="password"  class="input100" placeholder="Enter Password" name="pw" required>
+					
+						<span class="focus-input100"></span>
+					</div>
+					
+					<div class="flex-sb-m w-full p-b-48">
+						<div class="contact100-form-checkbox">
+							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+							<label class="label-checkbox100" for="ckb1">
+								Remember me
+							</label>
+						</div>
 
-  <div class="site-section-header">
-    <h3>LOGIN TO MEMBERS AREA</h3>
-  </div> 
+						<div>
+							<a href="#" class="txt3">
+								Forgot Password?
+							</a>
+						</div>
+					</div>
 
-  <div class="site-section-content">  
-    <div class="site-post-text">
-      <div class="row site-portfolio-row">
-        <form class="modal-content animate" action="./php/auth.php" method="POST">
+					<div class="container-login100-form-btn">
+					
+            <button type="submit"  class="login100-form-btn" style="margin-left: 30px;">Login</button>
+					</div>
 
-            <div class="container" style="padding:20px;">
-              <label for="regestration_number"><b>Username</b></label>
-              <input id="regestration_number" type="text" placeholder="Enter Registration Number" name="regestration_number" required>
-        
-              <label for="pw" style="padding-left: 20px;"><b>Password</b></label>
-              <input id="pw" type="password" placeholder="Enter Password" name="pw" required>
-        
-              <button type="submit" class="btn" style="margin-left: 30px;">Login</button>
-              <label style="padding-left:20px;">
-                <input type="checkbox" checked="checked" name="remember" > Remember me
-              </label>
-            </div>
-          
-            <div class="container" style="padding: 20px;">
-            <span id="error_msg" style="margin-right:50px;color:rgb(230, 95, 95);visibility:hidden;position:absolute;"></span><span class="psw">Forgot <a href="#">password?</a></span>
-            </div>
+        </form>
+        <span id="error_msg" style="margin-right:50px;color:rgb(230, 95, 95);visibility:hidden;position:absolute;"></span>
+			</div>
+		</div>
+	</div>
+	
 
-          </form>
-      </div>
-    </div>
-  </div>
+	<div id="dropDownSelect1"></div>
 
 
-</div>
 
-<!-- <div class="col-lg-4 col-md-4 site-section-right">
-    <div class="site-section-subheader">
-        <h5>Join the Community</h5>             
-    </div>
-    <div class="fb-page" data-href="https://www.facebook.com/OBADSSC/" data-width="400" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/OBADSSC/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/OBADSSC/">D. S. Senanayke College OBA</a></blockquote></div>   
-</div> -->
-</div>
+
 </section> 
+	
 
-<!-- site body end -->
 
+  <script src="template/js/main.js"></script>
 
-<!-- site footer -->
-<footer id="section-footer" class="container-fluid site-section">
+  <footer id="section-footer" class="container-fluid site-section">
 <?php include('./components/footer.php') ?>
 </footer><!-- site footer end -->
 
@@ -141,5 +159,7 @@
 
     };
  </script>
+
+
 </body>
 </html>
