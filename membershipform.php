@@ -2,7 +2,20 @@
 
 <html lang="en">
 <head>
-	<title>Membership</title>
+    <title>Membership</title>
+    <?php
+      session_start();
+
+      if( isset($_SESSION['login_user']) ){
+        echo "<span id ='login_user' style='visibility:hidden; position:absolute;'>".$_SESSION['login_user']."</span>";
+        echo "<span id ='login_user_reg' style='visibility:hidden; position:absolute;'>".$_SESSION['regestration_number']."</span>";
+        echo "<span id ='login_user_role' style='visibility:hidden; position:absolute;'>".$_SESSION['admin_role']."</span>";
+
+      }
+      else{
+        echo "<span id ='login_user' style='visibility:hidden;position:absolute;'>no_data</span>";
+      }
+  ?>
 
   <meta charset="UTF-8">
   <meta content="text/html; charset=UTF-8" http-equiv="content-type">        
@@ -323,6 +336,6 @@
 <script type="text/javascript" src="template/js/jquery.site.slider.js"></script>  
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>  
 <script type="text/javascript" src="js/membershipForm.js"></script> 
-
+<script type="text/javascript" src="js/login.js"></script>
 </body>
 </html>

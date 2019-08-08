@@ -56,7 +56,7 @@ echo('
       <ul>
       <li id="nav-home"><a href="index.php">HOME</a></li>
       <li id="nav-news"><a href="aboutUs.php">ABOUT US</a></li>
-      <li id="nav-events"><a href="events">EVENTS</a></li>
+      <li id="nav-events"><a href="events.php">EVENTS</a></li>
       <li id="nav-projects"><a href="membership.php">MEMBERSHIP</a></li>            
       <li id="nav-media"><a href="image-gallery.php">GALLERY</a>
        <!-- <ul>
