@@ -114,17 +114,25 @@
             </div>
            
           </div>
-          <div class="flex-sb-m w-full p-b-48">
-          <span id="error_msg" style="margin-right:50px;color:rgb(230, 95, 95);visibility:hidden;position:absolute;"></span>
-          </div>
+          <div class="container">
+            <div class="row">
+                <div class="col align-self-center">
+                <span id="error_msg" style="color:rgb(230, 95, 95);visibility:hidden; display: flex;justify-content: center;"></span>
+              
+                </div>
+            </div>
+        </div>
+          
+          
 					<div class="container-login100-form-btn">
           
-            <button type="submit"  class="login100-form-btn" style="margin-left: 30px;">Login</button>
+          <button type="submit"  class="login100-form-btn" >Login</button>
 					</div>
-
+         
         </form>
+      
+      </div>
      
-			</div>
 		</div>
 	</div>
 	
